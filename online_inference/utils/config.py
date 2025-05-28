@@ -5,3 +5,9 @@ v3_config = {
 }
 
 sql_service_url = "sql service url"
+
+
+
+config_mapping = {
+    "v3": v3_config
+}

@@ -26,7 +26,8 @@ class Embedder :
         return embs
 
 class Reranker :
-    def __init__(self,
+    def __init__(
+        self,
         model_name_or_path: str = None,
         use_fp16: bool = False,
         inference_mode: str = "huggingface",
@@ -34,39 +35,39 @@ class Reranker :
         device: Union[str, int] = 4
     ) -> None:
 
-    self.interence_mode = inference_mode
-    self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, cache_dir=cache_dir)
+        self.interence_mode = inference_mode
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, cache_dir=cache_dir)
 
-    if device and isinstance(device, str) :
-        self.device = torch.device(device)
-        if device == "auto" :
-            use_fp16 = False
-    else ;
-        if torch.cuda.is_available() :
-            if device is not None :
-                self.device = torch.device(f"cuda:{device}")
-            else :
-                self.device = torch.device("cuda")       
+        if device and isinstance(device, str) :
+            self.device = torch.device(device)
+            if device == "auto" :
+                use_fp16 = False
+        else ;
+            if torch.cuda.is_available() :
+                if device is not None :
+                    self.device = torch.device(f"cuda:{device}")
+                else :
+                    self.device = torch.device("cuda")       
 
-    self.model = AutoModelForSequenceClassification.from_pretrained(
-        model_name_or_path,
-        cache_dir=cache_dir,
-        trust_remote_code=True
-    )
+        self.model = AutoModelForSequenceClassification.from_pretrained(
+            model_name_or_path,
+            cache_dir=cache_dir,
+            trust_remote_code=True
+        )
 
-    if use_fp16 :
-        self.model.half()
-    self.model.eval()
+        if use_fp16 :
+            self.model.half()
+        self.model.eval()
 
-    self.model = self.model.to(self.device)
+        self.model = self.model.to(self.device)
 
-    if device is None :
-        self.num_gpus = torch.cuda.device_count()
-        if self.num_gpus > 1 :
-            print(f"----- using {self.num_gpus}*GPUs -------")
-            self.model = torch.nn.DataParallel(self.model)
-    else :
-        self.num_gpus = 1
+        if device is None :
+            self.num_gpus = torch.cuda.device_count()
+            if self.num_gpus > 1 :
+                print(f"----- using {self.num_gpus}*GPUs -------")
+                self.model = torch.nn.DataParallel(self.model)
+        else :
+            self.num_gpus = 1
 
     @torch.no_grad()
     def compute_score(self, sentence_paris: Union[List[Tuple[str, str]], Tuple[str, str]], batch_size: int = 256,
