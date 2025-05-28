@@ -3,3 +3,5 @@ v3_config = {
     "model": "deepseek_chat",
     "api_key": "api_key"
 }
+
+sql_service_url = "sql service url"
