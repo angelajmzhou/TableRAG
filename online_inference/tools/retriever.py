@@ -191,7 +191,7 @@ class MixedDocRetriever :
         all_docs = defaultdict(list)
         for file in tqdm(os.listdir(excel_dir_path)) :
             content = excel_to_markdown(os.path.join(excel_dir_path, file))
-            excel_content = f"Table Name: {file}" + content
+            excel_content = content
             all_docs[file] = excel_content
         
         for file in tqdm(os.listdir(doc_dir_path)) :
