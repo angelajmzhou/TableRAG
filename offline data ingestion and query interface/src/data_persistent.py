@@ -156,13 +156,13 @@ def parse_excel_file_and_insert_to_db(excel_file_outer_dir: str):
             
             df_convert = df.apply(infer_and_convert)
             df_convert = transfer_df_columns(df_convert)
-            # df_convert.columns = [transfer_name(col) for col in df_convert.columns]
-            # df_convert.columns = [
-            #     'No' if i == 0 and (not col or pd.isna(col)) else transfer_name(col) 
-            #     for i, col in enumerate(df_convert.columns)
-            # ]
 
             schema_dict, table_name = generate_schema_info(df_convert, file_name)
+
+            # 确保目录存在
+            if not os.path.exists(SCHEMA_DIR):
+                os.makedirs(SCHEMA_DIR)
+
             with open(f"{SCHEMA_DIR}/{table_name}.json", 'w', encoding='utf-8') as f:
                 json.dump(schema_dict, f, ensure_ascii=False)
             

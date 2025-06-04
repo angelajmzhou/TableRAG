@@ -11,15 +11,6 @@ model_request_config = {
             "Content-Type": "application/json"
         },
         "model": "deepseek-v3"
-    },
-
-    "qwen2.5-72b": {
-        "endpoint": "https://api.deepseek.com/v1/completions",
-        "headers": {
-            "Authorization": "Bearer sk-xxx",
-            "Content-Type": "application/json"
-        },
-        "model": "qwen2.5-72b"
     }
 }
 
