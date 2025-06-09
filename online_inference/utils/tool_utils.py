@@ -14,6 +14,7 @@ class Embedder :
         self.model_path = model_path
         self.device = torch.device(f"cuda:{device_id}")
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path, use_fast=True)
+        self.model = AutoModel.from_pretrained(self.model_path)
         self.model = self.model.to(self.device)
         self.model.eval()
     
@@ -42,7 +43,7 @@ class Reranker :
             self.device = torch.device(device)
             if device == "auto" :
                 use_fp16 = False
-        else ;
+        else :
             if torch.cuda.is_available() :
                 if device is not None :
                     self.device = torch.device(f"cuda:{device}")
@@ -92,7 +93,7 @@ class Reranker :
                     return_tensors="pt"
                 ).to(self.device)
 
-                scores = self.model(**test_inputs_batch, return_dict=True).logtis.view(-1).float()
+                scores = self.model(**test_inputs_batch, return_dict=True).logits.view(-1).float()
                 all_scores.extend(scores.cpu().nump().tolist())
                 flag = True
 
@@ -101,7 +102,7 @@ class Reranker :
                 error_count += 1
                 print("adjust", batch_size)
             
-            except torch.cuda.OutOfMemroyError as e :
+            except torch.cuda.OutOfMemoryError as e :
                 batch_size = batch_size // 2
                 error_count += 1
                 print("adjust", batch_size)

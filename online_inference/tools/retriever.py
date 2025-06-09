@@ -16,7 +16,7 @@ from collections import defaultdict
 from transformers import AutoModel
 import transformers
 from utils.tool_utils import *
-import ntlk
+import nltk
 from more_itertools import chunked
 import numpy as np
 import pickle

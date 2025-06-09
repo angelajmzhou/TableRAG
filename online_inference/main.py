@@ -8,7 +8,7 @@ from tqdm import tqdm
 from chat_utils import *
 from tools.retriever import *
 from tools.sql_tool import *
-from utils.config import *
+from config import *
 from utils.utils import read_in, read_in_lines
 from typing import Dict, Tuple, Any
 import threading
@@ -38,7 +38,7 @@ class TableRAG() :
             reranker_path="",
             save_path=""
         )
-        self.repo_id = self.config.get("repo_id", "")
+        # self.repo_id = self.config.get("repo_id", "")
         self.function_lock = threading.Lock()
 
     def relate_to_table(self, doc_name: str) -> str :
@@ -57,7 +57,7 @@ class TableRAG() :
             "type": "function",
             "function": {
                 "name": "solve_subquery",
-                "description": "Return answer for the decomposed subquery."
+                "description": "Return answer for the decomposed subquery.",
                 "paramters": {
                     "type": "object",
                     "properties": {
@@ -264,13 +264,13 @@ class TableRAG() :
             return result
 
         if max_workers >= 1 :
-            file_lock = threading.lock()
+            file_lock = threading.Lock()
             with open(save_file_path, "r", encoding="utf-8") as fout :
                 with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor :
                     futures = []
                     for case in src_data :
                         future = executor.submit(process_data, case)
-                        futures.append(future)
+                        futures.append((future, case["question"]))
                     
                     for future, question_id in tqdm(futures, desc="handling questions") :
                         try :

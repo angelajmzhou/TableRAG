@@ -8,6 +8,7 @@ import time
 import threading
 import traceback
 import sys
+sys.path.append("../")
 from chat_utils import *
 from utils.config import sql_service_url
 
@@ -17,13 +18,13 @@ logger = init_logger('./logs/test.log', logging.INFO)
 def with_retry(max_retries=3, backoff_factor=5) :
     def decorator(func) :
         @wraps(func)
-        def wrapper(*args, *kwargs) :
+        def wrapper(*args, kwargs) :
             retries = 0
             while retries < max_retries :
                 try :
                     return func(*args, *kwargs)
                 except Exception as e :
-                    retries + =1
+                    retries += 1
                     if retries > max_retries :
                         raise e
                     wait_time = backoff_factor * (2 ** (retries - 1))
@@ -63,7 +64,7 @@ def get_excel_rag_response(table_name_list, query, repo_id) :
         raise e
 
 
-def get_excel_rag_response_plain(table_name_list, query, repo_id) :
+def get_excel_rag_response_plain(table_name_list, query, repo_id=None) :
     url = sql_service_url
 
     headers = {
@@ -71,7 +72,7 @@ def get_excel_rag_response_plain(table_name_list, query, repo_id) :
     }
 
     body = {
-        'repo_id': repo_id,
+        # 'repo_id': repo_id,
         'table_name_list': table_name_list,
         'query': query
     }
@@ -84,3 +85,12 @@ def get_excel_rag_response_plain(table_name_list, query, repo_id) :
         logger.error(f"SQL error, the model return is : {resp.text}")
         traceback.print_exc
         return {}
+
+if __name__ == '__main__' :
+    get_excel_rag_response_plain(
+        query="What is the middle name of the player with the second most National Football League career rushing yards ?",
+        table_name_list=[
+        "List_of_National_Football_League_rushing_yards_leaders_0"
+    ]
+
+    )

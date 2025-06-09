@@ -7,7 +7,7 @@ from typing import Dict, Any, Optional
 import os
 import hashlib
 import time
-from utils.config import *
+from config import *
 import httpx
 
 def init_logger(name='my_logger', level=logging.DEBUG, log_file='app.log') :
