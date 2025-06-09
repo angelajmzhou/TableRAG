@@ -189,3 +189,117 @@ class TableRAG() :
                 )
 
                 final_prompt = combine_prompt_formatted
+
+                msg = [{"role": "user", "content": final_prompt}]
+                answer = self.get_llm_response(text_messages=msg, backbone=backbone, select_config=select_config)
+                answer = self.extract_answer(answer)
+
+                if not answer :
+                    answer = ""
+                
+                logger.log(f"LLM Subquery Answer: {answer}")
+                execution_message = {
+                    "role": "tool",
+                    "tool_call_id": tool_call_id,
+                    "content": "Subquery Answer: " + answer
+                }
+
+        return None, text_messages
+
+
+    def construct_initla_prompt(self, case: dict, top1_table_name: str) -> Any :
+        query = case["question"]
+
+        table_id = top1_table_name + ".csc"
+        csv_file_path = os.path.join(r'../datasets/HybridQA/my_dev_csv_tok', table_id)
+        if os.path.exists(csv_file_path) :
+            markdown_text = read_plain_csv(csv_file_path)
+        else :
+            markdown_text = "Can NOT find table content!"
+        
+        inital_prompt = SYSTEM_EXPLORE_PROMPT.format(query=query, table_content=markdown_text)
+        logger.info(f"Inital prompt: {inital_prompt}")
+
+        intial_msg = [{"role": "user", "content": inital_prompt}]
+        return intial_msg
+    
+    def run(
+        self,
+        file_path: str,
+        save_file_path: str,
+        backbone: str,
+        rerun: bool = False,
+        max_workers: int = 1
+    ) -> None :
+        """
+        Experimental Entry.
+        """
+        if rerun :
+            pre_data = read_in_lines(save_file_path)
+            pre_questions = {case["question"] for case in pre_data}
+
+        else :
+            pre_questions = {}
+        src_data = read_in(file_path)
+
+        def process_data(case) :
+            if case["question"] in pre_questions :
+                return pre_questions[case["question"]]
+            answer, messages = self._run(case, backbone=backbone)
+            
+            result = case.copy()
+            if answer == None :
+                result["tablerag_answer"] = ""
+                result["tablerag_messages"] = []
+            else :
+                new_messages = []
+                for mes in messages :
+                    if not isinstance(mes, dict) :
+                        new_messages.append(mes.to_dict())
+                    else :
+                        new_messages.append(mes)
+                result["tablerag_answer"] = answer
+                result["tablerage_messages"] = new_messages
+
+            return result
+
+        if max_workers >= 1 :
+            file_lock = threading.lock()
+            with open(save_file_path, "r", encoding="utf-8") as fout :
+                with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor :
+                    futures = []
+                    for case in src_data :
+                        future = executor.submit(process_data, case)
+                        futures.append(future)
+                    
+                    for future, question_id in tqdm(futures, desc="handling questions") :
+                        try :
+                            result = future.result()
+                            with file_lock :
+                                json.dump(result, fout)
+                                fout.flush()
+                        except Exception as e :
+                            print(f"Failed to get result for {question_id}: {e}")
+                            traceback.print_exc()
+
+if __name__ == "__main__" :
+    parser = argparse.ArgumentParser(description="entry args")
+    parser.add_argument('--backbone', type=str, default="gpt-4o")
+    parser.add_argument('--data_file_path', type=str, default="", help="source file path")
+    parser.add_argument('--save_file_path', type=str, default="")
+    parser.add_argument('--max_iter', type=int, default=5)
+    parser.add_argument('--rerun', type=bool, default=False)
+    _args, _unparsed = parser.parse_known_args()
+    logger.init_logger('./logs/test.log', logging.INFO)
+
+    agent = TableRAG(_args)
+    start_time = time.time()
+    agent.run(
+        file_path=_args.data_file_path,
+        save_file_path=_args.save_file_path,
+        backbone=_args.backbone,
+        rerun=_args.rerun
+    )
+    end_time = time.time()
+    print(f"Processing data consumes: {end_time - start_time:.6f} s.")
+
