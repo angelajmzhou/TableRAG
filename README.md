@@ -2,7 +2,7 @@
 
 Repo for _[TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning](https://github.com/yxh-y/TableRAG/)_  
 
-![Main Architecture](./images/Main%20structure.png)
+![Main Architecture](./figures/Main%20structure.png)
 
 # 📌 Introduction
 
