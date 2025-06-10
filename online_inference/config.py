@@ -4,8 +4,7 @@ v3_config = {
     "api_key": "api_key"
 }
 
-sql_service_url = 'https://6cbe-121-36-124-23.ngrok-free.app/get_tablerag_response' 
-
+sql_service_url = 'url for sql service' 
 
 
 config_mapping = {

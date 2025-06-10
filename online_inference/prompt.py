@@ -1,6 +1,8 @@
-SYSTEM_EXPLORE_PROMPT = """Next, you will complete a table-related question answering task. Based on the provided materials such as the table content(in Markdown format), you need to analyze the Question.
-And try to decide whether the Question should be broken down into subqueries. After you have collected sufficient information, you need to generate comprehensive answers.
-You have a "solve_subquery" tool, it only takes natural language question as input.
+SYSTEM_EXPLORE_PROMPT = """Next, you will complete a table-related question answering task. Based on the provided materials such as the table content (in Markdown format), you need to analyze the User Query.
+And try to decide whether the User Input Query should be broken down into subqueries. You are provided with "solve_subquery" tool that can get answer for the subqueries.
+After you have collected sufficient information, you need to generate comprehensive answers.
+
+Table Contet: {table_content}
 
 Instructions:
 1. Carefully analyze each user query through step-by-step reasoning.
@@ -15,8 +17,7 @@ Instructions:
 6. When you have sufficient information, provide the final answer in the following format:
     <Answer>: [your complete response]
 
-Table Contet: {table_content}
-Question: {question}
+User Input Query: {query}
 Please start!
 """
 

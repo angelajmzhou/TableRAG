@@ -53,10 +53,28 @@ def get_chat_result(
         api_key=llm_config.get('api_key', ''),
         base_url=llm_config.get('url', '')
     )
-    chat_completion = client.chat.completions.create(
-        messages=messages,
-        model=llm_config.get('model', 'gpt-4o'),
-        tools=tools,
-        temperature=0.001
-    )
-    return chat_completion.choices[0].message
+    try :
+        chat_completion = client.chat.completions.create(
+            messages=messages,
+            model=llm_config.get('model', 'gpt-4o'),
+            tools=tools,
+            temperature=0.1
+        )
+        return chat_completion.choices[0].message
+    except :
+        service_url = llm_config.get('url', '')
+        payload = {
+            "model": llm_config.get('model', ''),
+            "messages": messages,
+            "temperature": 0.1,
+            "tools": tools
+        }
+        headers = {
+            "Content-Type": "application/json",
+        }
+        response = requests.post(
+            service_url,
+            json=payload,
+            headers=headers
+        )
+        return json.loads(response.text)['choices'][0]["message"]

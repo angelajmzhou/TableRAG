@@ -144,7 +144,7 @@ class SemanticRetriever :
             return index_gpu
 
     def retrieve(self, query, recall_num, rerank_num) :
-        docs, ori_file_name = self.recall(recall_num)
+        docs, ori_file_name = self.recall(query, recall_num)
         reranked_docs, rerank_scores, filenames = self.rerank(query, docs, rerank_num, ori_file_name)
         return reranked_docs, rerank_scores, filenames
         

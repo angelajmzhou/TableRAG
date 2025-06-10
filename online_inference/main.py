@@ -32,11 +32,11 @@ class TableRAG() :
         self.max_iter = min(_args.max_iter, MAX_ITER)
         self.cnt = 0
         self.retriever = MixedDocRetriever(
-            doc_dir_path="",
-            excel_dir_path="",
-            llm_path="",
-            reranker_path="",
-            save_path=""
+            doc_dir_path=_args.doc_dir,
+            excel_dir_path=_args.excel_dir,
+            llm_path=os.path.join(_args.bge_dir, "bge-m3"),
+            reranker_path=os.path.join(_args.bge_dir, "bge-reranker-v2-m3"),
+            save_path="./embedding.pkl"
         )
         # self.repo_id = self.config.get("repo_id", "")
         self.function_lock = threading.Lock()
@@ -58,19 +58,20 @@ class TableRAG() :
             "function": {
                 "name": "solve_subquery",
                 "description": "Return answer for the decomposed subquery.",
-                "paramters": {
+                "parameters": {
                     "type": "object",
                     "properties": {
                         "subquery": {
                             "type": "string",
-                            "description": "The subquery to be solved"
+                            "description": "The subquery to be solved, only take natural language as input."
                         }
                     },
                     "required": [
                         "subquery"
                     ],
                     "additionalProperties": False
-                }
+                },
+                "strict": True
             }
         }]
         return tools
@@ -110,11 +111,11 @@ class TableRAG() :
         except :
             return response['content']
 
-    def get_llm_response(self, text_messages: object, tools: object, backbone: str, selct_config: object) :
+    def get_llm_response(self, text_messages: object, tools: object, backbone: str, select_config: object) :
         if tools :
-            response = get_chat_result(messages=text_messages, tools=tools, llm_config=selct_config)   
+            response = get_chat_result(messages=text_messages, tools=tools, llm_config=select_config)   
         else :
-            response = get_chat_result(messages=text_messages, tools=None, llm_config=selct_config)   
+            response = get_chat_result(messages=text_messages, tools=None, llm_config=select_config)   
 
         return response
                         
@@ -132,7 +133,7 @@ class TableRAG() :
         _, _, doc_filenaems = self.retriever.retrieve(query_with_suffix, 30, 5)
 
         top1_table_name = doc_filenaems[0].replace(".json", "").replace(".xlsx", "")
-        related_table_name_list = [top1_table_name + "_Sheet1.xlsx"]
+        related_table_name_list = [top1_table_name]
 
 
         tools = self.create_tools()
@@ -152,12 +153,12 @@ class TableRAG() :
             if not sub_queries and "<Answer>" in reasoning and current_iter != self.max_iter - 1 :
                 answer = self.extract_answer(reasoning)
                 logger.info(f"Answer: {answer}")
-                return answer
+                return answer, text_messages
             
             if not sub_queries :
                 text_messages.append({
                     "role": "user",
-                    "content": "ERROR: Did not output a suquery!"
+                    "content": "ERROR: Did not call tool with a suquery!"
                 })
                 continue
 
@@ -169,14 +170,14 @@ class TableRAG() :
                 unique_retriebed_docs = list(set(reranked_docs))
                 doc_content = "\n".join([r for r in unique_retriebed_docs[:3]])
 
-                excel_rag_response_dict = get_excel_rag_response_plain(str(related_table_name_list), sub_query, self.repo_id)
+                excel_rag_response_dict = get_excel_rag_response_plain(related_table_name_list, sub_query, self.repo_id)
                 excel_rag_response = copy.deepcopy(excel_rag_response_dict)
                 logger.info(f"Requesting ExcelRAG, source file {str(related_table_name_list)}, with query {sub_query}")
 
                 try :
                     sql_str = excel_rag_response['sql_str']
-                    sql_execute_result = excel_rag_response['sql_execute_result']
-                    schema  = get_excel_rag_response['nl2sql_prompt'].split('基于上面的schema，请使用MySQL语法解决下面的问题')[0].strip()
+                    sql_execute_result = excel_rag_response['sql_execution_result']
+                    schema  = get_excel_rag_response['nl2sql_prompt'].split('Based on the schemas above, please use MySQL syntax to solve the following problem')[0].strip()
                 except :
                     sql_str, sql_execute_result, schema = "ExcelRAG execute fails, key does not exists."
 
@@ -191,27 +192,28 @@ class TableRAG() :
                 final_prompt = combine_prompt_formatted
 
                 msg = [{"role": "user", "content": final_prompt}]
-                answer = self.get_llm_response(text_messages=msg, backbone=backbone, select_config=select_config)
-                answer = self.extract_answer(answer)
+                answer = self.get_llm_response(text_messages=msg, backbone=backbone, select_config=select_config, tools=None)
+                answer = self.extract_content(answer)
 
                 if not answer :
                     answer = ""
                 
-                logger.log(f"LLM Subquery Answer: {answer}")
+                logger.info(f"LLM Subquery Answer: {answer}")
                 execution_message = {
                     "role": "tool",
                     "tool_call_id": tool_call_id,
                     "content": "Subquery Answer: " + answer
                 }
+                text_messages.append(execution_message)
 
         return None, text_messages
 
 
-    def construct_initla_prompt(self, case: dict, top1_table_name: str) -> Any :
+    def construct_initial_prompt(self, case: dict, top1_table_name: str) -> Any :
         query = case["question"]
 
-        table_id = top1_table_name + ".csc"
-        csv_file_path = os.path.join(r'../datasets/HybridQA/my_dev_csv_tok', table_id)
+        table_id = top1_table_name + ".csv"
+        csv_file_path = os.path.join(self.config.excel_dir, table_id)
         if os.path.exists(csv_file_path) :
             markdown_text = read_plain_csv(csv_file_path)
         else :
@@ -265,7 +267,7 @@ class TableRAG() :
 
         if max_workers >= 1 :
             file_lock = threading.Lock()
-            with open(save_file_path, "r", encoding="utf-8") as fout :
+            with open(save_file_path, "w", encoding="utf-8") as fout :
                 with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor :
                     futures = []
                     for case in src_data :
@@ -286,6 +288,9 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser(description="entry args")
     parser.add_argument('--backbone', type=str, default="gpt-4o")
     parser.add_argument('--data_file_path', type=str, default="", help="source file path")
+    parser.add_argument('--doc_dir', type=str, default="", help="source file path")
+    parser.add_argument('--excel_dir', type=str, default="", help="source file path")
+    parser.add_argument('--bge_dir', type=str, default="", help="source file path")
     parser.add_argument('--save_file_path', type=str, default="")
     parser.add_argument('--max_iter', type=int, default=5)
     parser.add_argument('--rerun', type=bool, default=False)

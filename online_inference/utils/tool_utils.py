@@ -94,7 +94,7 @@ class Reranker :
                 ).to(self.device)
 
                 scores = self.model(**test_inputs_batch, return_dict=True).logits.view(-1).float()
-                all_scores.extend(scores.cpu().nump().tolist())
+                all_scores.extend(scores.cpu().numpy().tolist())
                 flag = True
 
             except RuntimeError as e :

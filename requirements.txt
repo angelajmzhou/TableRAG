@@ -1,0 +1,4 @@
+openai
+openpyxl
+langchain_text_splitters
+nltk
