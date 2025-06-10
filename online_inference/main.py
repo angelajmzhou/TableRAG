@@ -279,6 +279,7 @@ class TableRAG() :
                             result = future.result()
                             with file_lock :
                                 json.dump(result, fout)
+                                fout.write("\n")
                                 fout.flush()
                         except Exception as e :
                             print(f"Failed to get result for {question_id}: {e}")
