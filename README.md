@@ -2,6 +2,8 @@
 
 Repo for _[TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning](https://github.com/yxh-y/TableRAG/)_  
 
+![Main Architecture](./images/Main%20structure.png)
+
 # 📌 Introduction
 
 - We identify two key limitations of existing RAG approaches in the context of heterogeneous document question answering: structural information loss and lack of global view. 
