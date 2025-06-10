@@ -47,3 +47,25 @@ Note:
     - if the two materials shows conflit, you should think about each of them, and finally give an answer.
 """
 
+EVALUATION_PRONPT = """We would like to request your feedback on the performance of the AI assistant in response to the user question displayed above according to the gold answer. Please use the following listed aspects and their descriptions as evaluation criteria:
+    - Accuracy and Hallucinations: The assistant's answer is semantically consistent with the gold answer; The numerical value and order need to be accurate, and there should be no hallucinations.
+    - Completeness: Referring to the reference answers, the assistant's answer should contain all the key points needed to answer the user's question; further elaboration on these key points can be omitted.
+Please rate whether this answer is suitable for the question. Please note that the gold answer can be considered as a correct answer to the question.
+
+The assistant receives an overall score on a scale of 0 OR 1, where 0 means wrong and 1 means correct.
+Dirctly output a line indicating the score of the Assistant.
+
+PLEASE OUTPUT WITH THE FOLLOWING FORMAT, WHERE THE SCORE IS 0 OR 1 BY STRICTLY FOLLOWING THIS FORMAT: "[[score]]", FOR EXAMPLE "Rating: [[1]]":
+<start output>
+Rating: [[score]]
+<end output> 
+
+[Question]
+{question}
+
+[Gold Answer]
+{golden}
+
+[The Start of Assistant's Predicted Answer]
+{gen}
+"""
