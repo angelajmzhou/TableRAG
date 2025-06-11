@@ -43,7 +43,7 @@ Note:
 1. The markdown table content in Content 1 may be incomplete.
 2. You should cross-validate the given two materials:
     - if the answers are the same, directly output the answer.
-    - if the "SQL execution result" contains error, you should try to answer based on the Content 1.
+    - if the "SQL execution result" contains error or is empty, you should try to answer based on the Content 1.
     - if the two materials shows conflit, you should think about each of them, and finally give an answer.
 """
 
