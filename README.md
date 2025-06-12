@@ -14,7 +14,7 @@ Repo for _[TableRAG: A Retrieval Augmented Generation Framework for Heterogeneou
 
 ## Environment
 ```
-conda create -n webwalker python=3.10
+conda create -n your_env python=3.10
 
 git clone https://github.com/yxh-y/TableRAG/
 cd TableRAG
