@@ -24,14 +24,14 @@ pip install -r requirements.txt
 
 # 🛠 How to Run?
 
+## Offline Workflow
 
-## Step 1: Setup MySQL Database
+### Step 1: Setup MySQL Database
 
-### Download MySQL
-reach https://downloads.mysql.com/archives/community/
-find MySQL 8.0.24 and downloads for your appropriate environment
+1. Download MySQL
+Reach https://downloads.mysql.com/archives/community/ and find MySQL 8.0.24 and downloads for your appropriate environment.
 
-### Install MySQL
+2. Install MySQL
 ```
 tar -zxvf mysql-8.0.24-linux-glibc2.12-x86_64.tar.gz
 cd mysql-8.0.24-linux-glibc2.12-x86_64
@@ -44,43 +44,51 @@ sudo cp support-files/mysql.server /etc/init.d/mysql
 sudo systemctl enable mysql
 sudo systemctl start mysql
 ```
-
-### Create Database for TableRAG
+3. Create Database for TableRAG
 ```sql
 CREATE DATABASE TableRAG;
 ```
 
+### Step 2: Offline data Ingestion
 
-## Step 2: Set Config and Arguments
+1. Setup database config 
+Edit offline_data_ingestion_and_query_interface/config/database_config.json and update it with your own MySQL config.
 
-### Offline data ingestion
+2. Prepare table files to be ingested
+Unzip 'offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel.zip' to 'offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel/'.
 
-#### Setup database config 
-edit offline_data_ingestion_and_query_interface/config/database_config.json
-update it with your own MySQL config
-
-#### Prepare table files to be ingested
-unzip offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel.zip
-to offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel/
-
-#### Execute data ingestion pipeline
+3. Execute data ingestion pipeline
 ```
 cd offline_data_ingestion_and_query_interface/src/
 python data_persistent.py
 ```
 
-## Step 3: Example Usage Command
+### Step 3: Start Database query service
 
-### Start Database query service
+1. Setup LLM config
+Edit 'offline_data_ingestion_and_query_interface/src/handle_requests.py' and substitute your llm request url and apikey into model_request_config.
 
-#### setup LLM config
-edit offline_data_ingestion_and_query_interface/src/handle_requests.py
-substitute your llm request url and apikey into model_request_config
-
-#### start service to provide SQL query interface
+2. Start service to provide SQL query interface
 
 ```
 python interface.py
+```
+
+## Online Workflow
+
+### Step 1: Setup Config
+
+Edit 'online_inference/config.py' to set the LLM infering url and key, and the query service url.
+
+### Step 2: Run Main Experiment
+```
+cd online_inference
+python3 main.py
+  --backbone <backbone_llm>
+  --data_file_path <infering data input file path>
+  --save_file_path <path to save file>
+  --max_iter <max iterations of TableRAG>
+  --rerun <True if some cases fail at the previous run> 
 ```
 
 
