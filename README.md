@@ -7,7 +7,7 @@ Repo for _[TableRAG: A Retrieval Augmented Generation Framework for Heterogeneou
 # 📌 Introduction
 
 - We identify two key limitations of existing RAG approaches in the context of heterogeneous document question answering: structural information loss and lack of global view. 
-- We propose **TableRAG**, an **Hybird (SQL Execution and Textual Retrieval) framework** that unifies textual understanding and complex manipulations over tabular data. TableRAG comprises an offline database construction phase and a four-step online iterative reasoning process.
+- We propose **TableRAG**, an **Hybrid (SQL Execution and Textual Retrieval) framework** that unifies textual understanding and complex manipulations over tabular data. TableRAG comprises an offline database construction phase and a four-step online iterative reasoning process.
 - We develop **HeteQA**, a benchmark for evaluating multi-hop heterogeneous reasoning capabilities. Experimental results show that TableRAG outperforms RAG and programmatic approaches on HeteQA and public benchmarks, establishing a state-of-the-art solution.
 
 # 🔎 Setup
