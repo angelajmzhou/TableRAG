@@ -55,8 +55,7 @@ CREATE DATABASE TableRAG;
 Edit offline_data_ingestion_and_query_interface/config/database_config.json and update it with your own MySQL config.
 
 2. Prepare table files to be ingested
-Download dev_excel.zip from [Google Drive](https://drive.google.com/drive/folders/1Pea6kiUZv0UP8k7Ohv19KorBdBaUrouE?usp=drive_link)
-Unzip dev_excel.zip to 'offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel/'.
+Download dev_excel.zip from [Google Drive](https://drive.google.com/drive/folders/1Pea6kiUZv0UP8k7Ohv19KorBdBaUrouE?usp=drive_link). Unzip dev_excel.zip to 'offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel/'.
 
 4. Execute data ingestion pipeline
 ```
