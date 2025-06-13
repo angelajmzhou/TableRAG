@@ -79,7 +79,7 @@ python interface.py
 
 ## Online Workflow
 
-### Step 1: Setup Config
+### Step 1: Setup Config and Data Source
 
 1. Edit 'online_inference/config.py' to set the LLM infering url and key, and the query service url.
    
