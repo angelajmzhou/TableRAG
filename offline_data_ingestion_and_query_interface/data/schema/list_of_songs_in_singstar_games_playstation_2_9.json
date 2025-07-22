@@ -1,0 +1,1 @@
+{"table_name": "list_of_songs_in_singstar_games_playstation_2_9", "column_list": [["artist", "VARCHAR(255)", "sample values:['Fergie', 'Calvin Harris', 'Nelly Furtado']"], ["song_title", "VARCHAR(255)", "sample values:['Love Today', 'Clumsy', 'Makes Me Wonder']"], ["au", "VARCHAR(255)", "sample values:['Yes']"], ["de", "VARCHAR(255)", "sample values:['Yes']"]]}

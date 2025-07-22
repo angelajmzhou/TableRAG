@@ -1,0 +1,1 @@
+{"table_name": "list_of_programs_broadcast_by_showtime_4", "column_list": [["title", "VARCHAR(255)", "sample values:['Dexter', 'Masters of Horror', 'Penny Dreadful']"], ["first_broadcast", "INT", "sample values:['2005', '2016', '2006']"], ["last_broadcast", "INT", "sample values:['2010', '2004', '2016']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "list_of_power_stations_in_poland_4", "column_list": [["name", "VARCHAR(255)", "sample values:['Kamieńsk Wind Farm', 'Cisowo Wind Farm', 'Lisewo Wind Farm']"], ["location", "VARCHAR(255)", "sample values:['Tymień', 'Lisewo', 'Kamieńsk']"], ["capacity_mwe", "FLOAT", "sample values:['48.0', '30.0', '22.0']"]]}

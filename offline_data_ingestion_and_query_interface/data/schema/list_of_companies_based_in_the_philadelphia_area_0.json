@@ -1,0 +1,1 @@
+{"table_name": "list_of_companies_based_in_the_philadelphia_area_0", "column_list": [["name", "VARCHAR(255)", "sample values:['AmeriGas', \"Boscov 's\", 'Axalta Coating Systems']"], ["city", "VARCHAR(255)", "sample values:['Chesterbrook , PA', 'West Conshohocken , PA', 'Berlin , NJ']"], ["industry", "VARCHAR(255)", "sample values:['electronics', 'real estate', 'utility']"]]}

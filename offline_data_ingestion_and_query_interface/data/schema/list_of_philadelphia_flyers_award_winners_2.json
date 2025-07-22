@@ -1,0 +1,1 @@
+{"table_name": "list_of_philadelphia_flyers_award_winners_2", "column_list": [["player", "VARCHAR(255)", "sample values:['Mikael Renberg', 'Eric Lindros', 'Joni Pitkanen']"], ["position", "VARCHAR(255)", "sample values:['Defense', 'Goaltender', 'Forward']"], ["season", "VARCHAR(255)", "sample values:['2015-16', '1983-84', '1986-87']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "torneo_del_litoral_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Estudiantes', 'Ateneo Inmaculada', 'Paraná Rowing Club']"], ["city", "VARCHAR(255)", "sample values:['Rosario', 'Santa Fe', 'Paraná']"], ["province", "VARCHAR(255)", "sample values:['Santa Fe', 'Entre Ríos']"]]}

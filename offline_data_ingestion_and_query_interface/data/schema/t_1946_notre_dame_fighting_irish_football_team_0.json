@@ -1,0 +1,1 @@
+{"table_name": "t_1946_notre_dame_fighting_irish_football_team_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Zygmont Ziggy Czarobski', 'Emil Red Sitko', 'Johnny Lujack']"], ["position", "VARCHAR(255)", "sample values:['Halfback/Fullback', 'Tackle', 'End/Tackle']"], ["year_inducted", "INT", "sample values:['1960', '1984', '1977']"]]}

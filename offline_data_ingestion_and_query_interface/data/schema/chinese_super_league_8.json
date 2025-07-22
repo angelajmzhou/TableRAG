@@ -1,0 +1,1 @@
+{"table_name": "chinese_super_league_8", "column_list": [["year", "INT", "sample values:['2011', '2017', '2015']"], ["top_scorer", "VARCHAR(255)", "sample values:['Wu Lei', 'Yu Hanchao', 'Wang Yongpo']"], ["club", "VARCHAR(255)", "sample values:['Shanghai SIPG', 'Liaoning FC', 'Shandong Luneng Taishan']"], ["goals", "INT", "sample values:['20', '12', '10']"]]}

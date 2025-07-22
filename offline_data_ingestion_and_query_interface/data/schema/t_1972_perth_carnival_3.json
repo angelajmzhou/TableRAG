@@ -1,0 +1,1 @@
+{"table_name": "t_1972_perth_carnival_3", "column_list": [["name", "VARCHAR(255)", "sample values:['George McInnes', 'Max Hadley', 'Jim Leitch']"], ["age", "INT", "sample values:['22', '19', '23']"], ["position", "VARCHAR(255)", "sample values:['Ruckman', 'Centreman', 'Wingman']"], ["club", "VARCHAR(255)", "sample values:['Latrobe', 'Scottsdale', 'Ulverstone']"]]}

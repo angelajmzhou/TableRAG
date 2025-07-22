@@ -1,0 +1,1 @@
+{"table_name": "t_2013_major_league_baseball_all_star_game_2", "column_list": [["player", "VARCHAR(255)", "sample values:['Clay Buchholz', 'Yu Darvish', 'Matt Moore']"], ["team", "VARCHAR(255)", "sample values:['Mariners', 'Athletics', 'Rays']"], ["all_star_games", "INT", "sample values:['1', '13', '6']"]]}

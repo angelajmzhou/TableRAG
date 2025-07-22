@@ -1,0 +1,1 @@
+{"table_name": "euroleague_rising_star_0", "column_list": [["season", "VARCHAR(255)", "sample values:['2009-10', '2010-11', '2015-16']"], ["rising_star", "VARCHAR(255)", "sample values:['Goga Bitadze', 'Nikola Mirotić', 'Ricky Rubio']"], ["team", "VARCHAR(255)", "sample values:['Regal FC Barcelona', 'Partizan', 'Armani Jeans Milano']"]]}

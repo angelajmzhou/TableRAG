@@ -1,0 +1,1 @@
+{"table_name": "t_1974_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Catcher', 'Third baseman', 'Designated hitter']"], ["name", "VARCHAR(255)", "sample values:['Lee Iorg', 'Gene Delyon', 'Bill Almon']"], ["school", "VARCHAR(255)", "sample values:['Miami', 'USC', 'South Carolina']"]]}

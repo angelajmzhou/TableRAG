@@ -1,0 +1,1 @@
+{"table_name": "municipalities_of_switzerland_2", "column_list": [["rank", "INT", "sample values:['7', '8', '6']"], ["city", "VARCHAR(255)", "sample values:['Zürich', 'Winterthur', 'Geneva']"], ["canton", "VARCHAR(255)", "sample values:['Basel-Stadt', 'Zürich', 'Geneva']"], ["pop", "VARCHAR(255)", "sample values:['64,790', '201,118', '110,443']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "debra_messing_0", "column_list": [["year", "INT", "sample values:['2004', '2005', '2020']"], ["title", "VARCHAR(255)", "sample values:['Open Season', 'The Women', 'Lucky You']"], ["role", "VARCHAR(255)", "sample values:['Mary Magdalene', 'Lori', 'Kate Scott']"]]}

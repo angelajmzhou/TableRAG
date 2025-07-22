@@ -1,0 +1,1 @@
+{"table_name": "t_14th_legislative_assembly_of_british_columbia_0", "column_list": [["member", "VARCHAR(255)", "sample values:['James Horace King', 'Alexander Ingram Fisher', 'Hugh Stewart']"], ["electoral_district", "VARCHAR(255)", "sample values:['Kamloops', 'Fernie', 'Delta']"], ["party", "VARCHAR(255)", "sample values:['Liberal', 'Conservative', 'Independent']"]]}

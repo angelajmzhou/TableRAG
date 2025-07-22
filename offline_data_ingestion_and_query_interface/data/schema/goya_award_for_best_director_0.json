@@ -1,0 +1,1 @@
+{"table_name": "goya_award_for_best_director_0", "column_list": [["name", "VARCHAR(255)", "sample values:['José Luis Garci', 'Daniel Monzón', 'Cesc Gay']"], ["awards", "INT", "sample values:['3', '2', '1']"], ["nominations", "INT", "sample values:['5', '2', '3']"]]}

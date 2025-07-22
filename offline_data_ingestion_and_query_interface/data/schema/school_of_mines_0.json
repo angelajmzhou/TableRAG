@@ -1,0 +1,1 @@
+{"table_name": "school_of_mines_0", "column_list": [["institution", "VARCHAR(255)", "sample values:['University of Johannesburg', 'University of the Witwatersrand', 'National High School of Mines and Metallurgy']"], ["location", "VARCHAR(255)", "sample values:['Kitwe', 'Tripoli', 'Sudan']"], ["country", "VARCHAR(255)", "sample values:['Zambia', 'Ghana', 'Sudan']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "atlasjet_1", "column_list": [["aircraft", "VARCHAR(255)", "sample values:['Airbus A320-200', 'Boeing 737-400', 'Airbus A330-200']"], ["introduced", "VARCHAR(255)", "sample values:['2006', '2007', '2001']"], ["retired", "VARCHAR(255)", "sample values:['2007', '2005 2011', '2012']"]]}

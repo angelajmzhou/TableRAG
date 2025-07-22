@@ -1,0 +1,1 @@
+{"table_name": "t_2009_huddersfield_giants_season_0", "column_list": [["player", "VARCHAR(255)", "sample values:['18 . Danny Kirmond', '11 . Jamahl Lolesi', '10 . Darrell Griffin']"], ["position", "VARCHAR(255)", "sample values:['HK', 'C', 'FB']"], ["previous_club", "VARCHAR(255)", "sample values:['Huddersfield Giants', 'Bradford Bulls', 'St. Helens']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "list_of_persepolis_f", "column_list": [["name", "VARCHAR(255)", "sample values:['Aziz Asli', 'Homayoun Behzadi', 'Iraj Soleimani']"], ["position", "VARCHAR(255)", "sample values:['Forward', 'Midfielder', 'Goalkeeper']"], ["persepolis_career", "VARCHAR(255)", "sample values:['1970-80', '1968-71', '1970-88']"]]}

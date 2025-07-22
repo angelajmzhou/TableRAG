@@ -1,0 +1,1 @@
+{"table_name": "list_of_sports_films_14", "column_list": [["title", "VARCHAR(255)", "sample values:['Dil Bole Hadippa !', 'Lagaan', 'Chain Kulii Ki Main Kulii']"], ["year", "INT", "sample values:['2007', '1987', '2008']"], ["genre", "VARCHAR(255)", "sample values:['Action', 'Comedy', 'Comedy , Drama']"]]}

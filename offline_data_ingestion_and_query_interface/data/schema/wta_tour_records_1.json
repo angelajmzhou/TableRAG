@@ -1,0 +1,1 @@
+{"table_name": "wta_tour_records_1", "column_list": [["unnamed_0", "INT", "sample values:['15', '1', '5']"], ["player", "VARCHAR(255)", "sample values:['Kim Clijsters', 'Angelique Kerber', 'Petra Kvitová']"], ["prize_money", "VARCHAR(255)", "sample values:['$ 41,801,056', '$ 24,749,074', '$ 29,526,500']"]]}

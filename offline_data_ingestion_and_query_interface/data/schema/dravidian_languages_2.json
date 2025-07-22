@@ -1,0 +1,1 @@
+{"table_name": "dravidian_languages_2", "column_list": [["language", "VARCHAR(255)", "sample values:['Konda', 'Koya', 'Gondi']"], ["number_of_speakers", "VARCHAR(255)", "sample values:['20,000', '4,040', '2,980,000']"], ["location", "VARCHAR(255)", "sample values:['Telangana , Chhattisgarh , Maharashtra , Madhya Pradesh', 'Odisha', 'Chhattisgarh , Maharashtra , Odisha']"]]}

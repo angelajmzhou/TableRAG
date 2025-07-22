@@ -1,0 +1,1 @@
+{"table_name": "sc_toronto_0", "column_list": [["years", "VARCHAR(255)", "sample values:['2012', '1996-2001', '2002']"], ["name", "VARCHAR(255)", "sample values:['Cesar Garcia', 'Jose Testas', 'Danny Amaral']"], ["nation", "VARCHAR(255)", "sample values:['Portugal', 'Canada', 'Uruguay']"]]}

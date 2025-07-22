@@ -1,0 +1,1 @@
+{"table_name": "amusement_today_22", "column_list": [["times_hosting", "INT", "sample values:['3', '2', '1']"], ["park", "VARCHAR(255)", "sample values:['Lake Compounce', 'SeaWorld San Diego', 'Cedar Point']"], ["years", "VARCHAR(255)", "sample values:['2013', '2001 , 2006 , 2011', '2019']"]]}

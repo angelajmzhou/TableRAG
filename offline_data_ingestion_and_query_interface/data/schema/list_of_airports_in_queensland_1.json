@@ -1,0 +1,1 @@
+{"table_name": "list_of_airports_in_queensland_1", "column_list": [["community", "VARCHAR(255)", "sample values:['Townsville', 'Charters Towers', 'Antil Plains']"], ["airport_name", "VARCHAR(255)", "sample values:['Reid River Airfield', 'Breddan Aerodrome', 'Aitkenvale Aerodrome']"], ["type", "VARCHAR(255)", "sample values:['Military', 'Military/Public']"]]}

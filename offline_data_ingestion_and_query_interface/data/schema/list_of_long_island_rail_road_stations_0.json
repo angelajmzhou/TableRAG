@@ -1,0 +1,1 @@
+{"table_name": "list_of_long_island_rail_road_stations_0", "column_list": [["line", "VARCHAR(255)", "sample values:['Ronkonkoma Branch', 'Port Jefferson Branch', 'Babylon Branch']"], ["stations", "INT", "sample values:['14', '16', '1']"], ["termini", "VARCHAR(255)", "sample values:['Bay Shore Montauk', 'Lynbrook Long Beach', 'Rockville Centre Babylon']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "ckua_radio_network_0", "column_list": [["city_of_licence", "VARCHAR(255)", "sample values:['Drumheller / Hanna', 'Peace River', 'Whitecourt']"], ["frequency", "VARCHAR(255)", "sample values:['00 99.3 FM', '0 103.7 FM', '0 102.5 FM']"], ["callsign", "VARCHAR(255)", "sample values:['CKUA-FM-14', 'CKUA-FM-5', 'CKUA-FM-4']"]]}

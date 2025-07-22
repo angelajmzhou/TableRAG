@@ -1,0 +1,1 @@
+{"table_name": "mallika_actress_0", "column_list": [["year", "INT", "sample values:['2012', '2010', '2005']"], ["film", "VARCHAR(255)", "sample values:['Thirupathi', 'Snehaveedu', 'Nerkku Nere']"], ["role", "VARCHAR(255)", "sample values:['Bhavayami', 'Karpagam', 'Kamala']"], ["language", "VARCHAR(255)", "sample values:['Beary', 'Tamil', 'Telugu']"]]}

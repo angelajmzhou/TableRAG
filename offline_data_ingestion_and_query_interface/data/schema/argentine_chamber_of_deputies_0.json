@@ -1,0 +1,1 @@
+{"table_name": "argentine_chamber_of_deputies_0", "column_list": [["province", "VARCHAR(255)", "sample values:['Santa Cruz', 'Jujuy', 'Buenos Aires']"], ["deputies", "INT", "sample values:['70', '24', '5']"], ["population_2010", "VARCHAR(255)", "sample values:['550,334', '1,053,466', '1,215,207']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "list_of_flag_bearers_for_mali_at_the_olympics_0", "column_list": [["_", "INT", "sample values:['2', '5', '6']"], ["event_year", "INT", "sample values:['1972', '2000', '2012']"], ["season", "VARCHAR(255)", "sample values:['Summer']"], ["flag_bearer", "VARCHAR(255)", "sample values:['Karamoke Kory Konte', 'Djénébou Danté', 'Kadiatou Camara']"]]}

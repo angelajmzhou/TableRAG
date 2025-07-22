@@ -1,0 +1,1 @@
+{"table_name": "laurence_fox_1", "column_list": [["year", "VARCHAR(255)", "sample values:['2003', '2019', '2015']"], ["title", "VARCHAR(255)", "sample values:['Frankie Drake Mysteries', \"Foyle 's War\", 'Egypt']"], ["role", "VARCHAR(255)", "sample values:['Cecil Vyse', 'SS Maj. Kessler', 'Frederick Dipple']"]]}

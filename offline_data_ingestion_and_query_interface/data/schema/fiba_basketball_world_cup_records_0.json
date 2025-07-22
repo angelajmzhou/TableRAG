@@ -1,0 +1,1 @@
+{"table_name": "fiba_basketball_world_cup_records_0", "column_list": [["year", "INT", "sample values:['1970', '2002', '2019']"], ["player", "VARCHAR(255)", "sample values:['Dirk Nowitzki', 'Luis Scola', 'Oscar Schmidt']"], ["scoring_average", "FLOAT", "sample values:['27.0', '20.1', '33.7']"]]}

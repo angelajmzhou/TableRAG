@@ -1,0 +1,1 @@
+{"table_name": "laura_prepon_0", "column_list": [["year", "INT", "sample values:['2006', '2017', '2004']"], ["title", "VARCHAR(255)", "sample values:['Karla', 'Once Upon a Time', 'The Hero']"], ["role", "VARCHAR(255)", "sample values:['Jennifer', 'Cathy', 'Angevin Duvet']"]]}

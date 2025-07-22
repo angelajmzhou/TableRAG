@@ -1,0 +1,1 @@
+{"table_name": "list_of_atlantic_10_df2442b6", "column_list": [["school", "VARCHAR(255)", "sample values:['Charlotte', 'Rhode Island', 'West Virginia']"], ["of_tournament_championships", "INT", "sample values:['9', '2', '0']"], ["last_tournament_championship", "FLOAT", "sample values:['2019.0', '2011.0', '2010.0']"]]}

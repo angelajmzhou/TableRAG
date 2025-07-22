@@ -1,0 +1,1 @@
+{"table_name": "t_2011_afl_rising_star_0", "column_list": [["round", "INT", "sample values:['16', '4', '12']"], ["player", "VARCHAR(255)", "sample values:['Jack Steven', 'Luke Shuey', 'Mitch Duncan']"], ["club", "VARCHAR(255)", "sample values:['Port Adelaide', 'Sydney', 'Fremantle']"]]}

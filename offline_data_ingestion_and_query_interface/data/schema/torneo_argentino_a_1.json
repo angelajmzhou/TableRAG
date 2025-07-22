@@ -1,0 +1,1 @@
+{"table_name": "torneo_argentino_a_1", "column_list": [["team", "VARCHAR(255)", "sample values:['General Paz Juniors', 'Villa Mitre', 'Tiro Federal']"], ["titles", "INT", "sample values:['1', '2']"], ["years_won", "VARCHAR(255)", "sample values:['1995-96 , 1997-98', '2010-11', '2004-05']"]]}

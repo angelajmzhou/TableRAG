@@ -1,0 +1,1 @@
+{"table_name": "t_2013_campeonato_mineiro_0", "column_list": [["clubs", "VARCHAR(255)", "sample values:['Atlético Mineiro', 'Tupi', 'Cruzeiro']"], ["home_city", "VARCHAR(255)", "sample values:['Varginha', 'Araxá', 'Juiz de Fora']"], ["t_2012_result", "VARCHAR(255)", "sample values:['7th', '9th', '1st']"]]}

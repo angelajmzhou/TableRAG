@@ -1,0 +1,1 @@
+{"table_name": "historic_house_trust_0", "column_list": [["landmark_name", "VARCHAR(255)", "sample values:['Morris-Jumel Mansion', 'Queens County Farm Museum', 'Lefferts Historic House']"], ["built", "INT", "sample values:['1785', '1832', '1670']"], ["borough", "VARCHAR(255)", "sample values:['no sample values available']"]]}

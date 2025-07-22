@@ -1,0 +1,1 @@
+{"table_name": "deloitte_football_money_league_17", "column_list": [["rank", "INT", "sample values:['7', '6', '1']"], ["club", "VARCHAR(255)", "sample values:['Newcastle United', 'Bayern Munich', 'Milan']"], ["income_million", "FLOAT", "sample values:['134.1', '193.7', '150.1']"], ["country", "VARCHAR(255)", "sample values:['Spain', 'Italy', 'Germany']"]]}

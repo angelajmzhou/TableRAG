@@ -1,0 +1,1 @@
+{"table_name": "walter_payton_award_0", "column_list": [["year", "INT", "sample values:['2012', '2019', '2003']"], ["player", "VARCHAR(255)", "sample values:['Erik Meyer', 'Ricky Santos', 'Louis Ivory']"], ["school", "VARCHAR(255)", "sample values:['Eastern Illinois', 'Georgia Southern', 'Furman']"], ["position", "VARCHAR(255)", "sample values:['QB', 'WR', 'RB']"]]}

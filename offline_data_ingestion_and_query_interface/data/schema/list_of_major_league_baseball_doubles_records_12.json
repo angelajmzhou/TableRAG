@@ -1,0 +1,1 @@
+{"table_name": "list_of_major_league_baseball_doubles_records_12", "column_list": [["doubles", "INT", "sample values:['363', '356', '352']"], ["team", "VARCHAR(255)", "sample values:['Boston Red Sox', 'Texas Rangers', 'St. Louis Cardinals']"], ["season", "INT", "sample values:['1930', '2003', '1921']"]]}

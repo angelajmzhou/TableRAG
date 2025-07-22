@@ -1,0 +1,1 @@
+{"table_name": "billy_unger_0", "column_list": [["year", "INT", "sample values:['2010', '2007', '2008']"], ["title", "VARCHAR(255)", "sample values:['Jack and the Beanstalk', 'Paved New World', 'You Again']"], ["role", "VARCHAR(255)", "sample values:['Charles Gates', 'Prince Charming', 'Billy Stone']"]]}

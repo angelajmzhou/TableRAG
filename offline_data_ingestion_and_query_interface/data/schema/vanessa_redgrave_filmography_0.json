@@ -1,0 +1,1 @@
+{"table_name": "vanessa_redgrave_filmography_0", "column_list": [["year", "INT", "sample values:['1966', '1958', '1971']"], ["title", "VARCHAR(255)", "sample values:['The Sailor from Gibraltar', 'Vacation', 'The Trojan Women']"], ["role", "VARCHAR(255)", "sample values:['Flavia', 'Nina', 'Sheila']"]]}

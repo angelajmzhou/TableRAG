@@ -1,0 +1,1 @@
+{"table_name": "heartland_championship_2", "column_list": [["team", "VARCHAR(255)", "sample values:['Poverty Bay', 'West Coast', 'King Country']"], ["titles", "VARCHAR(255)", "sample values:['-', '2', '1']"], ["runners_up", "VARCHAR(255)", "sample values:['3', '2', '-']"], ["years", "VARCHAR(255)", "sample values:['2013', '2018', '2014']"]]}

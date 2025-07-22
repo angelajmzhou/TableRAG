@@ -1,0 +1,1 @@
+{"table_name": "list_of_oldest_buildings_in_canada_9", "column_list": [["building", "VARCHAR(255)", "sample values:['Territorial Administration Building', 'Holy Trinity Anglican Church', 'Jean Caron Sr. Farm Home']"], ["built", "INT", "sample values:['1880', '1890', '1854']"], ["city", "VARCHAR(255)", "sample values:['Katepwa Beach', 'Stanley Mission', \"Fort Qu'Appelle\"]"]]}

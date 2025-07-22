@@ -1,0 +1,1 @@
+{"table_name": "eurocup_basketball_awards_1", "column_list": [["season", "VARCHAR(255)", "sample values:['2010-11', '2002-03', '2004-05']"], ["finals_mvp", "VARCHAR(255)", "sample values:['Marko Popović', 'Dejan Tomašević', 'Rudy Fernández']"], ["team", "VARCHAR(255)", "sample values:['Lietuvos Rytas', 'Lokomotiv Kuban', 'Khimki']"]]}

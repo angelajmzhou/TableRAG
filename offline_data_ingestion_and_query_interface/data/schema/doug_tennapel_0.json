@@ -1,0 +1,1 @@
+{"table_name": "doug_tennapel_0", "column_list": [["year", "INT", "sample values:['2016', '2009', '2007']"], ["title", "VARCHAR(255)", "sample values:['Earthworm Jim : Launch the Cow', 'Power Up', 'Gear']"], ["publisher", "VARCHAR(255)", "sample values:['Self-published', 'GRAPHIX', 'Fireman Press']"]]}

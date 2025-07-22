@@ -1,0 +1,1 @@
+{"table_name": "alexander_siddig_0", "column_list": [["year", "INT", "sample values:['2005', '2002', '1987']"], ["film", "VARCHAR(255)", "sample values:['A Dangerous Man : Lawrence After Arabia', 'The Fifth Estate', 'Cairo Time']"], ["role", "VARCHAR(255)", "sample values:['Fouad Saleh', 'Adib Abdel-Kareem', 'Ajay']"]]}

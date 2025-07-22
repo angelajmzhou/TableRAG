@@ -130,9 +130,9 @@ class TableRAG() :
         # TO BE FIXED
         query_with_suffix = case['question'] + f"The given table is in {table_id}"
 
-        _, _, doc_filenaems = self.retriever.retrieve(query_with_suffix, 30, 5)
+        _, _, doc_filenames = self.retriever.retrieve(query_with_suffix, 30, 5)
 
-        top1_table_name = doc_filenaems[0].replace(".json", "").replace(".xlsx", "")
+        top1_table_name = doc_filenames[0].replace(".json", "").replace(".xlsx", "")
         related_table_name_list = [top1_table_name]
 
 
@@ -296,7 +296,7 @@ if __name__ == "__main__" :
     parser.add_argument('--max_iter', type=int, default=5)
     parser.add_argument('--rerun', type=bool, default=False)
     _args, _unparsed = parser.parse_known_args()
-    logger.init_logger('./logs/test.log', logging.INFO)
+    init_logger('./logs/test.log', logging.INFO)
 
     agent = TableRAG(_args)
     start_time = time.time()

@@ -1,0 +1,1 @@
+{"table_name": "t_2007_in_australian_television_1", "column_list": [["program", "VARCHAR(255)", "sample values:['Fluffy Gardens', 'Wow ! Wow ! Wubbzy !', 'Hyperdrive']"], ["channel", "VARCHAR(255)", "sample values:['ABC 2', 'ABC2', 'ABC TV']"], ["debut_date", "VARCHAR(255)", "sample values:['10 May', '28 May', '7 March']"]]}

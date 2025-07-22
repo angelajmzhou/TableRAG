@@ -1,0 +1,1 @@
+{"table_name": "paul_bettany_0", "column_list": [["year", "INT", "sample values:['2000', '2002', '2008']"], ["film", "VARCHAR(255)", "sample values:['Firewall', 'Euston Road', 'Kiss Kiss ( Bang Bang )']"], ["role", "VARCHAR(255)", "sample values:['Bill Cox', 'Captain', 'Dustfinger']"]]}

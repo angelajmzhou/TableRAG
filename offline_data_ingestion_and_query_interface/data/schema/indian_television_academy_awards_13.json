@@ -1,0 +1,1 @@
+{"table_name": "indian_television_academy_awards_13", "column_list": [["year", "INT", "sample values:['2016', '2001', '2007']"], ["name", "VARCHAR(255)", "sample values:['Nikhat Mariyam Neerushaa', 'Pradeep Muley', 'Winnie Malhotra & Neelu Shroff']"], ["show", "VARCHAR(255)", "sample values:['Jai Shri Krishna', 'Hatim', 'Amrapali ( DD National )']"]]}

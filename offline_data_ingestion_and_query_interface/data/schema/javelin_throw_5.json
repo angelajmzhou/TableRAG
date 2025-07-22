@@ -1,0 +1,1 @@
+{"table_name": "javelin_throw_5", "column_list": [["year", "INT", "sample values:['1969', '1983', '1968']"], ["mark", "FLOAT", "sample values:['91.98', '94.22', '94.08']"], ["athlete", "VARCHAR(255)", "sample values:['Hannu Siitonen ( FIN )', 'Pentti Sinersaari ( FIN )', 'Jānis Lūsis ( URS )']"], ["place", "VARCHAR(255)", "sample values:['Rome', 'Berlin', 'Tata']"]]}

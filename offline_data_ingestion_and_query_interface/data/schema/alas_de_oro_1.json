@@ -1,0 +1,1 @@
+{"table_name": "alas_de_oro_1", "column_list": [["_", "INT", "sample values:['8', '5', '4']"], ["eliminated", "VARCHAR(255)", "sample values:['Joe Lider', 'Teddy Hart', 'Último Gladiador']"], ["eliminator", "VARCHAR(255)", "sample values:['Jack Evans', 'Teddy Hart', 'Super Fly']"]]}

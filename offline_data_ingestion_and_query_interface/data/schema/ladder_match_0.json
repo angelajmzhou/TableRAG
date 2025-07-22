@@ -1,0 +1,1 @@
+{"table_name": "ladder_match_0", "column_list": [["wrestler", "VARCHAR(255)", "sample values:['Kurt Angle', 'Sabu', 'Rob Van Dam']"], ["victories", "INT", "sample values:['3', '1', '2']"], ["appearances", "INT", "sample values:['3', '12', '6']"]]}

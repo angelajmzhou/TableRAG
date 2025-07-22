@@ -1,0 +1,1 @@
+{"table_name": "list_of_programs_broadcast_by_showtime_3", "column_list": [["title", "VARCHAR(255)", "sample values:['Just Another Immigrant', 'La La Land', 'Shangri-La']"], ["first_broadcast", "INT", "sample values:['2009', '2011', '2007']"], ["last_broadcast", "INT", "sample values:['2009', '2017', '2006']"]]}

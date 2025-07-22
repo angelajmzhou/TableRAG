@@ -1,0 +1,1 @@
+{"table_name": "arvind_trivedi_0", "column_list": [["title", "VARCHAR(255)", "sample values:['Aaj Ki Taaza Khabar', 'Maniyaro', 'Jesal Toral']"], ["type", "VARCHAR(255)", "sample values:['TV serial', 'Movie', 'TV series']"], ["language", "VARCHAR(255)", "sample values:['Hindi', 'Gujarati']"], ["year", "INT", "sample values:['1975', '1982', '1986']"]]}

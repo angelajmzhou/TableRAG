@@ -1,0 +1,1 @@
+{"table_name": "t_2012_afl_rising_star_0", "column_list": [["round", "INT", "sample values:['11', '20', '19']"], ["player", "VARCHAR(255)", "sample values:['Brandon Ellis', 'Stephen Coniglio', 'Devon Smith']"], ["club", "VARCHAR(255)", "sample values:['Brisbane Lions', 'Melbourne', 'Gold Coast']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "deloitte_football_money_league_14", "column_list": [["rank", "INT", "sample values:['18', '3', '12']"], ["club", "VARCHAR(255)", "sample values:['Benfica', 'Roma', 'Chelsea']"], ["revenue_million", "FLOAT", "sample values:['86.9', '122.9', '204.7']"], ["country", "VARCHAR(255)", "sample values:['Scotland', 'England', 'Spain']"]]}

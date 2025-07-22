@@ -1,0 +1,1 @@
+{"table_name": "eastern_kentucky_coalfield_1", "column_list": [["rank", "INT", "sample values:['5', '3', '10']"], ["city", "VARCHAR(255)", "sample values:['Grayson', 'Ashland', 'Corbin']"], ["population_2016", "VARCHAR(255)", "sample values:['4,043', '9,626', '5,313']"], ["county", "VARCHAR(255)", "sample values:['Perry', 'Greenup', 'Bell']"]]}

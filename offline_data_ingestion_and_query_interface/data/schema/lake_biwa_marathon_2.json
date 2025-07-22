@@ -1,0 +1,1 @@
+{"table_name": "lake_biwa_marathon_2", "column_list": [["athlete", "VARCHAR(255)", "sample values:['Akio Usami', 'José Ríos', 'Abebe Bikila']"], ["country", "VARCHAR(255)", "sample values:['Ethiopia', 'Spain', 'Kenya']"], ["wins", "INT", "sample values:['3', '2', '5']"], ["years", "VARCHAR(255)", "sample values:['1966 , 1967', '1963 , 1964', '1985 , 1987']"]]}

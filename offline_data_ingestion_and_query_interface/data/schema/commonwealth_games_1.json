@@ -1,0 +1,1 @@
+{"table_name": "commonwealth_games_1", "column_list": [["sport", "VARCHAR(255)", "sample values:['Cricket', 'Lawn bowls', 'Badminton']"], ["type", "VARCHAR(255)", "sample values:['Core', 'Optional']"], ["years", "VARCHAR(255)", "sample values:['1938-present', '2022', '1998-present']"]]}

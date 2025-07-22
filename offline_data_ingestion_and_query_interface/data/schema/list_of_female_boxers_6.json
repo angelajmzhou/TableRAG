@@ -1,0 +1,1 @@
+{"table_name": "list_of_female_boxers_6", "column_list": [["name", "VARCHAR(255)", "sample values:['Yenebier Guillen', 'Alesia Graf', 'Delia Gonzalez']"], ["nationality", "VARCHAR(255)", "sample values:['Canada', 'Belarus', 'Yemen']"], ["style", "VARCHAR(255)", "sample values:['Boxing']"]]}

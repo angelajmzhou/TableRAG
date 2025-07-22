@@ -1,0 +1,1 @@
+{"table_name": "list_of_phi_beta_sigma_chapters_3", "column_list": [["name", "VARCHAR(255)", "sample values:['Epsilon Eta Sigma', 'Epsilon Upsilon Sigma', 'Epsilon Chi Sigma']"], ["location", "VARCHAR(255)", "sample values:['Akron , OH', 'Champaign , IL', 'Louisville , KY']"], ["status", "VARCHAR(255)", "sample values:['Active', 'Inactive']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "ranked_lists_of_chilean_regions_18", "column_list": [["region", "VARCHAR(255)", "sample values:['Araucanía', 'Valparaíso', 'Atacama']"], ["men_years", "FLOAT", "sample values:['76.92', '75.08', '76.66']"], ["women_years", "FLOAT", "sample values:['81.35', '81.36', '81.47']"]]}

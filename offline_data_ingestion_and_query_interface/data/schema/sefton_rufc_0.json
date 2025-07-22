@@ -1,0 +1,1 @@
+{"table_name": "sefton_rufc_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Kevin Mainwaring', 'Geraint Thomas', 'Stephen Moffatt']"], ["position", "VARCHAR(255)", "sample values:['Lock', 'Scrum-half', 'Prop']"], ["nationality", "VARCHAR(255)", "sample values:['WAL', 'IRE', 'ENG']"], ["team", "VARCHAR(255)", "sample values:['1XV']"]]}

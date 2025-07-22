@@ -1,0 +1,1 @@
+{"table_name": "list_of_bolton_wanderers_f", "column_list": [["name", "VARCHAR(255)", "sample values:['Hidetoshi Nakata', 'Jared Borgetti', 'Danny Shittu']"], ["nationality", "VARCHAR(255)", "sample values:['Slovakia', 'England', 'South Africa']"], ["world_cup", "VARCHAR(255)", "sample values:['1998', '1958', '1994']"]]}

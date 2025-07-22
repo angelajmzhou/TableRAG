@@ -1,0 +1,1 @@
+{"table_name": "county_of_nares_0", "column_list": [["parish", "VARCHAR(255)", "sample values:['Mourilyan', 'Glady', 'Barron']"], ["lga", "VARCHAR(255)", "sample values:['Tablelands', 'Cassowary Coast', 'Cairns']"], ["towns", "VARCHAR(255)", "sample values:['Yungaburra', 'Babinda , Bellenden Ker , Miriwinni', 'Edmonton , Gordonvale']"]]}

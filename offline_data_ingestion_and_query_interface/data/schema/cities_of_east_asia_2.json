@@ -1,0 +1,1 @@
+{"table_name": "cities_of_east_asia_2", "column_list": [["city", "VARCHAR(255)", "sample values:['Kyoto', 'Kobe', 'Hamamatsu']"], ["japanese", "VARCHAR(255)", "sample values:['大阪', '名古屋', '千葉']"], ["prefecture", "VARCHAR(255)", "sample values:['Tokyo', 'Aichi', 'Hokkaido']"], ["population_2010", "VARCHAR(255)", "sample values:['962,130', '8,949,447', '1,222,910']"]]}

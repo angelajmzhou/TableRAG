@@ -1,0 +1,1 @@
+{"table_name": "missouri_valley_conference_men_s_basketball_tournament_1", "column_list": [["school", "VARCHAR(255)", "sample values:['Creighton', 'Drake', 'Wichita State']"], ["of_tournament_championships", "INT", "sample values:['5', '4', '1']"], ["last_tournament_championship", "FLOAT", "sample values:['1996.0', '2011.0', '2006.0']"]]}

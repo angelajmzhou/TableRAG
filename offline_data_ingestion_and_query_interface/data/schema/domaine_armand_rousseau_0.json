@@ -1,0 +1,1 @@
+{"table_name": "domaine_armand_rousseau_0", "column_list": [["vineyard_name", "VARCHAR(255)", "sample values:['Lavaux Saint-Jacques', 'Gevrey-Chambertin', 'Cazetiers']"], ["cru", "VARCHAR(255)", "sample values:['Grand Cru', 'Village', 'Premier Cru']"], ["hectares", "FLOAT", "sample values:['0.5', '0.75', '2.55']"]]}

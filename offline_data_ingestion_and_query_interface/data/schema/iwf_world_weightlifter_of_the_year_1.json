@@ -1,0 +1,1 @@
+{"table_name": "iwf_world_weightlifter_of_the_year_1", "column_list": [["year", "INT", "sample values:['2008', '1995', '1996']"], ["winner", "VARCHAR(255)", "sample values:['Svetlana Podobedova', 'Sun Caiyan', 'Peng Liping']"], ["country", "VARCHAR(255)", "sample values:['South Korea', 'China', 'Chinese Taipei']"]]}

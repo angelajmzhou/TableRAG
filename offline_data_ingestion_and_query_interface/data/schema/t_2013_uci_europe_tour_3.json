@@ -1,0 +1,1 @@
+{"table_name": "t_2013_uci_europe_tour_3", "column_list": [["rank", "INT", "sample values:['3', '2', '8']"], ["nation", "VARCHAR(255)", "sample values:['Belgium', 'Germany', 'Netherlands']"], ["points", "FLOAT", "sample values:['2742.2', '1570.0', '1276.0']"]]}

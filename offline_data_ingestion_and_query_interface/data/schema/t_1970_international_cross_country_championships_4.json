@@ -1,0 +1,1 @@
+{"table_name": "t_1970_international_cross_country_championships_4", "column_list": [["rank", "INT", "sample values:['5', '12', '6']"], ["country", "VARCHAR(255)", "sample values:['Ireland', 'Tunisia', 'Scotland']"], ["team", "VARCHAR(255)", "sample values:['no sample values available']"], ["points", "INT", "sample values:['35', '315', '393']"]]}

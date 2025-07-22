@@ -1,0 +1,1 @@
+{"table_name": "list_of_number_one_singles_of_2005_australia_0", "column_list": [["position", "INT", "sample values:['5', '3', '2']"], ["nationality", "VARCHAR(255)", "sample values:['AUS', 'IRE', 'SWE']"], ["artist", "VARCHAR(255)", "sample values:['Mariah Carey', 'Snoop Dogg', 'Tim McGraw ( as featuring )']"], ["weeks_1", "INT", "sample values:['5', '4', '3']"]]}

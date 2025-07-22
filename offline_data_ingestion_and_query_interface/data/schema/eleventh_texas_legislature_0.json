@@ -1,0 +1,1 @@
+{"table_name": "eleventh_texas_legislature_0", "column_list": [["representative", "VARCHAR(255)", "sample values:['Robert A. Atkinson', 'Nathaniel Macon Burford', 'John Franklin Armstrong']"], ["district", "INT", "sample values:['62', '11', '64']"], ["county", "VARCHAR(255)", "sample values:['Dallas', 'Freestone', 'Uvalde']"]]}

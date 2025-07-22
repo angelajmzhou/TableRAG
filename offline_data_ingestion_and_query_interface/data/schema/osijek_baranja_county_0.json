@@ -1,0 +1,1 @@
+{"table_name": "osijek_baranja_county_0", "column_list": [["municipality", "VARCHAR(255)", "sample values:['Marijanci', 'Drenje', 'Bilje']"], ["area_km", "FLOAT", "sample values:['121.0', '53.0', '57.0']"], ["settlements", "VARCHAR(255)", "sample values:['Laslovo , Divoš', 'Aljmaš , Bijelo Brdo , Dalj', 'Beketinci , Čepinski Martinci , Ovčara , Čokadinci , Livana']"]]}

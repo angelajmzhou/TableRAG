@@ -1,0 +1,1 @@
+{"table_name": "t_2005_mls_all_star_game_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Eddie Johnson +', 'Matt Reis', 'Simo Valakari']"], ["position", "VARCHAR(255)", "sample values:['GK', 'D', 'F']"], ["team", "VARCHAR(255)", "sample values:['MetroStars', 'Los Angeles Galaxy', 'Columbus Crew']"], ["mls_exp", "INT", "sample values:['6', '5', '7']"]]}

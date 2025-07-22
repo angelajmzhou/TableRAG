@@ -1,0 +1,1 @@
+{"table_name": "cmll_reyes_del_aire_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Ángel Azteca Jr', 'Euforia', 'Cancerbero']"], ["tournaments", "INT", "sample values:['2', '1', '4']"], ["year_s", "VARCHAR(255)", "sample values:['2008 , 2012 # 1 , 2013', '2007 # 1 , 2009 , 2012 # 2 , 2013 ,', '2014 Puebla']"]]}

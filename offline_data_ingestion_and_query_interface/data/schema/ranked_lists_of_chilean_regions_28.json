@@ -1,0 +1,1 @@
+{"table_name": "ranked_lists_of_chilean_regions_28", "column_list": [["region", "VARCHAR(255)", "sample values:['Magallanes', 'Tarapacá', 'Aisén']"], ["at_least_one_computer_in_the_household", "VARCHAR(255)", "sample values:['47.2%', '38.3%', '54.0%']"], ["internet_access", "VARCHAR(255)", "sample values:['39.8%', '33.4%', '34.8%']"]]}

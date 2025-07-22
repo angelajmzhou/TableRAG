@@ -1,0 +1,1 @@
+{"table_name": "t_1962_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Catcher', 'Outfielder', 'Second baseman']"], ["name", "VARCHAR(255)", "sample values:['Archie Moore', 'Larry Thomas', 'Tom Fletcher']"], ["school", "VARCHAR(255)", "sample values:['Texas', 'Springfield', 'Arizona']"]]}

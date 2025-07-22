@@ -1,0 +1,1 @@
+{"table_name": "list_of_somali_cities_by_population_0", "column_list": [["rank", "INT", "sample values:['12', '8', '6']"], ["city", "VARCHAR(255)", "sample values:['Burco', 'Hargeisa', 'Bosaso']"], ["region", "VARCHAR(255)", "sample values:['Awdal', 'Middle Shabelle', 'Sool']"], ["population", "VARCHAR(255)", "sample values:['350,222', '900,000', '1,250,000']"]]}

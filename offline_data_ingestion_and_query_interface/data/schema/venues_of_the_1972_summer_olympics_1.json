@@ -1,0 +1,1 @@
+{"table_name": "venues_of_the_1972_summer_olympics_1", "column_list": [["venue", "VARCHAR(255)", "sample values:['Basketballhalle', 'Grünwald', 'Dantebad']"], ["sports", "VARCHAR(255)", "sample values:['Weightlifting', 'Equestrian ( dressage )', 'Archery']"], ["capacity", "VARCHAR(255)", "sample values:['Not listed', '3,200', '978']"]]}

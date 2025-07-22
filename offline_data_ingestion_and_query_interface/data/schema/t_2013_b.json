@@ -1,0 +1,1 @@
+{"table_name": "t_2013_b", "column_list": [["position_midfield", "VARCHAR(255)", "sample values:['DF', 'MF', 'FW']"], ["player_solah", "VARCHAR(255)", "sample values:['Mohamed Shaffaz', 'Faruhad Ismail', 'Ibrahim Ifrah Areef']"], ["transferred_from", "VARCHAR(255)", "sample values:['Club Eagles', 'Vyansa', 'Victory']"]]}

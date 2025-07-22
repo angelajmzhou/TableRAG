@@ -1,0 +1,1 @@
+{"table_name": "list_of_shopping_malls_in_the_philippines_1", "column_list": [["name", "VARCHAR(255)", "sample values:['Central Plaza Mall', 'Grand Master Mall', '101 Shopping Mall']"], ["city_municipality", "VARCHAR(255)", "sample values:['Pili', 'Legazpi', 'Naga']"], ["province", "VARCHAR(255)", "sample values:['Masbate', 'Sorsogon', 'Camarines Sur']"]]}

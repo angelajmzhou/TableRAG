@@ -1,0 +1,1 @@
+{"table_name": "t_1997_cleveland_indians_season_0", "column_list": [["position", "VARCHAR(255)", "sample values:['DH', '3B', 'LF']"], ["name", "VARCHAR(255)", "sample values:['David Justice', 'Sandy Alomar , Jr', 'Marquis Grissom']"], ["of_starts", "INT", "sample values:['92', '119', '152']"]]}

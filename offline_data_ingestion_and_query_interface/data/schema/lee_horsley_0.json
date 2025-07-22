@@ -1,0 +1,1 @@
+{"table_name": "lee_horsley_0", "column_list": [["year", "INT", "sample values:['1999', '2007', '1982']"], ["title", "VARCHAR(255)", "sample values:['Unlawful Passage', 'The Sword and the Sorcerer', 'Tales of an Ancient Empire']"], ["role", "VARCHAR(255)", "sample values:['Peter Browning', 'Ed Cody', 'Joe Kenny']"]]}

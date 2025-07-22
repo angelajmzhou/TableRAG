@@ -1,0 +1,1 @@
+{"table_name": "melissa_george_0", "column_list": [["year", "INT", "sample values:['2007', '2009', '2012']"], ["title", "VARCHAR(255)", "sample values:['Felony', 'Dark City', 'Swinging with the Finkels']"], ["role", "VARCHAR(255)", "sample values:['May', 'Julie Toohey', 'Amanda']"]]}

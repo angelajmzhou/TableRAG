@@ -1,0 +1,1 @@
+{"table_name": "wesley_snipes_0", "column_list": [["year", "INT", "sample values:['1992', '1989', '1994']"], ["title", "VARCHAR(255)", "sample values:['Rising Sun', 'Money Train', \"Mo ' Better Blues\"]"], ["role", "VARCHAR(255)", "sample values:['Roemello Skugs', 'Flipper Purify', 'Shadow Handerson']"]]}

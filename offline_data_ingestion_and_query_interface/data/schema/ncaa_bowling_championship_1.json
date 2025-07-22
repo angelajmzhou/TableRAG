@@ -1,0 +1,1 @@
+{"table_name": "ncaa_bowling_championship_1", "column_list": [["unnamed_0", "VARCHAR(255)", "sample values:['Vanderbilt', 'Fairleigh Dickinson', 'McKendree']"], ["div", "VARCHAR(255)", "sample values:['II', 'I', 'III']"], ["conf", "VARCHAR(255)", "sample values:['MEAC', 'AMCC', 'CIBC']"], ["app", "INT", "sample values:['14', '13', '7']"]]}

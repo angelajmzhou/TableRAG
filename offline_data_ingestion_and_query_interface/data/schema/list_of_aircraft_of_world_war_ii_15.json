@@ -1,0 +1,1 @@
+{"table_name": "list_of_aircraft_of_world_war_ii_15", "column_list": [["name_of_aircraft", "VARCHAR(255)", "sample values:['de Havilland Australia DHA-G', 'Kokusai Ku-8', 'Waco CG-13']"], ["year_in_service", "INT", "sample values:['1941', '1943', '1945']"], ["country_of_origin", "VARCHAR(255)", "sample values:['Australia', 'UK', 'Japan']"]]}

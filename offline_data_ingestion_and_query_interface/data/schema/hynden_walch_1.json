@@ -1,0 +1,1 @@
+{"table_name": "hynden_walch_1", "column_list": [["year", "VARCHAR(255)", "sample values:['1997', '2006', '1999']"], ["title", "VARCHAR(255)", "sample values:['The Drew Carey Show', 'American Dragon : Jake Long', 'Charmed']"], ["role", "VARCHAR(255)", "sample values:['Elsie ( voice )', 'Valina ( voice )', 'Sarah Fisher']"]]}

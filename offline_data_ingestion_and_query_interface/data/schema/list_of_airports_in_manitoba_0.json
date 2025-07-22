@@ -1,0 +1,1 @@
+{"table_name": "list_of_airports_in_manitoba_0", "column_list": [["community", "VARCHAR(255)", "sample values:['Altona', 'Cooks Creek', 'Churchill']"], ["airport_name", "VARCHAR(255)", "sample values:['Churchill Airport', 'Big Sand Lake Airport', 'Bissett Water Aerodrome']"], ["tc_lid", "VARCHAR(255)", "sample values:['CJY6', 'CJQ9', 'CJS7']"]]}

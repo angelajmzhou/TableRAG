@@ -1,0 +1,1 @@
+{"table_name": "t_2013_fkf_division_one_1", "column_list": [["club", "VARCHAR(255)", "sample values:['Mumbi Nationale', 'Moyas', 'Mount Kenya United']"], ["home_stadium", "VARCHAR(255)", "sample values:['Langata Prison Ground', 'PSTC Ruiru', 'Jericho Toyoyo']"], ["town_city", "VARCHAR(255)", "sample values:['Nairobi', 'Unknown', 'Mombasa']"]]}

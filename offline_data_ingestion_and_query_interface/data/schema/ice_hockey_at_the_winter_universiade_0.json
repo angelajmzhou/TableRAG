@@ -1,0 +1,1 @@
+{"table_name": "ice_hockey_at_the_winter_universiade_0", "column_list": [["year", "INT", "sample values:['2007', '1970', '1987']"], ["gold", "VARCHAR(255)", "sample values:['Soviet Union', 'Canada', 'Slovakia']"], ["silver", "VARCHAR(255)", "sample values:['Slovakia', 'Soviet Union', 'Kazakhstan']"], ["bronze", "VARCHAR(255)", "sample values:['Romania', 'Sweden', 'Russia']"]]}

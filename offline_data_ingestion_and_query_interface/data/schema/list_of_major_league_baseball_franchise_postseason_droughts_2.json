@@ -1,0 +1,1 @@
+{"table_name": "list_of_major_league_baseball_franchise_postseason_droughts_2", "column_list": [["seasons", "INT", "sample values:['36', '21', '18']"], ["team", "VARCHAR(255)", "sample values:['Seattle Mariners', 'Tampa Bay Rays', 'Minnesota Twins']"], ["last_pennant", "VARCHAR(255)", "sample values:['2009', '2007', '1982 ( never since joining NL in 1998 )']"]]}

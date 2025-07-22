@@ -1,0 +1,1 @@
+{"table_name": "listed_buildings_in_blackpool_0", "column_list": [["name_and_location", "VARCHAR(255)", "sample values:['no sample values available']"], ["grade", "VARCHAR(255)", "sample values:['I', 'II', 'II*']"], ["date", "VARCHAR(255)", "sample values:['1857', '1840', 'Late 18th century']"], ["description", "VARCHAR(255)", "sample values:['no sample values available']"]]}

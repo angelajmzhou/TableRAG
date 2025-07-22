@@ -1,0 +1,1 @@
+{"table_name": "list_of_house_members_of_the_40th_parliament_of_canada_3", "column_list": [["name", "VARCHAR(255)", "sample values:['Yvon Godin', 'Rob Moore', 'Mike Allen']"], ["party", "VARCHAR(255)", "sample values:['Liberal', 'Conservative', 'NDP']"], ["electoral_district", "VARCHAR(255)", "sample values:['Tobique - Mactaquac', 'Fundy Royal', 'Saint John']"]]}

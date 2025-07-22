@@ -1,0 +1,1 @@
+{"table_name": "satish_kaushik_0", "column_list": [["year", "INT", "sample values:['2001', '2002', '2008']"], ["film", "VARCHAR(255)", "sample values:['Darna Zaroori Hai', 'Hamara Dil Aapke Paas Hai', 'Vaada']"], ["director", "VARCHAR(255)", "sample values:['Yes']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "northern_league_new_zealand_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Eastern Suburbs Reserves', 'East Coast Bays', 'Manukau United']"], ["location", "VARCHAR(255)", "sample values:['Onehunga', 'Birkenhead', 'Waitakere City']"], ["home_ground_s", "VARCHAR(255)", "sample values:['Allen Hill Stadium', 'Centre Park', 'Seddon Fields']"]]}

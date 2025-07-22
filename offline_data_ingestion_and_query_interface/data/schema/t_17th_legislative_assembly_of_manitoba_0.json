@@ -1,0 +1,1 @@
+{"table_name": "t_17th_legislative_assembly_of_manitoba_0", "column_list": [["member", "VARCHAR(255)", "sample values:['Nicholas Hryhorczuk', 'Arthur Boivin', 'Albert Kirvan']"], ["electoral_district", "VARCHAR(255)", "sample values:['Gilbert Plains', 'Emerson', 'Beautiful Plains']"], ["party", "VARCHAR(255)", "sample values:['Independent', 'Conservative', 'Liberal']"]]}

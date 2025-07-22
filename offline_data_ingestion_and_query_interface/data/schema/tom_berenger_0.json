@@ -1,0 +1,1 @@
+{"table_name": "tom_berenger_0", "column_list": [["year", "INT", "sample values:['1980', '1979', '1982']"], ["title", "VARCHAR(255)", "sample values:['Love at Large', 'The Dogs of War', 'Betrayed']"], ["role", "VARCHAR(255)", "sample values:['Richard Moore', 'Det . Mike Keegan', 'Michael']"]]}

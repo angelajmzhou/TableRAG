@@ -1,0 +1,1 @@
+{"table_name": "list_of_united_states_naval_academy_alumni_30", "column_list": [["name", "VARCHAR(255)", "sample values:['Albert Abraham Michelson', 'Alan Hale', 'Joseph Weber']"], ["class_year", "INT", "sample values:['1881', '1880', '1912']"], ["notability", "VARCHAR(255)", "sample values:['Astronomer and discoverer of Comet Hale-Bopp in 1995']"]]}

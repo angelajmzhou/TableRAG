@@ -1,0 +1,1 @@
+{"table_name": "list_of_dutch_top_40_number_one_singles_of_2009_0", "column_list": [["position", "INT", "sample values:['2', '6', '1']"], ["nationality", "VARCHAR(255)", "sample values:['Netherlands', 'United States', 'Romania']"], ["artist", "VARCHAR(255)", "sample values:['Madcon', 'Ilse DeLange', 'Jan Smit']"], ["weeks_1", "INT", "sample values:['2', '10', '4']"]]}

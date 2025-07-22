@@ -1,0 +1,1 @@
+{"table_name": "the_wrekin_transmitting_station_1", "column_list": [["frequency", "VARCHAR(255)", "sample values:['618.166 MHz', '642.000 MHz', '762.000 MHz']"], ["uhf", "VARCHAR(255)", "sample values:['27+', '31', '45†']"], ["kw", "INT", "sample values:['2', '1']"], ["operator", "VARCHAR(255)", "sample values:['BBC ( Mux 1 )', 'SDN ( Mux A )', 'Arqiva ( Mux C )']"]]}

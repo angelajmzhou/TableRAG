@@ -1,0 +1,1 @@
+{"table_name": "jefferson_public_radio_2", "column_list": [["location", "VARCHAR(255)", "sample values:['Eugene , Oregon', 'Yreka , California', 'Eureka , California']"], ["frequency", "VARCHAR(255)", "sample values:['91.5 FM', '1490 AM', '1280 AM']"], ["call_sign", "VARCHAR(255)", "sample values:['KPMO', 'KTBR', 'KSJK']"]]}

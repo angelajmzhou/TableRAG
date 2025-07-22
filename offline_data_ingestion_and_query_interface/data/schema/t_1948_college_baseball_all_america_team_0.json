@@ -1,0 +1,1 @@
+{"table_name": "t_1948_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Outfielder', 'Shortstop', 'Catcher']"], ["name", "VARCHAR(255)", "sample values:['Art Mazmanian', 'Ruck Steger', 'Hank Workman']"], ["school", "VARCHAR(255)", "sample values:['North Carolina', 'Lafayette', 'USC']"]]}

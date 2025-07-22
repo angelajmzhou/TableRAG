@@ -1,0 +1,1 @@
+{"table_name": "fiba_basketball_world_cup_records_1", "column_list": [["year", "INT", "sample values:['1978', '1963', '2006']"], ["player", "VARCHAR(255)", "sample values:['Oscar Schmidt', 'Nikos Galis', 'Pau Gasol']"], ["total_points_scored", "INT", "sample values:['244', '163', '337']"]]}

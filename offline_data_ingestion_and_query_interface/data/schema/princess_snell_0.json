@@ -1,0 +1,1 @@
+{"table_name": "princess_snell_0", "column_list": [["year", "VARCHAR(255)", "sample values:['2013', '2014', '2009-10']"], ["title", "VARCHAR(255)", "sample values:['Survivor Philippines : Celebrity Showdown', 'Indio', 'Magdalena']"], ["role", "VARCHAR(255)", "sample values:['Maya', 'Ecomodel', 'Young Victoria Sanreal']"]]}

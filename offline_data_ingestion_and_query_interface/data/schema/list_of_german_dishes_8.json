@@ -1,0 +1,1 @@
+{"table_name": "list_of_german_dishes_8", "column_list": [["name", "VARCHAR(255)", "sample values:['Franzbrötchen', 'Hamburger Aalsuppe [ de ]', 'Rote Grütze']"], ["type", "VARCHAR(255)", "sample values:['Snack', 'Main course', 'Dessert']"], ["description", "VARCHAR(255)", "sample values:['A bread dish that is made with vegetables and shrimp']"]]}

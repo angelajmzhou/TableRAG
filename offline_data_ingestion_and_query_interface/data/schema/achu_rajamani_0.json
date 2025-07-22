@@ -1,0 +1,1 @@
+{"table_name": "achu_rajamani_0", "column_list": [["year", "INT", "sample values:['2014', '2015', '2000']"], ["title", "VARCHAR(255)", "sample values:['Dynamite', 'Potugadu', 'Urumeen']"], ["language", "VARCHAR(255)", "sample values:['Telugu', 'Tamil', 'Malayalam']"]]}

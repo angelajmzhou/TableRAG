@@ -1,0 +1,1 @@
+{"table_name": "list_of_east_azarbaijan_cities_and_towns_by_population_0", "column_list": [["rank", "INT", "sample values:['6', '20', '5']"], ["city", "VARCHAR(255)", "sample values:['Sahand', 'Marand', 'Sardrud']"], ["county", "VARCHAR(255)", "sample values:['Osku', 'Tabriz', 'Sarab']"], ["t_2006_census", "VARCHAR(255)", "sample values:['23,989', '13,927', '75,332']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "list_of_united_states_naval_academy_alumni_1", "column_list": [["name", "VARCHAR(255)", "sample values:['James Irwin', 'Charles F. Bolden , Jr', 'Alan Shepard']"], ["class_year", "INT", "sample values:['1981', '1955', '1968']"], ["notability", "VARCHAR(255)", "sample values:['no sample values available']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "list_of_state_boarding_schools_in_england_and_wales_0", "column_list": [["school", "VARCHAR(255)", "sample values:['Burford School', 'Cranbrook School', 'Haydon Bridge High School']"], ["lea", "VARCHAR(255)", "sample values:['Bath and North East Somerset', 'Shropshire', 'Oxfordshire']"], ["gender", "VARCHAR(255)", "sample values:['Mixed', 'Boys']"]]}

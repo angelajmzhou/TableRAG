@@ -1,0 +1,1 @@
+{"table_name": "list_of_ottoman_domes_0", "column_list": [["diameter", "FLOAT", "sample values:['19.0', '12.5', '26.0']"], ["name_part", "VARCHAR(255)", "sample values:['Şehzade Mosque', 'Bayezid II Mosque', 'Suleymaniye Mosque']"], ["location", "VARCHAR(255)", "sample values:['Edirne', 'Istanbul', 'Bursa']"], ["built", "INT", "sample values:['1447', '1565', '1470']"]]}

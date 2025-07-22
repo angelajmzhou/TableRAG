@@ -1,0 +1,1 @@
+{"table_name": "t_2013_fc_seoul_season_4", "column_list": [["no", "INT", "sample values:['1', '6', '4']"], ["pos", "VARCHAR(255)", "sample values:['GK', 'FW', 'MF']"], ["name", "VARCHAR(255)", "sample values:['Kim Yong-Dae', 'Adilson', 'Go Yo-Han']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "t_2013_minnesota_united_fc_season_1", "column_list": [["date", "VARCHAR(255)", "sample values:['2013', 'March 1 , 2013', 'July 5 , 2013']"], ["player", "VARCHAR(255)", "sample values:['Kyle Altman', 'Neil Hlavaty', 'Devin Del Do']"], ["to", "VARCHAR(255)", "sample values:['Carolina Railhawks', 'Retired', 'Edmonton']"]]}

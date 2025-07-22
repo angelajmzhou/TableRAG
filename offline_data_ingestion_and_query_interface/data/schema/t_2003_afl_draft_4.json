@@ -1,0 +1,1 @@
+{"table_name": "t_2003_afl_draft_4", "column_list": [["player", "VARCHAR(255)", "sample values:['Luke Webster', 'Joel Macdonald', 'Jonathan McCormack']"], ["recruited_from", "VARCHAR(255)", "sample values:['NSW/ACT Rams', 'East Perth', 'Port Adelaide']"], ["club", "VARCHAR(255)", "sample values:['Geelong', 'Essendon', 'Fremantle']"]]}

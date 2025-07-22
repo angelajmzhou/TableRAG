@@ -1,0 +1,1 @@
+{"table_name": "ukrainian_men_s_handball_super_league_0", "column_list": [["team", "VARCHAR(255)", "sample values:['Shakhtar-Academiya', 'ZTR Zaporizhia', 'CSKA Kyiv']"], ["city", "VARCHAR(255)", "sample values:['Kiev', 'Lviv', 'Donetsk']"], ["arena", "VARCHAR(255)", "sample values:['Yunost Sport Hall', 'Palace of Sports ZAB', 'Palace of Sports ZTR']"]]}

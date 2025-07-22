@@ -1,0 +1,1 @@
+{"table_name": "t_1998_world_junior_figure_skating_championships_3", "column_list": [["rank", "INT", "sample values:['19', '17', '15']"], ["name", "VARCHAR(255)", "sample values:['Alexandra Kauc / Filip Bernadowski', 'Oksana Potdykova / Denis Petukhov', 'Rie Arikawa / Kenji Miyamoto']"], ["nation", "VARCHAR(255)", "sample values:['Poland', 'Australia', 'Bulgaria']"]]}

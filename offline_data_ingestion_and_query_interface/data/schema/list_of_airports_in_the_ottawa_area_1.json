@@ -1,0 +1,1 @@
+{"table_name": "list_of_airports_in_the_ottawa_area_1", "column_list": [["airport_name", "VARCHAR(255)", "sample values:['Arnprior Airport', 'Ottawa/Manotick ( Hope Field ) Aerodrome', 'Kars/Rideau Valley Air Park']"], ["icao_tc_lid_iata", "VARCHAR(255)", "sample values:['CPL3', 'CHF2', 'CNR6']"], ["location", "VARCHAR(255)", "sample values:['Arnprior', 'Ottawa', 'Kars']"]]}

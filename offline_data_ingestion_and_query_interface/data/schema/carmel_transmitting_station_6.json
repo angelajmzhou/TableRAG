@@ -1,0 +1,1 @@
+{"table_name": "carmel_transmitting_station_6", "column_list": [["frequency", "VARCHAR(255)", "sample values:['97.1 MHz', '105.2 MHz', '90.6 MHz']"], ["kw", "FLOAT", "sample values:['1.4', '3.0']"], ["service", "VARCHAR(255)", "sample values:['BBC Radio 2', 'BBC Radio Cymru', 'BBC Radio 4']"]]}

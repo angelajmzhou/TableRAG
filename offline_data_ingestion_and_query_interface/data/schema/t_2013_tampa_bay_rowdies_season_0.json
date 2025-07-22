@@ -1,0 +1,1 @@
+{"table_name": "t_2013_tampa_bay_rowdies_season_0", "column_list": [["no", "INT", "sample values:['24', '18', '5']"], ["position", "VARCHAR(255)", "sample values:['Goalkeeper', 'Forward', 'Midfielder']"], ["player", "VARCHAR(255)", "sample values:['Jordan Gafa', 'Kyle Clinton', 'Amani Walker']"], ["nation", "VARCHAR(255)", "sample values:['Jamaica', 'Bulgaria', 'Scotland']"]]}

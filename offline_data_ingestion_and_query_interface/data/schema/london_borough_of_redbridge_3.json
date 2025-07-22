@@ -1,0 +1,1 @@
+{"table_name": "london_borough_of_redbridge_3", "column_list": [["station", "VARCHAR(255)", "sample values:['Redbridge', 'Grange Hill', 'Gants Hill']"], ["opened", "DATETIME", "sample values:['1947-12-14 00:00:00', '1948-11-21 00:00:00', '1948-05-31 00:00:00']"], ["notes", "VARCHAR(255)", "sample values:['First opened by the Great Eastern Railway in 1903']"]]}

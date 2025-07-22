@@ -1,0 +1,1 @@
+{"table_name": "indiana_hoosiers_men_s_basketball_4", "column_list": [["player", "VARCHAR(255)", "sample values:['Christian Watford', 'Alan Henderson', 'Walt Bellamy']"], ["years", "VARCHAR(255)", "sample values:['1955-1958', '1991-1995', '1958-1961']"], ["rebounds", "VARCHAR(255)", "sample values:['776', '1,087', '1,091']"]]}

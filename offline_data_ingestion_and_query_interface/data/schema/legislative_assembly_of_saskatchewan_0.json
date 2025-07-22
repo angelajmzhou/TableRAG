@@ -1,0 +1,1 @@
+{"table_name": "legislative_assembly_of_saskatchewan_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Greg Brkich', 'Buckley Belanger', 'Danielle Chartier']"], ["party", "VARCHAR(255)", "sample values:['NDP', 'SK Party']"], ["riding", "VARCHAR(255)", "sample values:['Saskatoon Willowgrove', 'Athabasca', 'Canora-Pelly']"]]}

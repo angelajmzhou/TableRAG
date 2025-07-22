@@ -1,0 +1,1 @@
+{"table_name": "list_of_lunar_features_7", "column_list": [["name", "VARCHAR(255)", "sample values:['Dorsa Mawson', 'Dorsa Argand', 'Dorsa Barlow']"], ["dia", "VARCHAR(255)", "sample values:['85 km', '160 km', '197 km']"], ["name_origin", "VARCHAR(255)", "sample values:['Douglas Mawson ( 1882-1958 )', 'Martin Lister ( 1639-1712 )', 'Emile Argand ( 1879-1940 )']"]]}

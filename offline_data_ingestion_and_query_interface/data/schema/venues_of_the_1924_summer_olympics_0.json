@@ -1,0 +1,1 @@
+{"table_name": "venues_of_the_1924_summer_olympics_0", "column_list": [["venue", "VARCHAR(255)", "sample values:['Vélodrome de Vincennes', 'Stade Bergeyre', 'Camp de Châlons']"], ["sports", "VARCHAR(255)", "sample values:['Polo', 'Football', 'Boxing , Fencing , Weightlifting , Wrestling']"], ["capacity", "VARCHAR(255)", "sample values:['10,455', '389', '2,216']"]]}

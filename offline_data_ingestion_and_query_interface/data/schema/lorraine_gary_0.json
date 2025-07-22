@@ -1,0 +1,1 @@
+{"table_name": "lorraine_gary_0", "column_list": [["year", "INT", "sample values:['1977', '1978', '1976']"], ["title", "VARCHAR(255)", "sample values:['Jaws 2', '1941', 'I Never Promised You a Rose Garden']"], ["role", "VARCHAR(255)", "sample values:['Hysterical Lady', 'Joan Douglas', 'Billy-Jon']"]]}

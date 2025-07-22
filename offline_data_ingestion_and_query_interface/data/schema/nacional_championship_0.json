@@ -1,0 +1,1 @@
+{"table_name": "nacional_championship_0", "column_list": [["year", "INT", "sample values:['1973', '1976', '1979']"], ["champion", "VARCHAR(255)", "sample values:['River Plate', 'Ferro Carril Oeste', 'Vélez Sársfield']"], ["runner_up", "VARCHAR(255)", "sample values:['Talleres ( C )', 'Unión', 'San Lorenzo']"]]}

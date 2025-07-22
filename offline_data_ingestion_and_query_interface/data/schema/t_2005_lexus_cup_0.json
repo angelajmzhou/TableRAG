@@ -1,0 +1,1 @@
+{"table_name": "t_2005_lexus_cup_0", "column_list": [["golfer", "VARCHAR(255)", "sample values:['Paula Creamer', 'Naree Song', 'Carin Koch']"], ["country", "VARCHAR(255)", "sample values:['Norway', 'England', 'South Korea']"], ["wins", "INT", "sample values:['0', '2', '1']"], ["halves", "INT", "sample values:['0', '1']"], ["losses", "INT", "sample values:['0', '2', '1']"]]}

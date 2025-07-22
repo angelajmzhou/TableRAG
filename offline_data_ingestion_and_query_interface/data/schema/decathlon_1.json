@@ -1,0 +1,1 @@
+{"table_name": "decathlon_1", "column_list": [["year", "INT", "sample values:['1962', '1976', '1965']"], ["score", "VARCHAR(255)", "sample values:['8,319', '8,234', '8,634']"], ["athlete", "VARCHAR(255)", "sample values:['Kurt Bendlin ( FRG )', 'Philip Mulkey ( USA )', 'Bruce Jenner ( USA )']"], ["place", "VARCHAR(255)", "sample values:['Los Angeles', 'Heidelberg', 'Memphis']"]]}

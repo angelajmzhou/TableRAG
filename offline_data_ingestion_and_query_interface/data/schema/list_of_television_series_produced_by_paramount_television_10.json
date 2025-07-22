@@ -1,0 +1,1 @@
+{"table_name": "list_of_television_series_produced_by_paramount_television_10", "column_list": [["title", "VARCHAR(255)", "sample values:['MTV Unplugged', 'Jenny', 'Æon Flux']"], ["years", "VARCHAR(255)", "sample values:['1980s-1990s', '1995-1998', '1994-1996']"], ["network", "VARCHAR(255)", "sample values:['MTV/ Syndication', 'MTV BBC Two', 'MTV']"]]}

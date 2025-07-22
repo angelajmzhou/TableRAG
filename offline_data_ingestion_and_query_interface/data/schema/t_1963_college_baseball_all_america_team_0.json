@@ -1,0 +1,1 @@
+{"table_name": "t_1963_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Outfielder', 'Second baseman', 'Pitcher']"], ["name", "VARCHAR(255)", "sample values:['Bill Scripture', 'Butch Thompson', 'Eddie Jones']"], ["school", "VARCHAR(255)", "sample values:['Connecticut', 'Rutgers', 'Florida State']"]]}

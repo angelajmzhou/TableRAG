@@ -1,0 +1,1 @@
+{"table_name": "william_baldwin_0", "column_list": [["year", "INT", "sample values:['1996', '2000', '2003']"], ["title", "VARCHAR(255)", "sample values:['Internal Affairs', 'Curdled', 'Relative Values']"], ["role", "VARCHAR(255)", "sample values:['Steve Baker', 'Brady', \"Constance Bulworth 's Lover\"]"]]}

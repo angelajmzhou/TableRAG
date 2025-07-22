@@ -1,0 +1,1 @@
+{"table_name": "t_1997_world_artistic_gymnastics_championships_2", "column_list": [["rank", "FLOAT", "sample values:['6.0', '7.0', '4.0']"], ["gymnast", "VARCHAR(255)", "sample values:['Pae Gil Su ( PRK )', 'Marius Urzica ( ROU )', 'Nikolai Kryukov ( RUS )']"], ["total", "FLOAT", "sample values:['9.612', '9.6', '9.112']"]]}

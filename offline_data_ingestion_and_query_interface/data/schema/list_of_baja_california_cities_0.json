@@ -1,0 +1,1 @@
+{"table_name": "list_of_baja_california_cities_0", "column_list": [["rank", "INT", "sample values:['17', '15', '4']"], ["city", "VARCHAR(255)", "sample values:['Ensenada', 'Delta', 'Coahuila City']"], ["municipality", "VARCHAR(255)", "sample values:['Playas de Rosarito', 'Mexicali', 'Ensenada']"], ["population", "VARCHAR(255)", "sample values:['5,071', '16,702', '65,278']"]]}

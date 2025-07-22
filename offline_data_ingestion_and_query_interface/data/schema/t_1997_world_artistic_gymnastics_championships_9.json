@@ -1,0 +1,1 @@
+{"table_name": "t_1997_world_artistic_gymnastics_championships_9", "column_list": [["rank", "FLOAT", "sample values:['6.0', '7.0', '4.0']"], ["gymnast", "VARCHAR(255)", "sample values:['Svetlana Khorkina ( RUS )', 'Olga Teslenko ( UKR )', 'Liubov Sheremeta ( UKR )']"], ["total", "FLOAT", "sample values:['9.75', '9.712', '9.8']"]]}

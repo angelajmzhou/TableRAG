@@ -1,0 +1,1 @@
+{"table_name": "t_1998_in_australian_television_0", "column_list": [["program", "VARCHAR(255)", "sample values:['Petals', 'Bobtales', 'Hot Streak']"], ["channel", "VARCHAR(255)", "sample values:['ABC TV', 'Seven Network', 'SBS TV']"], ["debut_date", "VARCHAR(255)", "sample values:['20 May', '1 June', '4 September']"]]}

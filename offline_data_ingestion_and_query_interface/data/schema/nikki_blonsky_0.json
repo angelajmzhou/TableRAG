@@ -1,0 +1,1 @@
+{"table_name": "nikki_blonsky_0", "column_list": [["year", "INT", "sample values:['2008', '2011', '2012']"], ["title", "VARCHAR(255)", "sample values:['Geography Club', 'Hairspray', 'The English Teacher']"], ["role", "VARCHAR(255)", "sample values:['Sheila Nussbaum', 'Lady Paw Paw', 'Faith']"]]}

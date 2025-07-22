@@ -1,0 +1,1 @@
+{"table_name": "a1_team_mexico_0", "column_list": [["name", "VARCHAR(255)", "sample values:['David Martínez', 'Davíd Garza Pérez', 'Luis Diaz']"], ["seasons", "VARCHAR(255)", "sample values:['2005-06', '2005-06 , 2007-08', '2006-07']"], ["races_starts", "VARCHAR(255)", "sample values:['18 ( 36 )', '2 ( 4 )', '5 ( 10 )']"], ["points", "INT", "sample values:['5', '107', '0']"]]}

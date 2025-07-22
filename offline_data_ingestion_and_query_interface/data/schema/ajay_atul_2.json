@@ -1,0 +1,1 @@
+{"table_name": "ajay_atul_2", "column_list": [["sr", "INT", "sample values:['19', '3', '7']"], ["serial_track", "VARCHAR(255)", "sample values:['Hasyasamraat', 'Sony Marathi theme song', 'Shriyut Gagadhar Tipre']"], ["channel", "VARCHAR(255)", "sample values:['Mi Marathi', 'Zee Marathi', 'Zee Talkies']"]]}

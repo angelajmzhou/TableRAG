@@ -1,0 +1,1 @@
+{"table_name": "t_1996_world_artistic_gymnastics_championships_5", "column_list": [["rank", "FLOAT", "sample values:['5.0', '7.0', '6.0']"], ["gymnast", "VARCHAR(255)", "sample values:['Richard Ikeda ( CAN )', 'Vitaly Scherbo ( BLR )', 'Chainey Umphrey ( USA )']"], ["total", "FLOAT", "sample values:['9.475', '9.375', '9.8']"]]}

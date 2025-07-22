@@ -1,0 +1,1 @@
+{"table_name": "list_of_new_jersey_devils_award_winners_8", "column_list": [["individual", "VARCHAR(255)", "sample values:['Mark Johnson', 'Mike Emrick', 'Robbie Ftorek']"], ["year_inducted", "INT", "sample values:['2004', '2011', '2000']"], ["years_with_franchise", "VARCHAR(255)", "sample values:['1989-1991 , 2001-2002', '2001-2009', '1996']"]]}

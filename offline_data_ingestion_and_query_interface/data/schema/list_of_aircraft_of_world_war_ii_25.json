@@ -1,0 +1,1 @@
+{"table_name": "list_of_aircraft_of_world_war_ii_25", "column_list": [["name_of_aircraft", "VARCHAR(255)", "sample values:['CAC Woomera', 'Breda Ba.201', 'Beechcraft XA-38 Grizzly']"], ["year_first_flight", "INT", "sample values:['1939', '1945', '1940']"], ["country_of_origin", "VARCHAR(255)", "sample values:['Czechoslovakia', 'Lithuania', 'France']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "division_i_ncaa_7", "column_list": [["sport", "VARCHAR(255)", "sample values:['Football', 'Equestrian', 'Beach volleyball']"], ["men_s", "VARCHAR(255)", "sample values:['6.3', '9.9', '4.5']"], ["women_s", "VARCHAR(255)", "sample values:['14.0', '7.0', '12']"]]}

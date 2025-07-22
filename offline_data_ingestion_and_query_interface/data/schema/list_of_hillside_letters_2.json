@@ -1,0 +1,1 @@
+{"table_name": "list_of_hillside_letters_2", "column_list": [["monogram", "VARCHAR(255)", "sample values:['J', 'S', 'A']"], ["town", "VARCHAR(255)", "sample values:['Shafter', 'Marathon', 'Marfa']"], ["state", "VARCHAR(255)", "sample values:['Texas']"]]}

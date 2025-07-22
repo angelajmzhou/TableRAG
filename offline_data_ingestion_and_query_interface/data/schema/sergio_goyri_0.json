@@ -1,0 +1,1 @@
+{"table_name": "sergio_goyri_0", "column_list": [["year", "VARCHAR(255)", "sample values:['1991', '2001', '2013']"], ["title", "VARCHAR(255)", "sample values:['El maleficio', 'El precio de la fama', 'Mundos opuestos']"], ["roles", "VARCHAR(255)", "sample values:['Juan Carlos Cabrera', 'Jorge', 'Ricardo Valtierra']"]]}

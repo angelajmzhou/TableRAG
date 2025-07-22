@@ -1,0 +1,1 @@
+{"table_name": "performance_ranking_b9734240", "column_list": [["t_2010", "INT", "sample values:['1', '2', '13']"], ["university", "VARCHAR(255)", "sample values:['University of Cambridge', 'Seoul National University', 'National University of Singapore']"], ["country", "VARCHAR(255)", "sample values:['United Kingdom', 'US', 'Netherlands']"]]}

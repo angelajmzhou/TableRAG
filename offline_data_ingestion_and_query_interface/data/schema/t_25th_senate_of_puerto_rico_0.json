@@ -1,0 +1,1 @@
+{"table_name": "t_25th_senate_of_puerto_rico_0", "column_list": [["district", "VARCHAR(255)", "sample values:['District IV Mayagüez-Aguadilla', 'District I San Juan', 'District VI Guayama']"], ["name", "VARCHAR(255)", "sample values:['Ramón Luis Nieves', 'Jorge Suárez', 'Ramón Ruiz']"], ["political_party", "VARCHAR(255)", "sample values:['PNP', 'PPD']"]]}

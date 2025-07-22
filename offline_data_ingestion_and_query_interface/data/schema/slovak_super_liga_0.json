@@ -1,0 +1,1 @@
+{"table_name": "slovak_super_liga_0", "column_list": [["team", "VARCHAR(255)", "sample values:['FC Spartak Trnava', 'FK Pohronie', 'FC DAC 1904 Dunajská Streda']"], ["stadium", "VARCHAR(255)", "sample values:['Štadión pod Čebraťom', 'Mestský štadión', 'Anton Malatinský Stadium']"], ["capacity_or_seats", "VARCHAR(255)", "sample values:['4,817', '4,440', '22,500']"]]}

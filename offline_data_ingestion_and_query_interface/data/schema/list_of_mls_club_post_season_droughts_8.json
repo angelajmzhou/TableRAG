@@ -1,0 +1,1 @@
+{"table_name": "list_of_mls_club_post_season_droughts_8", "column_list": [["club", "VARCHAR(255)", "sample values:['New England Revolution', 'Colorado Rapids', 'Houston Dynamo']"], ["last_leagues_cup_qualification", "VARCHAR(255)", "sample values:['2019', 'never ( Leagues Cup began in 2019 )']"], ["length_of_drought", "VARCHAR(255)", "sample values:['2 seasons', '1 season']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "sportswoman_of_the_year_award_1", "column_list": [["year", "INT", "sample values:['2008', '2010', '1999']"], ["winner", "VARCHAR(255)", "sample values:['Lisa Fernandez', 'Rebecca Lobo', 'Lisa Leslie']"], ["sport", "VARCHAR(255)", "sample values:['Basketball', 'Volleyball', 'Field hockey']"]]}

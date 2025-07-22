@@ -1,0 +1,1 @@
+{"table_name": "kristen_wiig_0", "column_list": [["year", "INT", "sample values:['2008', '2006', '2009']"], ["title", "VARCHAR(255)", "sample values:['Adventureland', 'Melvin Goes to Dinner', 'Knocked Up']"], ["role", "VARCHAR(255)", "sample values:['Jane Whitman', 'Haley Sullivan', 'Paulette']"]]}

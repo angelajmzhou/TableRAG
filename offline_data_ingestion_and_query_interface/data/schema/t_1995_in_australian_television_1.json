@@ -1,0 +1,1 @@
+{"table_name": "t_1995_in_australian_television_1", "column_list": [["program", "VARCHAR(255)", "sample values:['The Unknown Marx Brothers', 'The Spirit of Freedom', 'The Larry Sanders Show']"], ["network", "VARCHAR(255)", "sample values:['ABC TV', 'SBS TV', 'Nine Network']"], ["debut_date", "VARCHAR(255)", "sample values:['30 January', '5 January', '8 January']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "loja_province_0", "column_list": [["canton", "VARCHAR(255)", "sample values:['Zapotillo', 'Pindal', 'Gonzanamá']"], ["pop", "VARCHAR(255)", "sample values:['23,801', '214,855', '15,513']"], ["area_km", "VARCHAR(255)", "sample values:['693', '112', '634']"], ["seat_capital", "VARCHAR(255)", "sample values:['Olmedo', 'Amaluza ( Espíndola )', 'Alamor']"]]}

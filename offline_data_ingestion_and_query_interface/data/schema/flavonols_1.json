@@ -1,0 +1,1 @@
+{"table_name": "flavonols_1", "column_list": [["name", "VARCHAR(255)", "sample values:['Isoquercitin', 'Quercitrin', 'Astragalin']"], ["aglycone", "VARCHAR(255)", "sample values:['Kaempferide', 'Azaleatin', 'Myricetin']"], ["t_3", "VARCHAR(255)", "sample values:['Robinose', 'Gal', 'Rutinose']"]]}

@@ -1,0 +1,1 @@
+{"table_name": "television_in_austria_0", "column_list": [["position", "INT", "sample values:['6', '3', '8']"], ["channel", "VARCHAR(255)", "sample values:['VOX', 'ProSieben', 'Das Erste']"], ["group", "VARCHAR(255)", "sample values:['ARD', 'ORF', 'RTL Group']"], ["share_of_total_viewing", "FLOAT", "sample values:['10.8', '4.1', '3.9']"]]}

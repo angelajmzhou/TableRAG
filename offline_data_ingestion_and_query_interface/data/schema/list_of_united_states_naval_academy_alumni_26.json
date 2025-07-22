@@ -1,0 +1,1 @@
+{"table_name": "list_of_united_states_naval_academy_alumni_26", "column_list": [["name", "VARCHAR(255)", "sample values:['John S. McCain , Jr', 'David S. Bill III', 'John Heaphy Fellowes']"], ["class_year", "INT", "sample values:['1940', '1966', '1947']"], ["notability", "VARCHAR(255)", "sample values:['Rear Admiral ; troopship and submarine commander']"]]}
