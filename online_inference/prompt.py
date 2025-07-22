@@ -31,7 +31,7 @@ $ Content 2: NL2SQL related Question information and SQL execution result in the
 {schema}
 
 # SQL generated based on the schema and the user question:
-{nl2sql_model_resopnse}
+{nl2sql_model_response}
 
 # SQL execution results
 {sql_execute_result}
