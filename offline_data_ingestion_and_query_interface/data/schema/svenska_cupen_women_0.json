@@ -1,1 +1,0 @@
-{"table_name": "svenska_cupen_women_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Kristianstads DFF', 'Tyresö FF', 'Umeå IK']"], ["winners", "INT", "sample values:['4', '3', '1']"], ["runners_up", "INT", "sample values:['0', '1', '3']"]]}

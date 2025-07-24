@@ -1,1 +1,0 @@
-{"table_name": "january_jones_0", "column_list": [["year", "INT", "sample values:['2015', '2004', '1999']"], ["title", "VARCHAR(255)", "sample values:['Swedish Auto', 'We Are Marshall', 'X-Men : First Class']"], ["role", "VARCHAR(255)", "sample values:['Lou Ann Norton', 'Elizabeth', 'Eve']"]]}

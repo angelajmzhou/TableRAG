@@ -1,1 +1,0 @@
-{"table_name": "world_s_busiest_passenger_air_routes_15", "column_list": [["rank", "INT", "sample values:['7', '6', '3']"], ["airport_1", "VARCHAR(255)", "sample values:['Medellín', 'Bogotá']"], ["airport_2", "VARCHAR(255)", "sample values:['Buenos Aires', 'Santiago de Chile', 'Quito']"], ["passengers_2017", "VARCHAR(255)", "sample values:['391,586', '366,904', '366,630']"]]}

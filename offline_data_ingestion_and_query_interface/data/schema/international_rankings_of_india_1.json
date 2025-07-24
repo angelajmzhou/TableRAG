@@ -1,1 +1,0 @@
-{"table_name": "international_rankings_of_india_1", "column_list": [["field", "VARCHAR(255)", "sample values:['Coffee Production , output of 300,300,000 kg', 'Goat Milk Production , output of 4,000,000 metric tons', 'Cotton Production , output of 27.0 million bales']"], ["rank", "INT", "sample values:['6', '5', '2']"], ["date", "INT", "sample values:['2008', '2004', '2010']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "indian_idol_5_3", "column_list": [["name", "VARCHAR(255)", "sample values:['Deepali Kishore', 'Meiyang Chang', 'Jolly Das']"], ["hometown", "VARCHAR(255)", "sample values:['Punjab', 'Darjeeling', 'New Delhi']"], ["elimination", "VARCHAR(255)", "sample values:['2nd Runner-up', 'Eliminated 6th', 'Eliminated 1st']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "gush_etzion_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Neve Daniel', 'Pnei Kedem', 'Elazar']"], ["founded", "INT", "sample values:['1977', '1967', '1994']"], ["population_eoy_2008", "VARCHAR(255)", "sample values:['560', '270', '75']"], ["type", "VARCHAR(255)", "sample values:['Independent municipality', 'Community settlement', 'Outpost']"]]}

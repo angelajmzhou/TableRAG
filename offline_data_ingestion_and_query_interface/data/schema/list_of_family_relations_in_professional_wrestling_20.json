@@ -1,1 +1,0 @@
-{"table_name": "list_of_family_relations_in_professional_wrestling_20", "column_list": [["in_law", "VARCHAR(255)", "sample values:['Martha Hart', 'Bestia Salvaje', 'Black Gordman']"], ["in_law_1", "VARCHAR(255)", "sample values:['Brian Knobs', 'Julie Hart', 'Lindsay Hart']"], ["country", "VARCHAR(255)", "sample values:['Mexico', 'Canada', 'Canada , United States']"]]}

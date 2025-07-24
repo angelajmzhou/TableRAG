@@ -1,1 +1,0 @@
-{"table_name": "list_of_female_boxers_15", "column_list": [["name", "VARCHAR(255)", "sample values:['Suzanne Riccio-Major', 'Lucia Rijker', 'Jessica Rakoczy']"], ["nationality", "VARCHAR(255)", "sample values:['Afghanistan', 'CAN', 'Trinidad']"], ["style", "VARCHAR(255)", "sample values:['Boxing']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "list_of_2012_indian_premier_league_personnel_changes_0", "column_list": [["player", "VARCHAR(255)", "sample values:['Rahul Shukla', 'Veer Pratap Singh', 'Tanmay Srivastava']"], ["to", "VARCHAR(255)", "sample values:['Delhi Daredevils', 'Kings XI Punjab', 'Kolkata Knight Riders']"], ["season", "VARCHAR(255)", "sample values:['2012-13', '2012']"]]}

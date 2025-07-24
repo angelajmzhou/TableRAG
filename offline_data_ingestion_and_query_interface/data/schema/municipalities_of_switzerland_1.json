@@ -1,1 +1,0 @@
-{"table_name": "municipalities_of_switzerland_1", "column_list": [["rank", "INT", "sample values:['8', '9', '6']"], ["city", "VARCHAR(255)", "sample values:['Selma', 'Corippo', 'Gresso']"], ["canton", "VARCHAR(255)", "sample values:['Graubünden', 'Bern', 'Valais']"], ["pop", "INT", "sample values:['19', '35', '31']"]]}

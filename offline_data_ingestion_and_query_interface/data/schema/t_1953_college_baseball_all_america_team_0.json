@@ -1,1 +1,0 @@
-{"table_name": "t_1953_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Catcher', 'Pitcher', 'Third baseman']"], ["name", "VARCHAR(255)", "sample values:['Bruce Haynam', 'Gene Sheets', 'Paul Giel']"], ["school", "VARCHAR(255)", "sample values:['CCNY', 'Minnesota', 'Stanford']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "list_of_fictional_birds_of_prey_1", "column_list": [["character", "VARCHAR(255)", "sample values:['Ossie Owl', 'Professor', 'Shimshek']"], ["species", "VARCHAR(255)", "sample values:['Eagle', 'Merlin', 'Owl']"], ["origin", "VARCHAR(255)", "sample values:['Ugglan Urban', 'Seirei Tsukai no Kenbu', 'Kevin and Kell']"]]}

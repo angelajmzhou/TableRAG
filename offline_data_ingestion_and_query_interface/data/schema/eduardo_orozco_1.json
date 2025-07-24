@@ -1,1 +1,0 @@
-{"table_name": "eduardo_orozco_1", "column_list": [["year", "VARCHAR(255)", "sample values:['2001', '2013-14', '2002']"], ["title", "VARCHAR(255)", "sample values:['Escándalos', 'Mujer con pantalones', 'Te tengo en salsa']"], ["role", "VARCHAR(255)", "sample values:['Enrique Cárdenas', 'Octavio', 'Juancho Febres']"]]}

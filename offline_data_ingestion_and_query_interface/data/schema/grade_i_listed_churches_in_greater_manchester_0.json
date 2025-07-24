@@ -1,1 +1,0 @@
-{"table_name": "grade_i_listed_churches_in_greater_manchester_0", "column_list": [["name", "VARCHAR(255)", "sample values:['St Mary', 'St Thomas', 'Edgar Wood Centre']"], ["location", "VARCHAR(255)", "sample values:['no sample values available']"], ["notes", "VARCHAR(255)", "sample values:['no sample values available']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "occult_symbols_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Arrow ( Belomancy )', 'Hexagram', 'Baphomet']"], ["origins", "VARCHAR(255)", "sample values:['Mesopotamia', 'Ancient Egypt and Persia', 'Order of Nine Angles']"], ["notes", "VARCHAR(255)", "sample values:['Arrows used to gain knowledge through divination']"]]}

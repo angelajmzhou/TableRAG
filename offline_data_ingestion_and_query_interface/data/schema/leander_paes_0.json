@@ -1,1 +1,0 @@
-{"table_name": "leander_paes_0", "column_list": [["no", "INT", "sample values:['6', '4', '7']"], ["partner", "VARCHAR(255)", "sample values:['Zeeshan Ali', 'Andrew Sznajder', 'Arne Thoms']"], ["year", "VARCHAR(255)", "sample values:['1991', '1991-1993', '1993 , 2000']"]]}

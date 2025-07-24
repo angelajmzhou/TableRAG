@@ -1,1 +1,0 @@
-{"table_name": "regions_of_chad_1", "column_list": [["key_on_map", "INT", "sample values:['15', '7', '16']"], ["region", "VARCHAR(255)", "sample values:['Sila', 'Kanem', 'Batha']"], ["capital", "VARCHAR(255)", "sample values:['Bongor', 'Am Timan', 'Mongo']"]]}

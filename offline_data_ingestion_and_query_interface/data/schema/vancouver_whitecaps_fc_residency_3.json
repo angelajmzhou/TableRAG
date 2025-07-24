@@ -1,1 +1,0 @@
-{"table_name": "vancouver_whitecaps_fc_residency_3", "column_list": [["year", "INT", "sample values:['2014', '2018', '2015']"], ["player", "VARCHAR(255)", "sample values:['Pedro Morales', 'Darren Mattocks', 'Kei Kamara']"], ["goals", "INT", "sample values:['22', '12', '10']"]]}

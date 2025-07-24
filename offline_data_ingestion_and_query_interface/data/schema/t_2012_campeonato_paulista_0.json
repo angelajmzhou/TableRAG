@@ -1,1 +1,0 @@
-{"table_name": "t_2012_campeonato_paulista_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Portuguesa', 'Palmeiras', 'Oeste']"], ["home_city", "VARCHAR(255)", "sample values:['Campinas', 'Mirassol', 'São Caetano do Sul']"], ["t_2011_result", "VARCHAR(255)", "sample values:['9th', '3rd', '10th']"]]}

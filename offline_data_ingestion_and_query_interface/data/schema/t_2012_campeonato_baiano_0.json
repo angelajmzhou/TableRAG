@@ -1,1 +1,0 @@
-{"table_name": "t_2012_campeonato_baiano_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Juazeirense', 'Bahia de Feira', 'Camaçari']"], ["home_city", "VARCHAR(255)", "sample values:['Itabuna', 'Salvador', 'Camaçari']"], ["t_2011_result", "VARCHAR(255)", "sample values:['8th', '6th', '7th']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "television_in_belgium_0", "column_list": [["rank", "INT", "sample values:['4', '7', '2']"], ["channel", "VARCHAR(255)", "sample values:['TF1', 'La Une', 'Club RTL']"], ["group", "VARCHAR(255)", "sample values:['France Télévisions', 'RTBF', 'AB Groupe']"], ["share_of_total_viewing", "VARCHAR(255)", "sample values:['17.0%', '5.2%', '4.5%']"]]}

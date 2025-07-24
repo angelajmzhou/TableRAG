@@ -1,1 +1,0 @@
-{"table_name": "list_of_islands_of_the_marshall_islands_1", "column_list": [["atoll_island", "VARCHAR(255)", "sample values:['Bokak Atoll', 'Ailinginae Atoll', 'Ujelang Atoll']"], ["chain", "VARCHAR(255)", "sample values:['Ratak', 'Ralik']"], ["area_km", "FLOAT", "sample values:['1.0', '0.57', '6.0']"], ["area_mi", "FLOAT", "sample values:['0.22', '0.0', '2.0']"]]}

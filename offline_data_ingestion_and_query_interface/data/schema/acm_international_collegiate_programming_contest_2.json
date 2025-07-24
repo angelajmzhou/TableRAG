@@ -1,1 +1,0 @@
-{"table_name": "acm_international_collegiate_programming_contest_2", "column_list": [["winner", "INT", "sample values:['2', '14', '1']"], ["country", "VARCHAR(255)", "sample values:['New Zealand', 'Canada', 'Poland']"], ["most_recent_win", "INT", "sample values:['2019', '1999', '2011']"]]}

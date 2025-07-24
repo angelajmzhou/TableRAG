@@ -1,1 +1,0 @@
-{"table_name": "ben_foster_actor_0", "column_list": [["year", "INT", "sample values:['2004', '2011', '2002']"], ["title", "VARCHAR(255)", "sample values:['Northfork', 'X-Men : The Last Stand', '3:10 to Yuma']"], ["role", "VARCHAR(255)", "sample values:['Aaron Kreifels', 'Ben Kurtzman', 'Charlie Prince']"]]}

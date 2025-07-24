@@ -1,1 +1,0 @@
-{"table_name": "bedford_borough_0", "column_list": [["ward_name", "VARCHAR(255)", "sample values:['Kempston North', 'Queens Park', 'Harpur']"], ["population_2009_estimate", "VARCHAR(255)", "sample values:['7,190', '7,650', '7,620']"], ["percentage_from_minority_groups", "VARCHAR(255)", "sample values:['23%', '26%', '25%']"]]}

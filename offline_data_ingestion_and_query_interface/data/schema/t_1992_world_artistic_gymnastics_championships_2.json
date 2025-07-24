@@ -1,1 +1,0 @@
-{"table_name": "t_1992_world_artistic_gymnastics_championships_2", "column_list": [["rank", "FLOAT", "sample values:['7.0', '5.0', '9.0']"], ["gymnast", "VARCHAR(255)", "sample values:['Grigory Misutin ( CIS )', \"Paul O'Neill ( USA )\", 'Li Jing ( CHN )']"], ["total", "FLOAT", "sample values:['9.737', '9.837', '9.65']"]]}

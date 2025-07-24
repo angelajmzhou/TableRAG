@@ -1,1 +1,0 @@
-{"table_name": "t_1993_in_country_music_0", "column_list": [["us", "INT", "sample values:['5', '2', '19']"], ["can", "INT", "sample values:['39', '13', '10']"], ["single", "VARCHAR(255)", "sample values:['Almost Goodbye', 'Alright Already', 'Alibis']"], ["artist", "VARCHAR(255)", "sample values:['Clint Black with Wynonna', 'Travis Tritt', 'Randy Travis']"]]}

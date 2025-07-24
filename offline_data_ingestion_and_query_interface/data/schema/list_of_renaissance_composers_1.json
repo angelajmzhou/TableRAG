@@ -1,1 +1,0 @@
-{"table_name": "list_of_renaissance_composers_1", "column_list": [["name", "VARCHAR(255)", "sample values:['Pycard', 'Roy Henry', 'Henry Abyngdon']"], ["born", "VARCHAR(255)", "sample values:['c. 1450', 'c. 1435', 'c. 1430']"], ["died", "VARCHAR(255)", "sample values:['after 1410', 'after 1504', '1445']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "uefa_women_s_champions_league_2", "column_list": [["season", "VARCHAR(255)", "sample values:['2010-11', '2005-06', '2013-14']"], ["topscorer_club", "VARCHAR(255)", "sample values:['Ada Hegerberg ( Olympique Lyonnais )', 'Margrét Lára Viðarsdóttir ( Valur Reykjavík )', 'Laura Rus ( Apollon Limassol )']"], ["goals", "INT", "sample values:['10', '8', '12']"]]}

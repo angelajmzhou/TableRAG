@@ -1,1 +1,0 @@
-{"table_name": "list_of_airports_in_niger_0", "column_list": [["city_served", "VARCHAR(255)", "sample values:['Dogondoutchi', 'La Tapoa', 'Iferouane']"], ["icao", "VARCHAR(255)", "sample values:['DRRU', 'DRZG', 'DRRL']"], ["airport_name", "VARCHAR(255)", "sample values:['Goure Airport', 'Mano Dayak International Airport', 'Dogondoutchi Airport']"]]}

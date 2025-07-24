@@ -1,1 +1,0 @@
-{"table_name": "celia_kaye_1", "column_list": [["year", "INT", "sample values:['1972', '1965', '1976']"], ["film", "VARCHAR(255)", "sample values:['Conan the Barbarian', 'Island of the Blue Dolphins', 'Wild Seed']"], ["role", "VARCHAR(255)", "sample values:['Rene Freeman', 'High Priestess', 'Daphne']"]]}

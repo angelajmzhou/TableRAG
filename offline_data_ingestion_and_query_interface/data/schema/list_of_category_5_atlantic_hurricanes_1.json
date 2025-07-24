@@ -1,1 +1,0 @@
-{"table_name": "list_of_category_5_atlantic_hurricanes_1", "column_list": [["name", "VARCHAR(255)", "sample values:['Beulah', 'Tampico', 'Allen']"], ["year", "INT", "sample values:['1961', '1928', '1932']"], ["major_category_5", "VARCHAR(255)", "sample values:['Quintana Roo', 'Dominican Republic', 'Cuba']"]]}

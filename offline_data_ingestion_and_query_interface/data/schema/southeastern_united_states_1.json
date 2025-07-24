@@ -1,1 +1,0 @@
-{"table_name": "southeastern_united_states_1", "column_list": [["rank", "INT", "sample values:['20', '19', '6']"], ["city", "VARCHAR(255)", "sample values:['Tampa', 'Atlanta', 'Virginia Beach']"], ["state", "VARCHAR(255)", "sample values:['District of Columbia', 'Louisiana', 'Kentucky']"], ["population_2015", "VARCHAR(255)", "sample values:['314,488', '827,097', '369,075']"]]}

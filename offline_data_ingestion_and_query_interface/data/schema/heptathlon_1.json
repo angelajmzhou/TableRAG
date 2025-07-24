@@ -1,1 +1,0 @@
-{"table_name": "heptathlon_1", "column_list": [["year", "INT", "sample values:['1990', '1994', '1999']"], ["score", "INT", "sample values:['6559', '7158', '6861']"], ["athlete", "VARCHAR(255)", "sample values:['Jackie Joyner ( USA )', 'Eunice Barber ( FRA )', 'Sabine Paetz ( GDR )']"], ["location", "VARCHAR(255)", "sample values:['Houston', 'Pyatigorsk', 'Rome']"]]}

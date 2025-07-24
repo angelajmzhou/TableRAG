@@ -1,1 +1,0 @@
-{"table_name": "t_2011_uci_oceania_tour_2", "column_list": [["rank", "INT", "sample values:['10', '3', '2']"], ["team", "VARCHAR(255)", "sample values:['Trek Livestrong U23', 'Genesys Wealth Advisers', 'PureBlack Racing']"], ["points", "INT", "sample values:['30', '32', '218']"]]}

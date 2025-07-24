@@ -1,1 +1,0 @@
-{"table_name": "t_1960_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Catcher', 'Third baseman', 'Shortstop']"], ["name", "VARCHAR(255)", "sample values:['Alan Hall', 'Wayne Knapp', 'Dick Soergel']"], ["school", "VARCHAR(255)", "sample values:['Mississippi', 'Penn State', 'Minnesota']"]]}

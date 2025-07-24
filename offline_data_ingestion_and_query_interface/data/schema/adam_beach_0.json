@@ -1,1 +1,0 @@
-{"table_name": "adam_beach_0", "column_list": [["year", "INT", "sample values:['2004', '2000', '1997']"], ["title", "VARCHAR(255)", "sample values:['Sawtooth', 'Flags of Our Fathers', 'Windtalkers']"], ["role", "VARCHAR(255)", "sample values:['Will', 'Rafe Acuna', 'Sinclair']"], ["notes", "VARCHAR(255)", "sample values:['Patuxet', 'Cree', \"Coeur d'Alene\"]"]]}

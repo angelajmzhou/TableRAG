@@ -1,1 +1,0 @@
-{"table_name": "john_cahill_medal_1", "column_list": [["recipients", "VARCHAR(255)", "sample values:['Harry Phillips', 'John Cahill', 'Kane Cornes']"], ["medals", "INT", "sample values:['2', '4', '3']"], ["seasons", "VARCHAR(255)", "sample values:['2014 , 2015 , 2016', '1948 , 1949 , 1951', '1920 , 1921']"]]}

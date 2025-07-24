@@ -1,1 +1,0 @@
-{"table_name": "south_moravian_region_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Kyjov', 'Znojmo', 'Brno']"], ["population", "VARCHAR(255)", "sample values:['9,742', '20,572', '11,218']"], ["area_km", "INT", "sample values:['17', '66', '35']"], ["district", "VARCHAR(255)", "sample values:['Hodonín District', 'Vyškov District', 'Znojmo District']"]]}

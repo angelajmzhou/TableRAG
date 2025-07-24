@@ -1,1 +1,0 @@
-{"table_name": "t_2010_albirex_niigata_season_0", "column_list": [["no", "INT", "sample values:['21', '10', '8']"], ["pos", "VARCHAR(255)", "sample values:['GK', 'CB', 'FW']"], ["name", "VARCHAR(255)", "sample values:['Daigo Nishi', 'Mitsuru Nagata', 'Masaaki Higashiguchi']"], ["ms", "INT", "sample values:['33', '24', '31']"]]}

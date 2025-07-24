@@ -1,1 +1,0 @@
-{"table_name": "list_of_sovereign_st_9a20fc93", "column_list": [["name", "VARCHAR(255)", "sample values:['Bolivia', 'Venezuela', 'Argentina']"], ["currency", "VARCHAR(255)", "sample values:['Falkland Islands pound', 'Boliviano', 'Paraguayan guaraní']"], ["gdp_ppp_per_capita_2008_est", "VARCHAR(255)", "sample values:['14,900', '3,900', '7,500']"]]}

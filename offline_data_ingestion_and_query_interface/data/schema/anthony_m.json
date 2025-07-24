@@ -1,1 +1,0 @@
-{"table_name": "anthony_m", "column_list": [["year", "INT", "sample values:['2008', '2010', '2011']"], ["artist", "VARCHAR(255)", "sample values:['Rico Love', 'Tank', 'Day 26']"], ["song", "VARCHAR(255)", "sample values:['Lovers', 'Love Em All ( Alt Version )', 'Waterfalls']"]]}

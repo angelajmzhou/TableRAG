@@ -1,1 +1,0 @@
-{"table_name": "list_of_major_league_baseball_franchise_postseason_droughts_7", "column_list": [["seasons", "INT", "sample values:['2', '1', '5']"], ["team", "VARCHAR(255)", "sample values:['Los Angeles Angels', 'Baltimore Orioles', 'Philadelphia Phillies']"], ["last_appearance", "VARCHAR(255)", "sample values:['2018 ALDS', '2015 NL Wild Card', '2001 ALCS']"]]}

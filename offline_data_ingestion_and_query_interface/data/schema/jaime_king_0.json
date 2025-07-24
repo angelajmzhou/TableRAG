@@ -1,1 +1,0 @@
-{"table_name": "jaime_king_0", "column_list": [["year", "INT", "sample values:['2002', '2007', '2009']"], ["title", "VARCHAR(255)", "sample values:['Fanboys', 'Pearl Harbor', 'The Tripper']"], ["role", "VARCHAR(255)", "sample values:['Heather', 'Kathy Joyce', 'Nathalie']"]]}

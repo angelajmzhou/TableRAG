@@ -1,1 +1,0 @@
-{"table_name": "list_of_a_league_honours_1", "column_list": [["grand_final", "INT", "sample values:['2019', '2012', '2011']"], ["champions", "VARCHAR(255)", "sample values:['Sydney FC ( 3 )', 'Melbourne Victory ( 3 )', 'Melbourne Victory ( 4 )']"], ["runners_up", "VARCHAR(255)", "sample values:['Melbourne Victory', 'Western Sydney Wanderers', 'Central Coast Mariners']"]]}

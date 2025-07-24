@@ -1,1 +1,0 @@
-{"table_name": "israel_super_cup_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Hapoel Kfar Saba', 'Beitar Jerusalem', 'Maccabi Netanya']"], ["winners", "VARCHAR(255)", "sample values:['-', '3', '6']"], ["runner_up", "VARCHAR(255)", "sample values:['4', '3', '1']"]]}

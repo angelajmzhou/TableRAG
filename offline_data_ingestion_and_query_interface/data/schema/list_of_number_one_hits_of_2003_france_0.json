@@ -1,1 +1,0 @@
-{"table_name": "list_of_number_one_hits_of_2003_france_0", "column_list": [["pos", "INT", "sample values:['4', '7', '8']"], ["artist", "VARCHAR(255)", "sample values:['Florent Pagny', 'DJ BoBo', 'Chimène Badi']"], ["title", "VARCHAR(255)", "sample values:['Chihuahua', 'Hey Oh', 'DJ']"], ["sales", "VARCHAR(255)", "sample values:['508,000', '517,000', '531,000']"]]}

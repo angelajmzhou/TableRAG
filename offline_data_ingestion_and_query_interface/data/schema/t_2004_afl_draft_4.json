@@ -1,1 +1,0 @@
-{"table_name": "t_2004_afl_draft_4", "column_list": [["player", "VARCHAR(255)", "sample values:['Josh Thurgood', 'Paul Bevan', 'Andrew Carrazzo']"], ["recruited_from", "VARCHAR(255)", "sample values:['Hawthorn', 'NSW-ACT U18', 'Oakleigh U18']"], ["club", "VARCHAR(255)", "sample values:['St Kilda', 'Adelaide', 'Geelong']"]]}

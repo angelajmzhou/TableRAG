@@ -1,1 +1,0 @@
-{"table_name": "thb_champions_league_0", "column_list": [["club", "VARCHAR(255)", "sample values:['CNaPS Sport', 'JS Antalaha', 'Ajesaia']"], ["city", "VARCHAR(255)", "sample values:['Mahajanga', 'Vakinankaratra', 'Antalaha']"], ["titles", "INT", "sample values:['7', '3', '4']"], ["last_title", "INT", "sample values:['1988', '1983', '1986']"]]}

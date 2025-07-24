@@ -1,1 +1,0 @@
-{"table_name": "new_democratic_party_candidates_2008_canadian_federal_election_8", "column_list": [["riding", "VARCHAR(255)", "sample values:['Edmonton Centre', 'Fort McMurray - Athabasca', 'Edmonton - Sherwood Park']"], ["candidate", "VARCHAR(255)", "sample values:['Ian Vaughan', 'Ellen Parker', 'Mark Voyageur']"], ["gender", "VARCHAR(255)", "sample values:['F', 'M']"]]}

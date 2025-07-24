@@ -1,1 +1,0 @@
-{"table_name": "ridge_hill_transmitting_station_0", "column_list": [["frequency", "VARCHAR(255)", "sample values:['94.7 MHz', '90.8 MHz', '97.6 MHz']"], ["kw", "VARCHAR(255)", "sample values:['0.8', '2', '10']"], ["service", "VARCHAR(255)", "sample values:['Sunshine Radio', 'BBC Radio 3', 'BBC Radio 4']"]]}

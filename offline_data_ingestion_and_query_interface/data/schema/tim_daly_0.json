@@ -1,1 +1,0 @@
-{"table_name": "tim_daly_0", "column_list": [["year", "INT", "sample values:['1999', '1994', '1995']"], ["title", "VARCHAR(255)", "sample values:['Seven Girlfriends', 'My Neighbor Totoro ( Tonari no Totoro )', 'Spellbinder']"], ["role", "VARCHAR(255)", "sample values:['Chris Murdoch', 'Tom Donnelly', 'Frank Oliver']"]]}

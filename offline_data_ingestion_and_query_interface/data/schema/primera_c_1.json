@@ -1,1 +1,0 @@
-{"table_name": "primera_c_1", "column_list": [["club", "VARCHAR(255)", "sample values:['Sportivo Alsina', 'Sportivo Italiano', 'Ferro Carril Oeste']"], ["titles", "INT", "sample values:['4', '6', '3']"], ["years_won", "VARCHAR(255)", "sample values:['1953 , 1958 , 1972 , 1991-92', '1932 , 1933 , 1936 , 1941', '1944 , 1948 , 2009-10']"]]}

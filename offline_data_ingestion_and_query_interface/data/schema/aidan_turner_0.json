@@ -1,1 +1,0 @@
-{"table_name": "aidan_turner_0", "column_list": [["year", "INT", "sample values:['2007', '2018', '2013']"], ["title", "VARCHAR(255)", "sample values:['The Hobbit : The Desolation of Smaug', 'Love Is Blind', 'The Mortal Instruments : City of Bones']"], ["role", "VARCHAR(255)", "sample values:['Boatman', 'Russell', 'Mal']"]]}

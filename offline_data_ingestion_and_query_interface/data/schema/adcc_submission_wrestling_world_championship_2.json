@@ -1,1 +1,0 @@
-{"table_name": "adcc_submission_wrestling_world_championship_2", "column_list": [["year", "INT", "sample values:['2000', '2017', '2001']"], ["winner", "VARCHAR(255)", "sample values:['André Galvão ( 4/4 )', 'André Galvão ( 3/4 )', 'Mario Sperry ( 1/2 )']"], ["t_2nd_place", "VARCHAR(255)", "sample values:['Roberto Abreu', 'Braulio Estima', 'Claudio Calasans']"]]}

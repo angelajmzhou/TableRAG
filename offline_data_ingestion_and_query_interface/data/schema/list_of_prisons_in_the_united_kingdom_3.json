@@ -1,1 +1,0 @@
-{"table_name": "list_of_prisons_in_the_united_kingdom_3", "column_list": [["name", "VARCHAR(255)", "sample values:['Kilmarnock', 'Inverness', 'Perth']"], ["location", "VARCHAR(255)", "sample values:['Greenock', 'Tullibody', 'Longforgan']"], ["council_area", "VARCHAR(255)", "sample values:['Dumfries and Galloway', 'East Ayrshire', 'Inverclyde']"]]}

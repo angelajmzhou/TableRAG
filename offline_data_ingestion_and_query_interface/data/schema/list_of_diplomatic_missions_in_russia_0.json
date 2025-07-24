@@ -1,1 +1,0 @@
-{"table_name": "list_of_diplomatic_missions_in_russia_0", "column_list": [["delegation", "VARCHAR(255)", "sample values:['Australia', 'Afghanistan', 'Angola']"], ["mission_type", "VARCHAR(255)", "sample values:['Embassy']"], ["district", "VARCHAR(255)", "sample values:['Yakimanka', 'Presnensky', 'Ramenki']"], ["mission_website", "VARCHAR(255)", "sample values:['link', '-']"]]}

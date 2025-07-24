@@ -1,1 +1,0 @@
-{"table_name": "t_2013_belarusian_first_league_0", "column_list": [["team", "VARCHAR(255)", "sample values:['Isloch Minsk Raion', 'Bereza-2010', 'SKVICH']"], ["location", "VARCHAR(255)", "sample values:['Gorodeya', 'Rechitsa', 'Polotsk']"], ["position_in_2012", "VARCHAR(255)", "sample values:['7', 'Second League , 5', '13']"]]}

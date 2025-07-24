@@ -1,1 +1,0 @@
-{"table_name": "channing_tatum_0", "column_list": [["year", "INT", "sample values:['2007', '2009', '2011']"], ["title", "VARCHAR(255)", "sample values:['The Son of No One', 'Battle in Seattle', 'A Guide to Recognizing Your Saints']"], ["role", "VARCHAR(255)", "sample values:['Greg', 'Boy in church', 'Marcus Flavius Aquila']"]]}

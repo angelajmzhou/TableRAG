@@ -1,1 +1,0 @@
-{"table_name": "jamie_chung_0", "column_list": [["year", "INT", "sample values:['2016', '2013', '2007']"], ["title", "VARCHAR(255)", "sample values:['Flight 7500', 'I Now Pronounce You Chuck and Larry', 'A Year and Change']"], ["role", "VARCHAR(255)", "sample values:['Ruby', 'Nima', 'Amber']"]]}

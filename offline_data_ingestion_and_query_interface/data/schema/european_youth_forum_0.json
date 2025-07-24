@@ -1,1 +1,0 @@
-{"table_name": "european_youth_forum_0", "column_list": [["date", "VARCHAR(255)", "sample values:['2019-2020', '1999-2000', '2017-2018']"], ["president", "VARCHAR(255)", "sample values:['Ms Pauliina Arola', 'Ms Johanna Nyman', 'Mr Tine Radinja']"], ["nationality", "VARCHAR(255)", "sample values:['Spain', 'Slovenia', 'Finland']"]]}

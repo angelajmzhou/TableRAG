@@ -1,1 +1,0 @@
-{"table_name": "double_association_football_64", "column_list": [["club", "VARCHAR(255)", "sample values:['LPRC Oilers', 'Mighty Barrolle', 'Invincible Eleven']"], ["number", "INT", "sample values:['2', '1', '3']"], ["seasons", "VARCHAR(255)", "sample values:['2013', '2017', '1999 , 2005']"]]}

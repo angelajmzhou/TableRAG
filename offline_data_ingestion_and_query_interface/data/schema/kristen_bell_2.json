@@ -1,1 +1,0 @@
-{"table_name": "kristen_bell_2", "column_list": [["year", "INT", "sample values:['2009', '2007', '2019']"], ["title", "VARCHAR(255)", "sample values:['Disney Infinity', 'Kingdom Hearts III', \"Assassin 's Creed\"]"], ["voice_role", "VARCHAR(255)", "sample values:['Lucy Stillman', 'Princess Anna', 'Cora']"]]}

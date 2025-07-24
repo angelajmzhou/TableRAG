@@ -1,1 +1,0 @@
-{"table_name": "venues_of_the_2003_pan_american_games_2", "column_list": [["venue", "VARCHAR(255)", "sample values:['Body Shop - Plaza Naco', 'Feria Ganadera', 'Carlos Teo Cruz Coliseum']"], ["sports", "VARCHAR(255)", "sample values:['Bowling', 'Roller skating', 'Shooting']"], ["capacity", "VARCHAR(255)", "sample values:['2,000', '600', '5,000']"]]}

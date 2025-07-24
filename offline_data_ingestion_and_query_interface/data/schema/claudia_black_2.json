@@ -1,1 +1,0 @@
-{"table_name": "claudia_black_2", "column_list": [["year", "INT", "sample values:['2003', '2007', '2006']"], ["title", "VARCHAR(255)", "sample values:['Destiny', 'Mass Effect 3', 'Dragon Age : Origins']"], ["role", "VARCHAR(255)", "sample values:[\"Admiral Daro'Xen vas Moreh , Matriarch Aethyta\", 'Fauna', \"A'Kanna\"]"]]}

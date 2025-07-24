@@ -1,1 +1,0 @@
-{"table_name": "el_oro_province_0", "column_list": [["canton", "VARCHAR(255)", "sample values:['Pasaje', 'Balsas', 'Las Lajas']"], ["pop", "VARCHAR(255)", "sample values:['217,696', '5,348', '62,959']"], ["area_km", "INT", "sample values:['147', '69', '282']"], ["seat_capital", "VARCHAR(255)", "sample values:['Huaquillas', 'Chilla', 'Machala']"]]}

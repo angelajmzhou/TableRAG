@@ -1,1 +1,0 @@
-{"table_name": "consumers_energy_0", "column_list": [["plant", "VARCHAR(255)", "sample values:['Loud Hydro', 'Webber Hydro', 'Hardy Dam']"], ["river", "VARCHAR(255)", "sample values:['Au Sable', 'Kalamazoo', 'Muskegon']"], ["power_mw", "INT", "sample values:['6', '8', '9']"]]}

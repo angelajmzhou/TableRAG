@@ -1,1 +1,0 @@
-{"table_name": "columbus_crew_0", "column_list": [["no", "INT", "sample values:['18', '22', '17']"], ["position", "VARCHAR(255)", "sample values:['Goalkeeper', 'Midfielder', 'Forward']"], ["player", "VARCHAR(255)", "sample values:['Hector Jiménez', 'Lucas Zelarayán ( DP )', 'Derrick Etienne']"], ["nation", "VARCHAR(255)", "sample values:['Canada', 'Costa Rica', 'Argentina']"]]}

@@ -1,0 +1,14 @@
+2025-07-23 14:44:04,071 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'nationality' in 'field list'")
+[SQL: SELECT `nationality` FROM `t_2004_united_states_grand_prix_0` WHERE `driver` = 'Jenson Button';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-23 14:53:00,649 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'nationality' in 'field list'")
+[SQL: SELECT `nationality` FROM `t_2004_united_states_grand_prix_0` WHERE `driver` = 'Jenson Button';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-23 14:53:07,200 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but I cannot answer this question with the given database schema. The schema `ncis_soundtrack_1` contains information about songs, artists, seasons, and episodes of NCIS, but it does not contain any information about novels or their settings.
+2025-07-23 14:53:07,201 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but I cannot answer this question with the given database schema. Th' at line 1")
+[SQL: I am sorry, but I cannot answer this question with the given database schema. The schema `ncis_soundtrack_1` contains information about songs, artists, seasons, and episodes of NCIS, but it does not contain any information about novels or their settings.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-23 14:53:21,233 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-23 16:49:26,489 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

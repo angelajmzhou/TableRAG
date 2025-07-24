@@ -1,1 +1,0 @@
-{"table_name": "southeastern_conference_baseball_tournament_0", "column_list": [["school", "VARCHAR(255)", "sample values:['Ole Miss', 'Vanderbilt', 'Alabama']"], ["appearances", "INT", "sample values:['3', '9', '8']"], ["championships", "INT", "sample values:['4', '6', '0']"]]}

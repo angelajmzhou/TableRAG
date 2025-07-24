@@ -1,1 +1,0 @@
-{"table_name": "asian_club_champions_a5d10112", "column_list": [["team", "VARCHAR(255)", "sample values:['Júbilo Iwata', 'Al-Sadd', 'Liaoning Whowin']"], ["no", "INT", "sample values:['4', '7', '10']"], ["years", "VARCHAR(255)", "sample values:['2013 , 2015 , 2019', '1967 , 1970', '2004 , 2005 , 2009 , 2011 , 2012']"]]}

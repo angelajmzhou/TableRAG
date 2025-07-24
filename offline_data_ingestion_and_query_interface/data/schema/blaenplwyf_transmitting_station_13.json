@@ -1,1 +1,0 @@
-{"table_name": "blaenplwyf_transmitting_station_13", "column_list": [["frequency", "VARCHAR(255)", "sample values:['93.1 MHz', '107.7 MHz', '88.7 MHz']"], ["kw", "INT", "sample values:['10', '6', '120']"], ["service", "VARCHAR(255)", "sample values:['BBC Radio 4', 'BBC Radio Wales', 'BBC Radio 2']"]]}

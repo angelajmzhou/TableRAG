@@ -1,1 +1,0 @@
-{"table_name": "pioneer_football_league_4", "column_list": [["school", "VARCHAR(255)", "sample values:['Valparaiso', 'Marist', 'Stetson']"], ["football_stadium", "VARCHAR(255)", "sample values:['Bailey Memorial Stadium', 'Jayne Stadium', 'Torero Stadium']"], ["capacity", "VARCHAR(255)", "sample values:['7,500', '11,000', '6,500']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "t_4th_legislative_assembly_of_saskatchewan_0", "column_list": [["electoral_district", "VARCHAR(255)", "sample values:['Cypress', 'Francis', 'Kinistino']"], ["member", "VARCHAR(255)", "sample values:['Archibald Peter McNab', 'George Alexander Bell', 'Thomas Evan Gamble']"], ["party", "VARCHAR(255)", "sample values:['Liberal']"]]}

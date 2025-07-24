@@ -1,1 +1,0 @@
-{"table_name": "veikkausliiga_2", "column_list": [["player", "VARCHAR(255)", "sample values:['Saku Puhakainen', 'Valeri Popovitch', 'Rafael']"], ["time", "VARCHAR(255)", "sample values:['2000-2018', '1991-2005', '1995-2009']"], ["matches", "INT", "sample values:['358', '360', '354']"]]}

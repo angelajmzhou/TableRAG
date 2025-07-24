@@ -1,1 +1,0 @@
-{"table_name": "forbes_global_2000_2", "column_list": [["rank", "INT", "sample values:['5', '3', '18']"], ["country", "VARCHAR(255)", "sample values:['Sweden', 'Netherlands', 'Italy']"], ["companies", "VARCHAR(255)", "sample values:['20', '225**', '535****']"]]}

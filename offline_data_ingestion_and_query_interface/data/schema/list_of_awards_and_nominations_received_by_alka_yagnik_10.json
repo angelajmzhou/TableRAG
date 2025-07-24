@@ -1,1 +1,0 @@
-{"table_name": "list_of_awards_and_nominations_received_by_alka_yagnik_10", "column_list": [["year", "INT", "sample values:['1993', '1998', '1995']"], ["song", "VARCHAR(255)", "sample values:['Palki Main Hogi Sawar', 'San Sanana', 'Mere Angne Mein']"], ["film", "VARCHAR(255)", "sample values:['Hum Hain Rahi Pyar Ke', 'Asoka', 'Raja Hindustani']"]]}

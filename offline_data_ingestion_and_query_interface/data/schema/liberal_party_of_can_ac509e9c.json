@@ -1,1 +1,0 @@
-{"table_name": "liberal_party_of_can_ac509e9c", "column_list": [["riding", "VARCHAR(255)", "sample values:['Delta - Richmond East', 'British Columbia Southern Interior', 'Nanaimo - Alberni']"], ["candidate_s_name", "VARCHAR(255)", "sample values:['Brian Scott', 'Don Bell', 'Janna Francis']"], ["gender", "VARCHAR(255)", "sample values:['F', 'M']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "list_of_medal_of_hon_d5cd774c", "column_list": [["name", "VARCHAR(255)", "sample values:['William Harding Carter', 'Edward John McClernand', 'Matthias W. Day']"], ["class_year", "INT", "sample values:['1884', '1867', '1876']"], ["notability", "VARCHAR(255)", "sample values:['no sample values available']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "double_association_football_22", "column_list": [["club", "VARCHAR(255)", "sample values:['Kuala Lumpur', 'Kelantan', 'Pahang']"], ["number", "INT", "sample values:['2', '3', '1']"], ["seasons", "VARCHAR(255)", "sample values:['1988', '1993 , 2007 , 2008', '2016 , 2017 , 2019']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "bert_schneider_0", "column_list": [["year", "VARCHAR(255)", "sample values:['1966-1968', '1969', '1978']"], ["title", "VARCHAR(255)", "sample values:['Five Easy Pieces', 'The Last Picture Show', 'Head']"], ["genre", "VARCHAR(255)", "sample values:['documentary film', 'television situation comedy', 'road film']"]]}

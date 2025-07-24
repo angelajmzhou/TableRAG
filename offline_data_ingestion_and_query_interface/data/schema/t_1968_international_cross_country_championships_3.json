@@ -1,1 +1,0 @@
-{"table_name": "t_1968_international_cross_country_championships_3", "column_list": [["rank", "INT", "sample values:['13', '10', '2']"], ["country", "VARCHAR(255)", "sample values:['United States', 'Belgium', 'England']"], ["team", "VARCHAR(255)", "sample values:['no sample values available']"], ["points", "INT", "sample values:['58', '304', '101']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "rock_band_ios_1", "column_list": [["song_title", "VARCHAR(255)", "sample values:['A Jagged Gorgeous Winter', 'Just Breathe', 'Just a Girl']"], ["artist", "VARCHAR(255)", "sample values:['Honest Bob and the Factory-to-Dealer Incentives', 'Morningwood', 'Death of The Cool']"], ["free", "VARCHAR(255)", "sample values:['No', 'Yes']"]]}

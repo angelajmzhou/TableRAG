@@ -1,1 +1,0 @@
-{"table_name": "list_of_songs_in_singstar_games_playstation_2_8", "column_list": [["artist", "VARCHAR(255)", "sample values:['Kenny Chesney', 'Johnny Cash', 'Gretchen Wilson']"], ["song_title", "VARCHAR(255)", "sample values:['Days Go By', 'Online', 'I Walk the Line']"], ["us", "VARCHAR(255)", "sample values:['Yes']"]]}

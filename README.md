@@ -16,16 +16,16 @@ Repo for _[TableRAG: A Retrieval Augmented Generation Framework for Heterogeneou
 ```
 conda create -n your_env python=3.10
 
-git clone https://github.com/yxh-y/TableRAG/
+git clone https://github.com/angelajmzhou/TableRAG/
 cd TableRAG
 
-pip install -r requirements.txt
+pip install -r linux_requirements.txt
 ```
 
 # 🛠 How to Run?
 
 ## Dataset Preparation
-1. Download dev_excel.zip from [Google Drive](https://drive.google.com/drive/folders/1Pea6kiUZv0UP8k7Ohv19KorBdBaUrouE?usp=drive_link).
+1. Download dev_excel.zip, dev_doc.zip, my_dev.json from [Google Drive](https://drive.google.com/drive/folders/1Pea6kiUZv0UP8k7Ohv19KorBdBaUrouE?usp=drive_link).
 
 ## Offline Workflow
 
@@ -33,6 +33,7 @@ pip install -r requirements.txt
 
 1. Download MySQL
 Reach https://downloads.mysql.com/archives/community/ and find MySQL 8.0.24 and downloads for your appropriate environment.
+(In my experience, later versions also worked.)
 
 2. Install MySQL
 ```
@@ -55,21 +56,22 @@ CREATE DATABASE TableRAG;
 ### Step 2: Offline data Ingestion
 
 1. Setup database config 
-Edit offline_data_ingestion_and_query_interface/config/database_config.json and update it with your own MySQL config.
+Edit offline_backend/config/database_config.json and update it with your own MySQL config.
 
 2. Prepare table files to be ingested
-Unzip dev_excel.zip to 'offline_data_ingestion_and_query_interface/dataset/hybridqa/dev_excel/'.
+Extract dev_doc and dev_excel into offline/backend/data/hybridqa, and extract my_dev.json into root directory.
+optionally, use `clean.py` to reduce dataset to only sports-related data.
 
 4. Execute data ingestion pipeline
 ```
-cd offline_data_ingestion_and_query_interface/src/
+cd offline_backend/src/
 python data_persistent.py
 ```
 
 ### Step 3: Start Database query service
 
 1. Setup LLM config
-Edit 'offline_data_ingestion_and_query_interface/src/handle_requests.py' and substitute your llm request url and apikey into model_request_config.
+Edit 'offline_backend/src/handle_requests.py' and substitute your llm request url and apikey into model_request_config.
 
 2. Start service to provide SQL query interface
 
@@ -86,6 +88,8 @@ python interface.py
 3. Unzip the dev_excel.zip and put it into "/data" directory.
 
 ### Step 2: Run Main Experiment
+
+From original repository:
 ```
 cd online_inference
 python3 main.py
@@ -96,5 +100,9 @@ python3 main.py
   --rerun <True if some cases fail at the previous run, default to False> 
 ```
 
+I used this to run:
+```
+python3 main.py   --backbone gemini   --save_file_path ../results/results.json   --doc_dir ../offline_backend/dataset/hybridqa/dev_doc   --excel_dir ../offline_backend/dataset/hybridqa/dev_excel   --bge_dir ../models
+```
 
-
+If data_file_path is not provided as an argument, TableRAG will run in interactive mode, where users can live-prompt and receive answers until 'exit' is input.

@@ -1,1 +1,0 @@
-{"table_name": "list_of_aircraft_of_world_war_ii_13", "column_list": [["name_of_aircraft", "VARCHAR(255)", "sample values:['Armstrong Whitworth Albemarle', 'Caproni Ca.133', 'Douglas C-47/R4D Skytrain/Dakota']"], ["year_in_service", "INT", "sample values:['1933', '1938', '1940']"], ["country_of_origin", "VARCHAR(255)", "sample values:['Italy', 'Germany', 'US']"]]}

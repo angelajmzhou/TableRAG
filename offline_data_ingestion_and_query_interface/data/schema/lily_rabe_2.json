@@ -1,1 +1,0 @@
-{"table_name": "lily_rabe_2", "column_list": [["year", "VARCHAR(255)", "sample values:['2006', '2015', '2010-2011']"], ["title", "VARCHAR(255)", "sample values:['Cymbeline', 'Miss Julie', 'Heartbreak House']"], ["role", "VARCHAR(255)", "sample values:['Annelle Dupuy-Desoto', 'Beatrice', 'Kate']"]]}

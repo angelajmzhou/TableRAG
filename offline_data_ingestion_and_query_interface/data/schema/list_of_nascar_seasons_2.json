@@ -1,1 +1,0 @@
-{"table_name": "list_of_nascar_seasons_2", "column_list": [["season", "INT", "sample values:['2001', '1996', '2002']"], ["races", "INT", "sample values:['22', '25', '20']"], ["drivers_champion", "VARCHAR(255)", "sample values:['James Buescher', 'Matt Crafton', 'Bobby Hamilton']"], ["manufacturers_champion", "VARCHAR(255)", "sample values:['Ford', 'Dodge', 'Toyota']"]]}

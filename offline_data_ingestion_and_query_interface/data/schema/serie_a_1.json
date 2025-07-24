@@ -1,1 +1,0 @@
-{"table_name": "serie_a_1", "column_list": [["club", "VARCHAR(255)", "sample values:['Casale', 'Genoa', 'Novese']"], ["winners", "INT", "sample values:['7', '2', '3']"], ["runners_up", "VARCHAR(255)", "sample values:['6', '8', '1']"], ["championship_seasons", "VARCHAR(255)", "sample values:['1984-85', '1955-56 , 1968-69', '1986-87 , 1989-90']"]]}

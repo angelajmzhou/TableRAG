@@ -1,1 +1,0 @@
-{"table_name": "t_1995_afl_draft_2", "column_list": [["pick", "INT", "sample values:['10', '12', '17']"], ["player", "VARCHAR(255)", "sample values:['Peter Bell', 'Richard Peck', 'Andrew Donnelly']"], ["recruited_from", "VARCHAR(255)", "sample values:['Collingwood', 'Cairns', 'North Brisbane']"], ["club", "VARCHAR(255)", "sample values:['Hawthorn', 'Melbourne', 'Essendon']"]]}

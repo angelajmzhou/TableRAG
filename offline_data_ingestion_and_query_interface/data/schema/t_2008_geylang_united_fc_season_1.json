@@ -1,1 +1,0 @@
-{"table_name": "t_2008_geylang_united_fc_season_1", "column_list": [["position", "VARCHAR(255)", "sample values:['DF', 'FW', 'MF']"], ["player", "VARCHAR(255)", "sample values:['Abdul Hadi', 'Rangsan Vivatchaichok', 'Hassan Sunny']"], ["transferred_to", "VARCHAR(255)", "sample values:['Provincial Electricity Authority FC', 'Released', 'Home United']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "t_1972_perth_carnival_0", "column_list": [["name", "VARCHAR(255)", "sample values:['John Murphy', 'Stan Alves', 'Gary Hardeman']"], ["age", "INT", "sample values:['19', '22', '28']"], ["position", "VARCHAR(255)", "sample values:['Ruck-rover', 'Forward', 'Rover']"], ["club", "VARCHAR(255)", "sample values:['St Kilda', 'North Melbourne', 'Geelong']"]]}

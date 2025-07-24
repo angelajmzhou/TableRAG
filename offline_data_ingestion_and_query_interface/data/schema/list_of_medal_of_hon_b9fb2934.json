@@ -1,1 +1,0 @@
-{"table_name": "list_of_medal_of_hon_b9fb2934", "column_list": [["name", "VARCHAR(255)", "sample values:['Franklin Van Valkenburgh', 'Norman Scott', 'John P. Cromwell']"], ["class_year", "INT", "sample values:['1933', '1906', '1914']"], ["notability", "VARCHAR(255)", "sample values:['no sample values available']"]]}

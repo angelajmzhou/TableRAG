@@ -1,1 +1,0 @@
-{"table_name": "t_400_metres_hurdles_0", "column_list": [["year", "INT", "sample values:['1988', '1983', '1974']"], ["time", "FLOAT", "sample values:['47.53', '47.82', '47.14']"], ["athlete", "VARCHAR(255)", "sample values:['Kevin Young ( USA )', 'Danny Harris ( USA )', 'Jim Bolding ( USA )']"], ["location", "VARCHAR(255)", "sample values:['Berlin', 'Lausanne', 'Rome']"]]}

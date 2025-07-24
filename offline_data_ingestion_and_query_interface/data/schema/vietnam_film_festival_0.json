@@ -1,1 +1,0 @@
-{"table_name": "vietnam_film_festival_0", "column_list": [["festival", "VARCHAR(255)", "sample values:['12th Vietnam Film Festival', '18th Vietnam Film Festival', '15th Vietnam Film Festival']"], ["year", "INT", "sample values:['2009', '1990', '1988']"], ["host_city", "VARCHAR(255)", "sample values:['Huế', 'Tuy Hòa', 'Nha Trang']"]]}

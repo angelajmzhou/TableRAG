@@ -1,1 +1,0 @@
-{"table_name": "list_of_video_games_in_development_1", "column_list": [["title", "VARCHAR(255)", "sample values:['Age of Empires IV', 'Earthworm Jim 4', 'Untitled Battletoads game']"], ["platform_s", "VARCHAR(255)", "sample values:['Win , XBO', 'Unknown', 'Win , PS4']"], ["genre_s", "VARCHAR(255)", "sample values:['Platform', 'Unknown', 'First-person shooter']"]]}

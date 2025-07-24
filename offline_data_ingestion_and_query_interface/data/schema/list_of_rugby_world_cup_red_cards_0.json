@@ -1,1 +1,0 @@
-{"table_name": "list_of_rugby_world_cup_red_cards_0", "column_list": [["team", "VARCHAR(255)", "sample values:['Namibia', 'Ireland', 'Argentina']"], ["t_2019", "VARCHAR(255)", "sample values:['-', '1']"], ["total", "INT", "sample values:['0', '2', '4']"]]}

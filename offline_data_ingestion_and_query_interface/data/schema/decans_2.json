@@ -1,1 +1,0 @@
-{"table_name": "decans_2", "column_list": [["sign", "VARCHAR(255)", "sample values:['Capricorn', 'Leo', 'Pisces']"], ["first_decan_ruler_0_9", "VARCHAR(255)", "sample values:['Sun', 'Venus', 'Mars']"], ["second_decan_ruler_10_19", "VARCHAR(255)", "sample values:['Moon', 'Sun', 'Jupiter']"], ["third_decan_ruler_20_29", "VARCHAR(255)", "sample values:['Sun', 'Jupiter', 'Moon']"]]}

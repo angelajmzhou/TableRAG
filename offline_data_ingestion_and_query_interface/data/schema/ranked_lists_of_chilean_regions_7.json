@@ -1,1 +1,0 @@
-{"table_name": "ranked_lists_of_chilean_regions_7", "column_list": [["region", "VARCHAR(255)", "sample values:['Chile', 'Atacama', 'Valparaíso']"], ["gdp_ppp", "FLOAT", "sample values:['8.238', '3.021', '26.428']"], ["comparable_country", "VARCHAR(255)", "sample values:['The Bahamas', 'Burundi', 'Austria']"]]}

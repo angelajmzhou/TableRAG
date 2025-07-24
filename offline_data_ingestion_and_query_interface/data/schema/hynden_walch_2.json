@@ -1,1 +1,0 @@
-{"table_name": "hynden_walch_2", "column_list": [["year", "INT", "sample values:['2015', '2012', '2009']"], ["title", "VARCHAR(255)", "sample values:['Lego Dimensions', 'Skylanders Imaginators', 'Crash Team Racing']"], ["voice_role", "VARCHAR(255)", "sample values:['Alice', 'Hitomi', 'Starfire']"]]}

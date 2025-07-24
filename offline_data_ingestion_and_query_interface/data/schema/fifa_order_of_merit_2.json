@@ -1,1 +1,0 @@
-{"table_name": "fifa_order_of_merit_2", "column_list": [["recipient", "VARCHAR(255)", "sample values:['Dino Zoff', 'Salif Keita', 'Pelé']"], ["year", "VARCHAR(255)", "sample values:['1994', '1988', '1984 , 2004']"], ["nationality", "VARCHAR(255)", "sample values:['France', 'Italy', 'Soviet Union']"]]}

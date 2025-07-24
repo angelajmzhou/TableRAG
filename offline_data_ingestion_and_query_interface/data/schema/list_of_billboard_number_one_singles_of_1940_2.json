@@ -1,1 +1,0 @@
-{"table_name": "list_of_billboard_number_one_singles_of_1940_2", "column_list": [["weeks_at_number_one", "INT", "sample values:['11', '13', '12']"], ["song", "VARCHAR(255)", "sample values:[\"I 've Heard That Song Before\", 'Paper Doll', 'White Christmas']"], ["artist_s", "VARCHAR(255)", "sample values:['Artie Shaw', 'Glenn Miller', 'Harry James']"]]}

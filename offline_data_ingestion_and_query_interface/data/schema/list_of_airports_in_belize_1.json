@@ -1,1 +1,0 @@
-{"table_name": "list_of_airports_in_belize_1", "column_list": [["location_served", "VARCHAR(255)", "sample values:['Spanish Lookout', 'Royal Mayan Shrimp Farm', 'Belize Aquaculture Ltd']"], ["district", "VARCHAR(255)", "sample values:['BZ', 'TO', 'CY']"], ["aerodrome_name", "VARCHAR(255)", "sample values:['Royal Mayan Shrimp Farm', 'White Ridge Farm', 'Rempel Hangar']"]]}

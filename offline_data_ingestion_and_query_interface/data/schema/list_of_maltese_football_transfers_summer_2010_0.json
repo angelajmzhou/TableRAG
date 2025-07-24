@@ -1,1 +1,0 @@
-{"table_name": "list_of_maltese_football_transfers_summer_2010_0", "column_list": [["name", "VARCHAR(255)", "sample values:['Keith Gouder', 'Robert Magro', 'Jordi Cruyff']"], ["moving_from", "VARCHAR(255)", "sample values:['Valletta assistant manager', 'unattached', 'Valletta']"], ["moving_to", "VARCHAR(255)", "sample values:['Floriana', 'Qormi', 'AEK Larnaca']"]]}

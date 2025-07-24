@@ -1,1 +1,0 @@
-{"table_name": "indian_television_academy_awards_4", "column_list": [["year", "INT", "sample values:['2009', '2012', '2013']"], ["anchor", "VARCHAR(255)", "sample values:['Salman Khan', 'Amitabh Bachchan', 'Arshad Warsi']"], ["show", "VARCHAR(255)", "sample values:['Kya Aap Paanchvi Pass Se Tez Hain ?', 'Sansui Antakshri', 'Super Selector']"]]}

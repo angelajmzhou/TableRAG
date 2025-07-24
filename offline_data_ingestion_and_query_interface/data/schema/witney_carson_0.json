@@ -1,1 +1,0 @@
-{"table_name": "witney_carson_0", "column_list": [["season", "INT", "sample values:['25', '20', '22']"], ["partner", "VARCHAR(255)", "sample values:['Chris Mazdzer', 'Alfonso Ribeiro', 'Frankie Muniz']"], ["place", "VARCHAR(255)", "sample values:['4th', '1st', '2nd']"], ["average_score", "VARCHAR(255)", "sample values:['21.9*', '22.9', '19.6*']"]]}

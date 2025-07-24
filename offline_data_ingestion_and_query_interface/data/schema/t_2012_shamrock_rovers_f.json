@@ -1,1 +1,0 @@
-{"table_name": "t_2012_shamrock_rovers_f", "column_list": [["no", "INT", "sample values:['10', '21', '6']"], ["pos", "VARCHAR(255)", "sample values:['CM', 'LM', 'LB']"], ["name", "VARCHAR(255)", "sample values:['Oman', 'Brennan', 'Rice']"], ["ms", "INT", "sample values:['3']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "afro_asian_club_championship_3", "column_list": [["year", "INT", "sample values:['1995', '1992', '1989']"], ["winning_club", "VARCHAR(255)", "sample values:['Zamalek SC', 'ES Sétif', 'Club Africain']"], ["coach", "VARCHAR(255)", "sample values:['Lee Jang-soo', 'Ruud Krol', 'Oscar Fullone']"]]}

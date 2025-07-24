@@ -1,1 +1,0 @@
-{"table_name": "list_of_islands_of_michigan_4", "column_list": [["island", "VARCHAR(255)", "sample values:['Grassy Island', 'Elizabeth Park', 'Belle Isle']"], ["municipality", "VARCHAR(255)", "sample values:['Trenton', 'Ecorse', 'Gibraltar']"], ["county", "VARCHAR(255)", "sample values:['Wayne']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "fountains_in_portland_oregon_0", "column_list": [["title", "VARCHAR(255)", "sample values:['Elk', 'Lovejoy Fountain', 'The Dreamer']"], ["designer_s", "VARCHAR(255)", "sample values:['Carl L. Linde Oliver Laurence Barrett', 'Carter , Hull , Nishita , McCulley and Baxter', 'Lee Kelly']"], ["year", "VARCHAR(255)", "sample values:['1979', '1983', '2000']"]]}

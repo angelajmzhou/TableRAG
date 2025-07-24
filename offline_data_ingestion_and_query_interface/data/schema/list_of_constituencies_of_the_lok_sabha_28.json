@@ -1,1 +1,0 @@
-{"table_name": "list_of_constituencies_of_the_lok_sabha_28", "column_list": [["constituency_no", "INT", "sample values:['16', '20', '11']"], ["constituency", "VARCHAR(255)", "sample values:['Bangaon', 'Barasat', 'Maldaha Dakshin']"], ["reserved_for_sc_st_none", "VARCHAR(255)", "sample values:['ST', 'SC']"]]}

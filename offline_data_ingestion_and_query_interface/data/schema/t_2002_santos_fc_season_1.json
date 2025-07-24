@@ -1,1 +1,0 @@
-{"table_name": "t_2002_santos_fc_season_1", "column_list": [["pos", "VARCHAR(255)", "sample values:['DF', 'FW', 'GK']"], ["name", "VARCHAR(255)", "sample values:['Odvan', 'Esquerdinha', 'Viola']"], ["moving_to", "VARCHAR(255)", "sample values:['Gamba Osaka', 'Bahia', 'Free agent']"]]}

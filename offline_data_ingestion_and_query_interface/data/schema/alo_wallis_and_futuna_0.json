@@ -1,1 +1,0 @@
-{"table_name": "alo_wallis_and_futuna_0", "column_list": [["village", "VARCHAR(255)", "sample values:['Taoa', 'Tuatafa', 'Kolia']"], ["population", "INT", "sample values:['294', '43', '738']"], ["district", "VARCHAR(255)", "sample values:['Alo']"], ["island", "VARCHAR(255)", "sample values:['Alofi', 'Futuna']"]]}

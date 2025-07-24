@@ -1,1 +1,0 @@
-{"table_name": "list_of_football_clubs_in_argentina_4", "column_list": [["club", "VARCHAR(255)", "sample values:['San Miguel', 'Leandro N. Alem', 'Muñiz']"], ["city", "VARCHAR(255)", "sample values:['Campana', 'Villa Sarmiento', 'Valentín Alsina']"], ["province", "VARCHAR(255)", "sample values:['Buenos Aires', '( autonomous city )', 'Santa Fe']"]]}

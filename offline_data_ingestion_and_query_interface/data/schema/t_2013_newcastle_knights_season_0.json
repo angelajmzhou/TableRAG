@@ -1,1 +1,0 @@
-{"table_name": "t_2013_newcastle_knights_season_0", "column_list": [["player_coach", "VARCHAR(255)", "sample values:['Joseph Leilua', 'Jeremy Smith', 'Travis Waddell']"], ["previous_club", "VARCHAR(255)", "sample values:['Huddersfield Giants', 'St. George Illawarra Dragons', 'Sydney Roosters']"], ["length", "INT", "sample values:['2013', '2016', '2014']"]]}

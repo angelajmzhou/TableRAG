@@ -1,1 +1,0 @@
-{"table_name": "t_2002_afl_draft_4", "column_list": [["player", "VARCHAR(255)", "sample values:['Quinten Lynch', 'Ben Rutten', 'Aaron Sandilands']"], ["recruited_from", "VARCHAR(255)", "sample values:['East Fremantle', 'Casterton', 'Box Hill']"], ["club", "VARCHAR(255)", "sample values:['Geelong', 'West Coast Eagles', 'Fremantle']"]]}

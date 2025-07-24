@@ -1,1 +1,0 @@
-{"table_name": "list_of_princeton_un_e000e3ed", "column_list": [["name", "VARCHAR(255)", "sample values:['Sonia Sotomayor', 'Oliver Ellsworth', 'William Johnson']"], ["affiliation", "VARCHAR(255)", "sample values:['Att 1802-03', 'B 1774', 'B 1790']"], ["service", "VARCHAR(255)", "sample values:['2010-', '1835-67', '1793-1806']"]]}

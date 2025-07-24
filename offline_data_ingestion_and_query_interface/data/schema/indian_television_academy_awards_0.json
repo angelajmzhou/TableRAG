@@ -1,1 +1,0 @@
-{"table_name": "indian_television_academy_awards_0", "column_list": [["year", "INT", "sample values:['2010', '2005', '2007']"], ["show", "VARCHAR(255)", "sample values:['Stunt Mania', 'Fear Factor : Khatron Ke Khiladi', 'Fame Gurukul']"], ["channel", "VARCHAR(255)", "sample values:['Colors TV', 'Zee TV', 'Sony tv']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "latvian_higher_league_1", "column_list": [["club", "VARCHAR(255)", "sample values:['Olimpija Liepāja', 'Liepājas Metalurgs', 'FK Liepāja']"], ["no", "INT", "sample values:['8', '15', '6']"], ["years_won", "VARCHAR(255)", "sample values:['2015', '2006 , 2007 , 2008 , 2011 , 2013 , 2014', '1924 , 1925 , 1926 , 1930 , 1931 , 1934 , 1935 , 1940']"]]}

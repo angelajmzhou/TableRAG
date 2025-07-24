@@ -1,1 +1,0 @@
-{"table_name": "t_2008_s", "column_list": [["team", "VARCHAR(255)", "sample values:['Gombak United', 'Sengkang Punggol', 'Home United']"], ["stadium", "VARCHAR(255)", "sample values:['Jurong East Stadium', 'Queenstown Stadium', 'Bishan Stadium']"], ["capacity", "VARCHAR(255)", "sample values:['2,500', '3,800', '4,254']"]]}

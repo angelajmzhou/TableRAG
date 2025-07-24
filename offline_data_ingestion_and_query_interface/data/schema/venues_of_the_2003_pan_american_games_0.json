@@ -1,1 +1,0 @@
-{"table_name": "venues_of_the_2003_pan_american_games_0", "column_list": [["venue", "VARCHAR(255)", "sample values:['Olympic Velodrome - Juan Pablo Duarte Olympic Center', 'Racquetball Pavilion', 'Judo Pavilion']"], ["sports", "VARCHAR(255)", "sample values:['Basketball', 'Softball', 'Cycling ( track )']"], ["capacity", "VARCHAR(255)", "sample values:['5,000', '600', '2,000']"]]}

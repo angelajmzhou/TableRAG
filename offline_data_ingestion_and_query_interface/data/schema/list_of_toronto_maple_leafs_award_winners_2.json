@@ -1,1 +1,0 @@
-{"table_name": "list_of_toronto_maple_leafs_award_winners_2", "column_list": [["player", "VARCHAR(255)", "sample values:['Mike Johnson', 'Felix Potvin', 'Dan Daoust']"], ["position", "VARCHAR(255)", "sample values:['Forward', 'Defence', 'Goaltender']"], ["season", "VARCHAR(255)", "sample values:['1985-86', '2011-12', '1982-83']"]]}

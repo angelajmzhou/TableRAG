@@ -1,1 +1,0 @@
-{"table_name": "jefferson_public_radio_0", "column_list": [["location", "VARCHAR(255)", "sample values:['Ashland , Oregon', 'Klamath Falls , Oregon', 'Medford , Oregon']"], ["frequency", "VARCHAR(255)", "sample values:['94.1 FM', '88.3 FM', '91.9 FM']"], ["call_sign", "VARCHAR(255)", "sample values:['KHEC', 'KSRG', 'KLMF']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "freddie_roach_boxing_0", "column_list": [["nationality", "VARCHAR(255)", "sample values:['Armenia', 'Cuba', 'Mexico']"], ["name", "VARCHAR(255)", "sample values:['Steve Collins', 'Jean Pascal', 'Zou Shiming']"], ["weight_class", "VARCHAR(255)", "sample values:['Welterweight', 'Light Welterweight', 'Jr Welterweight']"]]}

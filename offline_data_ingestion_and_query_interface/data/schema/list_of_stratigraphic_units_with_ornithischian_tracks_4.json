@@ -1,1 +1,0 @@
-{"table_name": "list_of_stratigraphic_units_with_ornithischian_tracks_4", "column_list": [["name", "VARCHAR(255)", "sample values:['Cal Orcko', 'Dunvegan Formation', 'Wealden Group']"], ["location", "VARCHAR(255)", "sample values:['China Mongolia', 'Tajikistan', 'Bolivia']"], ["description", "VARCHAR(255)", "sample values:['Description', 'has many alternate spellings']"]]}

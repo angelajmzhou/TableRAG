@@ -1,1 +1,0 @@
-{"table_name": "neighborhoods_in_detroit_9", "column_list": [["name", "VARCHAR(255)", "sample values:['Springwells', 'Delray', 'West Vernor-Lawndale Historic District']"], ["location", "VARCHAR(255)", "sample values:['no sample values available']"], ["summary", "VARCHAR(255)", "sample values:['no sample values available']"]]}

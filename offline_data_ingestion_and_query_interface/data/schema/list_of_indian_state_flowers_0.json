@@ -1,1 +1,0 @@
-{"table_name": "list_of_indian_state_flowers_0", "column_list": [["state", "VARCHAR(255)", "sample values:['Manipur', 'Chhattisgarh', 'Punjab']"], ["common_name", "VARCHAR(255)", "sample values:['Red Vanda', \"Lady 's slipper\", 'Ashoka']"], ["binomial_name", "VARCHAR(255)", "sample values:['Cypripedioideae', 'Jasminum officinale', 'Lilium mackliniae']"]]}

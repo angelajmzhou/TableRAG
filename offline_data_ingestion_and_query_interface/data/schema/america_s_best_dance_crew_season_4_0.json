@@ -1,1 +1,0 @@
-{"table_name": "america_s_best_dance_crew_season_4_0", "column_list": [["dance_crew", "VARCHAR(255)", "sample values:['Vogue Evolution', 'AfroBoriké', 'Rhythm City']"], ["hometown", "VARCHAR(255)", "sample values:['Nashville , Tennessee', 'Seattle , Washington', 'Las Vegas , Nevada']"], ["region", "VARCHAR(255)", "sample values:['East', 'West', 'South']"]]}

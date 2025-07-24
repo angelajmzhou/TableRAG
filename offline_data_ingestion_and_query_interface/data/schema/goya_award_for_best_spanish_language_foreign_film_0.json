@@ -1,1 +1,0 @@
-{"table_name": "goya_award_for_best_spanish_language_foreign_film_0", "column_list": [["country", "VARCHAR(255)", "sample values:['Costa Rica', 'Ecuador', 'Uruguay']"], ["awards", "INT", "sample values:['2', '4', '3']"], ["nominations", "INT", "sample values:['18', '7', '10']"]]}

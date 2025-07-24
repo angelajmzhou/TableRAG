@@ -1,1 +1,0 @@
-{"table_name": "iran_at_the_1976_summer_olympics_0", "column_list": [["sport", "VARCHAR(255)", "sample values:['Aquatics , Water polo', 'Wrestling', 'Fencing']"], ["men", "INT", "sample values:['11', '17', '9']"], ["total", "INT", "sample values:['4', '17', '7']"]]}

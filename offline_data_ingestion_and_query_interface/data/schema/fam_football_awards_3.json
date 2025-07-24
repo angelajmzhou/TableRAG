@@ -1,1 +1,0 @@
-{"table_name": "fam_football_awards_3", "column_list": [["seasons", "VARCHAR(255)", "sample values:['2019', '2005-06', '2009']"], ["footballers", "VARCHAR(255)", "sample values:['Akhyar Rashid', 'Liew Kit Kong', 'Norshahrul Idlan Talaha']"], ["teams_clubs", "VARCHAR(255)", "sample values:['Kedah FA', 'Kuala Muda Naza FC', 'Perak FA']"]]}

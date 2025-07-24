@@ -1,1 +1,0 @@
-{"table_name": "nancy_lieberman_award_1", "column_list": [["school", "VARCHAR(255)", "sample values:['Oregon', 'Gonzaga', 'Oklahoma State']"], ["winners", "INT", "sample values:['2', '8', '1']"], ["years", "VARCHAR(255)", "sample values:['2006', '2010', '2008']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "t_1954_college_baseball_all_america_team_0", "column_list": [["position", "VARCHAR(255)", "sample values:['Catcher', 'Pitcher', 'First baseman']"], ["name", "VARCHAR(255)", "sample values:['Mickey Sullivan ( 2 )', 'Paul Ebert', 'William Nolan']"], ["school", "VARCHAR(255)", "sample values:['Michigan State', 'North Carolina State', 'Baylor']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "t_2013_new_york_cosmos_season_0", "column_list": [["no", "INT", "sample values:['11', '8', '12']"], ["position", "VARCHAR(255)", "sample values:['Defender', 'Midfielder', 'Forward']"], ["player", "VARCHAR(255)", "sample values:['Chad Calderone', 'Hunter Gorskie', 'Chris Rodd']"], ["nation", "VARCHAR(255)", "sample values:['United States', 'Italy', 'Cameroon']"]]}

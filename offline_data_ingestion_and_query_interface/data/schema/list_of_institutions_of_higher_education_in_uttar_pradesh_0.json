@@ -1,1 +1,0 @@
-{"table_name": "list_of_institutions_of_higher_education_in_uttar_pradesh_0", "column_list": [["university", "VARCHAR(255)", "sample values:['Sanskriti University', 'Monad University', 'Invertis University']"], ["location", "VARCHAR(255)", "sample values:['Lucknow', 'Chitrakoot', 'Greater Noida']"], ["established", "INT", "sample values:['2012', '2001', '2011']"]]}

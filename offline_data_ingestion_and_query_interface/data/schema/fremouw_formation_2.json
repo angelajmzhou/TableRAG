@@ -1,1 +1,0 @@
-{"table_name": "fremouw_formation_2", "column_list": [["taxon", "VARCHAR(255)", "sample values:['Pedaeosaurus parvus', 'Ericiolacerta parva', 'Myosaurus gracilis']"], ["member", "VARCHAR(255)", "sample values:['Upper Fremouw', 'Lower Fremouw']"], ["notes", "VARCHAR(255)", "sample values:['A dicynodont', 'A therocephalian', 'A cynodont']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "botswana_premier_league_0", "column_list": [["club", "VARCHAR(255)", "sample values:['TAFIC FC', 'Township Rollers', 'Sharps Shooting Stars']"], ["city_town", "VARCHAR(255)", "sample values:['Mahalapye', 'Orapa', 'Gaborone']"], ["position_in_2018_19", "VARCHAR(255)", "sample values:['6th', '11th', '13th']"]]}

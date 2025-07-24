@@ -1,1 +1,0 @@
-{"table_name": "kvvv_ld_0", "column_list": [["channel", "FLOAT", "sample values:['15.1', '15.4', '15.5']"], ["label", "VARCHAR(255)", "sample values:['KVVV 15', 'amen', 'WORD']"], ["format", "VARCHAR(255)", "sample values:['480i']"], ["programming", "VARCHAR(255)", "sample values:['SVT', 'The Word Network', 'Amen Network']"]]}

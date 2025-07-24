@@ -1,1 +1,0 @@
-{"table_name": "riverview_gold_cup_3", "column_list": [["year", "INT", "sample values:['2013', '2000', '2011']"], ["t_1st", "VARCHAR(255)", "sample values:[\"King 's\", 'Redlands', 'Shore']"], ["t_2nd", "VARCHAR(255)", "sample values:[\"St Joseph 's\", 'Scots', 'Grammar']"], ["t_3rd", "VARCHAR(255)", "sample values:[\"King 's\", 'St Ignatius', 'Grammar']"]]}

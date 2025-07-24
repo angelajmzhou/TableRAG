@@ -1,1 +1,0 @@
-{"table_name": "venues_of_the_1976_winter_olympics_0", "column_list": [["venue", "VARCHAR(255)", "sample values:['Eisschnellaufbahn', 'Patscherkofel', 'Axamer Lizum']"], ["sports", "VARCHAR(255)", "sample values:['Speed skating', 'Ice hockey', 'Bobsleigh , Luge']"], ["capacity", "VARCHAR(255)", "sample values:['Not listed', '7,000', '10,836']"]]}

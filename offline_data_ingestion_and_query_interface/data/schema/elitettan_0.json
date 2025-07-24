@@ -1,1 +1,0 @@
-{"table_name": "elitettan_0", "column_list": [["club", "VARCHAR(255)", "sample values:['Morön BK', 'Kvarnsvedens IK', 'Umeå IK']"], ["location", "VARCHAR(255)", "sample values:['Umeå', 'Asarum', 'Skellefteå']"], ["venue", "VARCHAR(255)", "sample values:['Gröndal', 'Ljungbergsplanen', 'Hammarby IP']"], ["capacity", "VARCHAR(255)", "sample values:['7,350', '12,182', '5,000']"]]}

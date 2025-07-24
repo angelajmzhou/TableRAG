@@ -1,2 +1,7 @@
-offline_data_ingestion_and_query_interface/dataset/hybridqa/*
+offline_backend/dataset/hybridqa/*
 models/*
+__pycache__/
+*.pyc
+.env
+*.pkl
+offline_backend/data/*

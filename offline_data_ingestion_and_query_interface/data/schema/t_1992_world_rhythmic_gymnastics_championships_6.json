@@ -1,1 +1,0 @@
-{"table_name": "t_1992_world_rhythmic_gymnastics_championships_6", "column_list": [["place", "INT", "sample values:['2', '8', '6']"], ["nation", "VARCHAR(255)", "sample values:['Ukraine', 'Greece', 'Russia']"], ["total", "FLOAT", "sample values:['38.5', '38.0', '38.65']"]]}

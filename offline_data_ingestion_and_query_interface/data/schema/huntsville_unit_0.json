@@ -1,1 +1,0 @@
-{"table_name": "huntsville_unit_0", "column_list": [["name", "VARCHAR(255)", "sample values:['John Wesley Hardin', 'Carlos Coy', 'Satanta']"], ["status", "VARCHAR(255)", "sample values:['Released , now deceased', 'Committed suicide', 'Executed']"], ["details", "VARCHAR(255)", "sample values:['A Kiowa war chief', 'Artist known as The Magnificent Pretty Boy', 'Musician']"]]}

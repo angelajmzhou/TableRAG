@@ -1,1 +1,0 @@
-{"table_name": "t_2003_world_artistic_gymnastics_championships_1", "column_list": [["rank", "FLOAT", "sample values:['6.0', '4.0', '7.0']"], ["gymnast", "VARCHAR(255)", "sample values:['Paul Hamm ( USA )', 'Kyle Shewfelt ( CAN )', 'Róbert Gál ( HUN )']"], ["total", "FLOAT", "sample values:['9.762', '9.662', '9.737']"]]}

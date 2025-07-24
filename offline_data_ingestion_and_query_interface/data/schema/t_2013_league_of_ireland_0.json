@@ -1,1 +1,0 @@
-{"table_name": "t_2013_league_of_ireland_0", "column_list": [["team", "VARCHAR(255)", "sample values:[\"St Patrick 's Athletic\", 'Dundalk', 'Bray Wanderers']"], ["location", "VARCHAR(255)", "sample values:['Phibsborough', 'Limerick', 'Tallaght']"], ["stadium", "VARCHAR(255)", "sample values:['Dalymount Park', 'Tolka Park', 'The Showgrounds']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "semi_automatic_ground_environment_0", "column_list": [["sector", "VARCHAR(255)", "sample values:['New York', 'Minot', 'Duluth']"], ["dc_and_site", "VARCHAR(255)", "sample values:['DC-19 ( not completed )']"], ["afb_etc", "VARCHAR(255)", "sample values:['Beale', 'Grand Forks', 'Norton']"], ["st", "VARCHAR(255)", "sample values:['AL', 'ND', 'ME']"]]}

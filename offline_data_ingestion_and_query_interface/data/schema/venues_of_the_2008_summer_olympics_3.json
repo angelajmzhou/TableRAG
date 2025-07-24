@@ -1,1 +1,0 @@
-{"table_name": "venues_of_the_2008_summer_olympics_3", "column_list": [["venue", "VARCHAR(255)", "sample values:['Fengtai Softball Field', 'Olympic Sports Center Gymnasium', 'Laoshan Mountain Bike Course']"], ["sports", "VARCHAR(255)", "sample values:['Weightlifting', 'Football', 'Softball']"], ["capacity", "VARCHAR(255)", "sample values:['5,400', '4,852', '36,228']"]]}

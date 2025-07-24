@@ -1,1 +1,0 @@
-{"table_name": "jonathan_edwards_musician_0", "column_list": [["year", "INT", "sample values:['1977', '2001', '1976']"], ["title", "VARCHAR(255)", "sample values:['My Love Will Keep', \"Cruising America 's Waterways\", 'Blue Ridge']"], ["label", "VARCHAR(255)", "sample values:['Chronic', 'Capricorn', 'Reprise']"]]}

@@ -1,1 +1,0 @@
-{"table_name": "list_of_new_testament_church_fathers_2", "column_list": [["title", "VARCHAR(255)", "sample values:['Apostolic Canons', 'Acts of Pilate', 'De Promissionibus']"], ["date", "VARCHAR(255)", "sample values:['400', '320', 'II']"], ["language", "VARCHAR(255)", "sample values:['Syriac', 'Greek', 'Aramaic']"]]}

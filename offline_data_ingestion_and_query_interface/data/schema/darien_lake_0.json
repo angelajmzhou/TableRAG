@@ -1,1 +1,0 @@
-{"table_name": "darien_lake_0", "column_list": [["roller_coaster", "VARCHAR(255)", "sample values:['Moto Coaster', 'Ride of Steel', 'The Viper']"], ["opened", "INT", "sample values:['1999', '2018', '2008']"], ["manufacturer", "VARCHAR(255)", "sample values:['Zierer', 'Arrow Huss', 'Vekoma']"], ["description", "VARCHAR(255)", "sample values:['no sample values available']"]]}

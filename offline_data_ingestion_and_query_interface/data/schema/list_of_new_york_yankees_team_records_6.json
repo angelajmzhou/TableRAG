@@ -1,1 +1,0 @@
-{"table_name": "list_of_new_york_yankees_team_records_6", "column_list": [["statistic", "VARCHAR(255)", "sample values:['Doubles', 'Home runs', 'Hits']"], ["record", "VARCHAR(255)", "sample values:['306', '289', '1,067']"], ["season", "INT", "sample values:['1996', '2006', '1931']"]]}

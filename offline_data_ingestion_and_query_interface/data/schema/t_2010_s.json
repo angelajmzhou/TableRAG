@@ -1,1 +1,0 @@
-{"table_name": "t_2010_s", "column_list": [["team", "VARCHAR(255)", "sample values:['Singapore Armed Forces', 'Home United', 'Beijing Guoan Talent']"], ["stadium", "VARCHAR(255)", "sample values:['Choa Chu Kang Stadium', 'Hougang Stadium', 'Clementi Stadium']"], ["capacity", "VARCHAR(255)", "sample values:['4,600', '4,000', '6,000']"]]}

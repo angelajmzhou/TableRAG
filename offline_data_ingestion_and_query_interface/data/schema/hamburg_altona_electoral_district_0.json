@@ -1,1 +1,0 @@
-{"table_name": "hamburg_altona_electoral_district_0", "column_list": [["year", "INT", "sample values:['1949', '2002', '1987']"], ["name", "VARCHAR(255)", "sample values:['Hugo Scharnberg', 'Jürgen Echternach', 'Marliese Dobberthien']"], ["party", "VARCHAR(255)", "sample values:['CDU', 'SPD']"], ["first_vote", "VARCHAR(255)", "sample values:['45.9%', '36.1%', '41.3%']"]]}

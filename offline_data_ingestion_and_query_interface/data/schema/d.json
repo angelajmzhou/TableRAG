@@ -1,1 +1,0 @@
-{"table_name": "d", "column_list": [["opened", "INT", "sample values:['1985', '1992', '1986']"], ["park", "VARCHAR(255)", "sample values:['Santa Cruz Beach Boardwalk', 'Six Flags Magic Mountain', 'Dollywood']"], ["notes", "VARCHAR(255)", "sample values:['Antique style cars ( removed 1999 )', 'Antique style cars', 'Antique style cars ( removed 2009 , currently in storage )']"]]}

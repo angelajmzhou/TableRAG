@@ -1,1 +1,0 @@
-{"table_name": "county_of_churchill_queensland_0", "column_list": [["parish", "VARCHAR(255)", "sample values:['Colin', 'Goolman', 'Blenheim']"], ["lga", "VARCHAR(255)", "sample values:['Lockyer Valley', 'Ipswich', 'Scenic Rim']"], ["towns", "VARCHAR(255)", "sample values:['Flagstone Creek , Preston', 'Gatton', 'Amberley']"]]}

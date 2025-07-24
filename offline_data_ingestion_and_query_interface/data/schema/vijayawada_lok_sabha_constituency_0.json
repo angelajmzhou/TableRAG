@@ -1,1 +1,0 @@
-{"table_name": "vijayawada_lok_sabha_constituency_0", "column_list": [["year", "INT", "sample values:['1962', '1980', '1967']"], ["winner", "VARCHAR(255)", "sample values:['Harindranath Chattopadhyaya', 'Parvathaneni Upendra', 'Godey Murahari']"], ["party", "VARCHAR(255)", "sample values:['Telugu Desam Party', 'Indian National Congress ( I )', 'Independent']"]]}

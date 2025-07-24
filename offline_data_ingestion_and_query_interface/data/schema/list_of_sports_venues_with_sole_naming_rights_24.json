@@ -1,1 +1,0 @@
-{"table_name": "list_of_sports_venues_with_sole_naming_rights_24", "column_list": [["name", "VARCHAR(255)", "sample values:['Telenor Arena', 'Color Line Stadion', 'Intility Arena']"], ["location", "VARCHAR(255)", "sample values:['Kristiansand', 'Bærum', 'Molde']"], ["type", "VARCHAR(255)", "sample values:['Football stadium', 'Domed football stadium']"]]}

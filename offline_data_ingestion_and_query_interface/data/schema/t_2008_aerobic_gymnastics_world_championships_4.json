@@ -1,1 +1,0 @@
-{"table_name": "t_2008_aerobic_gymnastics_world_championships_4", "column_list": [["rank", "FLOAT", "sample values:['4.0', '7.0', '5.0']"], ["gymnast", "VARCHAR(255)", "sample values:['no sample values available']"], ["country", "VARCHAR(255)", "sample values:['Romania', 'China', 'Russia']"], ["point", "FLOAT", "sample values:['20.1', '21.65', '21.45']"]]}

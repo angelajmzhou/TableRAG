@@ -1,1 +1,0 @@
-{"table_name": "j", "column_list": [["year", "INT", "sample values:['1987', '1989', '1988']"], ["title", "VARCHAR(255)", "sample values:['Crazy People', 'Why Me ?', \"Eddie Macon 's Run\"]"], ["role", "VARCHAR(255)", "sample values:['Dr. Santana', 'The Businessman / Cop', 'State Trooper Sherman Douglas']"]]}

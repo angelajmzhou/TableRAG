@@ -1,1 +1,0 @@
-{"table_name": "wigan_warriors_0", "column_list": [["player_name", "VARCHAR(255)", "sample values:['Jim Sullivan', 'Ken Gee', 'Shaun Edwards OBE']"], ["position_s", "VARCHAR(255)", "sample values:['Scrum-half', 'Hooker', 'Fullback']"], ["profile", "VARCHAR(255)", "sample values:['Link']"]]}

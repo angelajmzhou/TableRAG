@@ -1,1 +1,0 @@
-{"table_name": "uae_arabian_gulf_league_5", "column_list": [["season", "VARCHAR(255)", "sample values:['1980-81', '1988-89', '1992-93']"], ["player", "VARCHAR(255)", "sample values:['Bader Jassim', 'Hussain Yaslam', 'Ali Nawaz Baloch']"], ["club", "VARCHAR(255)", "sample values:['Al Shaab', 'Emirates', 'Al Wasl']"], ["goals", "INT", "sample values:['25', '16', '14']"]]}

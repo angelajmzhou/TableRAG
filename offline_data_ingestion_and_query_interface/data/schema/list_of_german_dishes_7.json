@@ -1,1 +1,0 @@
-{"table_name": "list_of_german_dishes_7", "column_list": [["name", "VARCHAR(255)", "sample values:['Handkäse', 'Nürnberger Rostbratwurst', 'Fischmilch [ de ]']"], ["type", "VARCHAR(255)", "sample values:['Main course', 'Beverage', 'Snack']"], ["description", "VARCHAR(255)", "sample values:['no sample values available']"]]}
