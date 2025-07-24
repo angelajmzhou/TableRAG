@@ -1,8 +1,9 @@
-SYSTEM_EXPLORE_PROMPT = """Next, you will complete a table-related question answering task. Based on the provided materials such as the table content (in Markdown format), you need to analyze the User Query.
+
+SYSTEM_PROMPT = """Next, you will complete a table-related question answering task. Based on the provided materials such as the table content (in Markdown format), you need to analyze the User Query.
 And try to decide whether the User Input Query should be broken down into subqueries. You are provided with "solve_subquery" tool that can get answer for the subqueries.
 After you have collected sufficient information, you need to generate comprehensive answers.
 
-Table Contet: {table_content}
+Table {name}: {table_content}
 
 Instructions:
 1. Carefully analyze each user query through step-by-step reasoning.
@@ -31,7 +32,7 @@ $ Content 2: NL2SQL related Question information and SQL execution result in the
 {schema}
 
 # SQL generated based on the schema and the user question:
-{nl2sql_model_resopnse}
+{nl2sql_model_response}
 
 # SQL execution results
 {sql_execute_result}
@@ -47,7 +48,7 @@ Note:
     - if the two materials shows conflit, you should think about each of them, and finally give an answer.
 """
 
-EVALUATION_PRONPT = """We would like to request your feedback on the performance of the AI assistant in response to the user question displayed above according to the gold answer. Please use the following listed aspects and their descriptions as evaluation criteria:
+EVALUATION_PROMPT = """We would like to request your feedback on the performance of the AI assistant in response to the user question displayed above according to the gold answer. Please use the following listed aspects and their descriptions as evaluation criteria:
     - Accuracy and Hallucinations: The assistant's answer is semantically consistent with the gold answer; The numerical value and order need to be accurate, and there should be no hallucinations.
     - Completeness: Referring to the reference answers, the assistant's answer should contain all the key points needed to answer the user's question; further elaboration on these key points can be omitted.
 Please rate whether this answer is suitable for the question. Please note that the gold answer can be considered as a correct answer to the question.

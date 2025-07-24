@@ -55,7 +55,7 @@ def read_jsonl_file(file_path) :
 
 def read_plain_csv(file_path) :
     """
-    Read a csv fiel and convert it into a markdown table format.
+    Read a csv file and convert it into a markdown table format.
 
     Args:
         file_path (str): Path to the csv file

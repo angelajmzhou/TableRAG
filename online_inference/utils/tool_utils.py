@@ -17,48 +17,16 @@ class Embedder :
         self.model = AutoModel.from_pretrained(self.model_path)
         self.model = self.model.to(self.device)
         self.model.eval()
-
+    
     @torch.no_grad()
-    def encode(self, texts, batch_size=64, max_length=512):
-        all_embeddings = []
-        i = 0
-        current_batch_size = batch_size
+    def encode(self, texts) :
+        features = self.tokenizer(texts, padding=True, truncation=True, 
+                                    return_tensors="pt").to(self.device)
+        model_output = self.model(**features)
+        embs = model_output[0][:, 0].cpu().numpy()
+        return embs
 
-        while i < len(texts):
-            error_count = 0
 
-            while True:
-                try:
-                    batch = texts[i : i+current_batch_size]
-
-                    features = self.tokenizer(
-                        batch,
-                        padding=True,
-                        truncation=True,
-                        max_length=max_length,
-                        return_tensors="pt"
-                    ).to(self.device)
-                    #[last_hidden_state, hidden_states (optional), attentions (optional)]
-
-                    model_output = self.model(**features)
-                    
-                    #of last_hidden_state: (batch_size, sequence_length, hidden_dim))
-                    cls_embs = model_output[0][:, 0].cpu().numpy()
-
-                    all_embeddings.extend(cls_embs)
-                    torch.cuda.empty_cache()
-                    i += current_batch_size
-                    break  # success
-
-                except (torch.cuda.OutOfMemoryError, RuntimeError) as e:
-                    torch.cuda.empty_cache()
-                    current_batch_size = max(1, current_batch_size // 2)
-                    error_count += 1
-                    print(f"[OOM] Retrying batch with size {current_batch_size}")
-                    if error_count > 5:
-                        raise RuntimeError("Too many OOM retries in encode()")
-
-        return all_embeddings
 class Reranker :
     def __init__(
         self,
@@ -66,10 +34,10 @@ class Reranker :
         use_fp16: bool = False,
         inference_mode: str = "huggingface",
         cache_dir: str = None,
-        device: Union[str, int] = 4
+        device: Union[str, int] = 0
     ) -> None:
-        
-        self.inference_mode = inference_mode
+
+        self.interence_mode = inference_mode
         self.tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, cache_dir=cache_dir)
 
         if device and isinstance(device, str) :
@@ -88,6 +56,7 @@ class Reranker :
             cache_dir=cache_dir,
             trust_remote_code=True
         )
+
         if use_fp16 :
             self.model.half()
         self.model.eval()
@@ -103,53 +72,66 @@ class Reranker :
             self.num_gpus = 1
 
     @torch.no_grad()
-    def compute_score(self, sentence_paris: Union[List[Tuple[str, str]], Tuple[str, str]], batch_size: int = 64,
+    def compute_score(self, sentence_paris: Union[List[Tuple[str, str]], Tuple[str, str]], batch_size: int = 256,
                         max_length: int = 512, normalize: bool = False) -> List[float] :
         if self.num_gpus > 0 :
             batch_size = batch_size * self.num_gpus
-
+        
         assert isinstance(sentence_paris, list)
         if isinstance(sentence_paris[0], str) :
             sentence_paris = [sentence_paris]
-
+        
         all_scores = []
-        i = 0
+        flag = False
+        error_count = 0
+        while not flag :
+            try :
+                test_inputs_batch = self.tokenizer(
+                    sentence_paris[: min(len(sentence_paris), batch_size)],
+                    padding=True,
+                    truncation=True,
+                    max_length=max_length,
+                    return_tensors="pt"
+                ).to(self.device)
 
-        while i < len(sentence_paris):
-            current_batch_size = batch_size
-            error_count = 0
-            while True:
-                try:
-                    batch = sentence_paris[i:i + current_batch_size]
-                    inputs = self.tokenizer(
-                        batch,
-                        padding=True,
-                        truncation=True,
-                        max_length=max_length,
-                        return_tensors="pt"
-                    ).to(self.device)
+                scores = self.model(**test_inputs_batch, return_dict=True).logits.view(-1).float()
+                all_scores.extend(scores.cpu().numpy().tolist())
+                flag = True
 
-                    scores = self.model(**inputs, return_dict=True).logits.view(-1).float()
-                    all_scores.extend(scores.cpu().numpy().tolist())
-                    torch.cuda.empty_cache()
-                    i += current_batch_size
-                    break  # exit retry loop if successful
+            except RuntimeError as e :
+                batch_size = batch_size // 2
+                error_count += 1
+                print("adjust", batch_size)
+            
+            except torch.cuda.OutOfMemoryError as e :
+                batch_size = batch_size // 2
+                error_count += 1
+                print("adjust", batch_size)
+            
+            finally :
+                if error_count > 5 :
+                    raise NotImplementedError('error count')
+            
+        for start_index in tqdm(range(batch_size, len(sentence_paris), batch_size), desc="Compute Scores",
+                                disable=len(sentence_paris) < batch_size) :
+            sentences_batch = sentence_paris[start_index: start_index + batch_size]
 
-                except (torch.cuda.OutOfMemoryError, RuntimeError) as e:
-                    current_batch_size = max(1, current_batch_size // 2)
-                    error_count += 1
-                    print(f"[Retry] Reducing batch size to {current_batch_size}")
-                    torch.cuda.empty_cache()
+            inputs = self.tokenizer(
+                sentences_batch,
+                padding=True,
+                truncation=True,
+                return_tensors="pt",
+                max_length=max_length
+            ).to(self.device)
 
-                    if error_count > 5:
-                        raise RuntimeError("Exceeded maximum OOM retries")
+            scores = self.model(**inputs, return_dict=True).logits.view(-1, ).float()
+            all_scores.extend(scores.cpu().numpy().tolist())
 
-        if normalize:
+        if normalize :
             all_scores = [sigmoid(score) for score in all_scores]
-
+        
         return all_scores
-
-#used to convert excel files to markdown tables
+    
 def excel_to_markdown(file_path) :
     workbook = load_workbook(file_path)
 
@@ -173,6 +155,6 @@ def excel_to_markdown(file_path) :
             row_count += 1
     return content
 
-#for testing functionality
+
 if __name__ == '__main__' :
     print(excel_to_markdown("./test.xlsx"))

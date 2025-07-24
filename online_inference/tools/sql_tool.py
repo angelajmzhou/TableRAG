@@ -48,10 +48,12 @@ def get_excel_rag_response(table_name_list, query, repo_id) :
     }
 
     body = {
-        'repo_id': repo_id,
-        'table_name_list': table_name_list,
-        'query': query
+    'table_name_list': table_name_list,
+    'query': query
     }
+    if repo_id:
+        body['repo_id'] = repo_id
+
 
     try :
         resp = requests.post(url=url, json=body, headers=headers, verify=False)
@@ -88,14 +90,15 @@ def get_excel_rag_response_plain(table_name_list: list = [], query: str = None) 
     
     try_times = 5
     while True :
-        try :
+        try:
             resp = requests.post(url=url, json=body, headers=headers, verify=False, timeout=60)
             answer = json.loads(resp.text)
             return answer
-        except Exception as e :
-            logger.error(f"SQL error, the model return is : {resp.text}")
-            traceback.print_exc
-            try_times -= 1
+        except json.JSONDecodeError as json_decode_e:
+            print(f"Response was not JSON-decodable. Raw response:\n{resp.text if 'resp' in locals() else 'No response received.'}")
+        except Exception as e:
+            print(f"Exception during request: {e}")
+            raise e
     return {}
 
 

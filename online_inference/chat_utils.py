@@ -9,6 +9,15 @@ import hashlib
 import time
 from config import *
 import httpx
+import google.generativeai as genai
+from typing import Dict, Any, Optional
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv("API_KEY")
+
 
 def init_logger(name='my_logger', level=logging.DEBUG, log_file='app.log') :
     """
@@ -39,42 +48,41 @@ def init_logger(name='my_logger', level=logging.DEBUG, log_file='app.log') :
 
     return logger
 
+def convert_to_gemini_format(openai_messages: list[Dict[str, Any]]) -> list[Dict[str, Any]]:
+    gemini_messages = []
+    for msg in openai_messages:
+        role = msg["role"]
+        content = msg["content"]
+        if isinstance(content, str):
+            parts = [{"text": content}]
+        elif isinstance(content, list):
+            parts = [{"text": part} if isinstance(part, str) else part for part in content]
+        else:
+            raise ValueError(f"Unexpected content type: {type(content)}")
+        # Gemini expects role to be "user" or "model"
+        if role == "assistant":
+            role = "model"
+        gemini_messages.append({"role": role, "parts": parts})
+    return gemini_messages
 
-def get_chat_result(
-    messages: object, 
-    tools: object = None,
-    tool_choice: object = None,
-    llm_config: Dict = None
-    ) :
+def get_chat_result(messages: list[Dict[str, Any]], tools: Any = None, llm_config: Dict = None):
     """
-    Get LLM generation result of different API backend, e.g. gpt-4o.
+    Get LLM result using Gemini.
     """
-    client = OpenAI(
-        api_key=llm_config.get('api_key', ''),
-        base_url=llm_config.get('url', '')
-    )
-    try :
-        chat_completion = client.chat.completions.create(
-            messages=messages,
-            model=llm_config.get('model', 'gpt-4o'),
-            tools=tools,
-            temperature=0.1
+    try:
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel(
+            model_name=llm_config.get("model", "gemini-1.5-pro"),
+            tools=tools
         )
-        return chat_completion.choices[0].message
-    except :
-        service_url = llm_config.get('url', '')
-        payload = {
-            "model": llm_config.get('model', ''),
-            "messages": messages,
-            "temperature": 0.1,
-            "tools": tools
-        }
-        headers = {
-            "Content-Type": "application/json",
-        }
-        response = requests.post(
-            service_url,
-            json=payload,
-            headers=headers
+
+        # Convert messages to Gemini format
+        gemini_messages = convert_to_gemini_format(messages)
+
+        response = model.generate_content(
+            contents=gemini_messages,
+            generation_config={"temperature": 0.1}
         )
-        return json.loads(response.text)['choices'][0]["message"]
+        return response
+    except Exception as e:
+        raise RuntimeError(f"Gemini error: {e}")

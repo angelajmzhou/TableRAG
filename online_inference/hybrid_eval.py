@@ -12,6 +12,7 @@ from utils.utils import read_in_lines, read_in
 from config import *
 import pandas as pd
 
+#this is currently not used? it evaluated the accuracy of the model response
 
 def llm_eval(
     new_case: List = None, 
@@ -19,9 +20,6 @@ def llm_eval(
     max_workers: int = 10,
     output_file: str = "evaluation.xlsx"
 ) :
-    """
-    LLM based answer evaluation via qwen 72b.
-    """
     if not new_case :
         new_case = read_in_lines(file_path=file_path)
     
@@ -54,9 +52,9 @@ def single_llm_eval(case: Dict = None) :
     gen = case['tablerag_answer']
     ques = case['question']
 
-    eval_prompt = EVALUATION_PRONPT.format(question=ques, golden=golden, gen=gen)
+    eval_prompt = EVALUATION_PROMPT.format(question=ques, golden=golden, gen=gen)
     messages = [{"role": "user", "content": eval_prompt}]
-    response = get_chat_result(messages=messages, llm_config=v3_config)
+    response = get_chat_result(messages=messages)
 
     matches = re.findall(pattern, response.content)
     return float(matches[0]) if matches else 0.0
@@ -64,11 +62,33 @@ def single_llm_eval(case: Dict = None) :
 
 if __name__ == '__main__' :
     parser = argparse.ArgumentParser(description="entry args")
-    parser.add_argument('--backbone', type=str, default="gpt-4o")
     parser.add_argument('--result_file_path', type=str, default="", help="source file path")
     _args, _unparsed = parser.parse_known_args()
-    
+    #read in dict as lines
     data = read_in_lines(_args.result_file_path)
-    questions = [d["question"] for d in data]
-
     llm_eval(data)
+
+    '''
+    EVALUATION_PROMPT = """We would like to request your feedback on the performance of the AI assistant in response to the user question displayed above according to the gold answer. Please use the following listed aspects and their descriptions as evaluation criteria:
+    - Accuracy and Hallucinations: The assistant's answer is semantically consistent with the gold answer; The numerical value and order need to be accurate, and there should be no hallucinations.
+    - Completeness: Referring to the reference answers, the assistant's answer should contain all the key points needed to answer the user's question; further elaboration on these key points can be omitted.
+    Please rate whether this answer is suitable for the question. Please note that the gold answer can be considered as a correct answer to the question.
+
+    The assistant receives an overall score on a scale of 0 OR 1, where 0 means wrong and 1 means correct.
+    Dirctly output a line indicating the score of the Assistant.
+
+    PLEASE OUTPUT WITH THE FOLLOWING FORMAT, WHERE THE SCORE IS 0 OR 1 BY STRICTLY FOLLOWING THIS FORMAT: "[[score]]", FOR EXAMPLE "Rating: [[1]]":
+    <start output>
+    Rating: [[score]]
+    <end output> 
+
+    [Question]
+    {question}
+
+    [Gold Answer]
+    {golden}
+
+    [The Start of Assistant's Predicted Answer]
+    {gen}
+    """
+    '''
