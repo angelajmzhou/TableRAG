@@ -64,7 +64,8 @@ def process_tablerag_request(table_name_list, query):
     nl2sql_start_time = time.time()
     resp_content = get_llm_response(
         system_prompt=NL2SQL_SYSTEM_PROMPT,
-        user_prompt=nl2sql_prompt
+        user_prompt=nl2sql_prompt,
+        model="v3"
     )
     nl2sql_end_time = time.time()
     nl2sql_time_cusumed = nl2sql_end_time - nl2sql_start_time

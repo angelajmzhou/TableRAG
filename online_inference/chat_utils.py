@@ -12,12 +12,6 @@ import httpx
 import google.generativeai as genai
 from typing import Dict, Any, Optional
 
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-api_key = os.getenv("API_KEY")
-
 
 def init_logger(name='my_logger', level=logging.DEBUG, log_file='app.log') :
     """
@@ -65,24 +59,36 @@ def convert_to_gemini_format(openai_messages: list[Dict[str, Any]]) -> list[Dict
         gemini_messages.append({"role": role, "parts": parts})
     return gemini_messages
 
-def get_chat_result(messages: list[Dict[str, Any]], tools: Any = None, llm_config: Dict = None):
+def get_chat_result(messages: list[Dict[str, Any]], tools: Any = None, llm_config: Dict = gemini_config):
     """
     Get LLM result using Gemini.
     """
-    try:
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel(
-            model_name=llm_config.get("model", "gemini-1.5-pro"),
-            tools=tools
-        )
+    if "gemini" in llm_config.get("model"):
+        try:
+            genai.configure(api_key=gemini_config.get("api_key", ""))
+            model = genai.GenerativeModel(
+                model_name=llm_config.get("model", "gemini-1.5-pro"),
+                tools=tools
+            )
 
-        # Convert messages to Gemini format
-        gemini_messages = convert_to_gemini_format(messages)
+            gemini_messages = convert_to_gemini_format(messages)
 
-        response = model.generate_content(
-            contents=gemini_messages,
-            generation_config={"temperature": 0.1}
+            response = model.generate_content(
+                contents=gemini_messages,
+                generation_config={"temperature": 0.1}
+            )
+            return response
+        except Exception as e:
+            raise RuntimeError(f"Gemini error: {e}")
+    elif "v3" in llm_config.get("model"):
+        client = OpenAI(
+        api_key=llm_config.get('api_key', ''),
+        base_url=llm_config.get('url', '')
         )
-        return response
-    except Exception as e:
-        raise RuntimeError(f"Gemini error: {e}")
+        chat_completion = client.chat.completions.create(
+            messages=messages,
+            model=llm_config.get('model', ''),
+            temperature=0.01
+        )
+        return chat_completion.choices[0].message
+      

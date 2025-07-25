@@ -10,7 +10,7 @@ Instructions:
 2. If the query needs information more than the given table content：
     - Decompose the query into subqueries.
     - Process one subquery at a time.
-    - Use "solve_subquery" tool to get answers for each subquey.
+    - Use "solve_subquery" tool to get answers for each subquery.
 3. If a query can be answered by table content, do not decompose it. And directly put the orignal query into the "solve_subquery" tool.
     The "solve_subquery" tool utilizes SQL execution inside, it can solve complex subquery on table through one tool call.
 4. Generate exactly ONE subquery at a time.
@@ -21,6 +21,41 @@ Instructions:
 User Input Query: {query}
 Please start!
 """
+SYSTEM_PROMPT_V3 = """You are completing a table-related question answering task. You are provided with a table in Markdown format and a user query.
+
+Your goal is to reason step by step to determine if the question can be answered directly using the table, or if it should be decomposed.
+
+If decomposition is needed, simulate calling the `solve_subquery` tool by outputting a JSON block in the following format:
+
+{{
+  "tool_calls": [
+    {{
+      "function": {{
+        "name": "solve_subquery",
+        "arguments": {{
+          "subquery": "<your subquery here>"
+        }}
+      }}
+    }}
+  ],
+  "content": "<your step-by-step reasoning here>"
+}}
+
+Instructions:
+1. If the user query can be answered directly using the table, output the reasoning and simulate a tool call using the original query.
+2. If the table is insufficient, decompose the question and simulate a tool call for the appropriate subquery.
+3. Only generate **one tool call per response**.
+4. Do NOT abbreviate any terms in your subquery.
+5. After sufficient subqueries have been processed, provide a final answer like:
+    <Answer>: [your final response]
+
+Table {name}: {table_content}
+
+User Query: {query}
+
+Please reason and respond in the JSON format described above.
+"""
+
 
 COMBINE_PROMPT = """You are about to complete a table-based question answernig task using the following two types of reference materials:
 

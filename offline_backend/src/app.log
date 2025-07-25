@@ -12,3 +12,181 @@
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2025-07-23 16:49:26,489 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 12:36:11,460 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about the nationality of drivers. Therefore, I cannot answer the question "What is the nationality of Jenson Button?" based on the given schema.
+2025-07-24 12:36:11,462 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about the' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about the nationality of drivers. Therefore, I cannot answer the question "What is the nationality of Jenson Button?" based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:36:17,042 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but I cannot answer this question with the given database schema. The `dancing_with_the_stars_u` table does not contain any information about novels, authors, or years related to books.
+2025-07-24 12:36:17,045 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but I cannot answer this question with the given database schema. Th' at line 1")
+[SQL: I am sorry, but I cannot answer this question with the given database schema. The `dancing_with_the_stars_u` table does not contain any information about novels, authors, or years related to books.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:36:22,540 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about armies or conflicts. Therefore, I cannot answer the question "Which army conflicted with the lashkars?".
+2025-07-24 12:36:22,542 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about arm' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about armies or conflicts. Therefore, I cannot answer the question "Which army conflicted with the lashkars?".]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:36:51,314 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:37:36,837 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 12:38:18,152 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:38:22,962 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `list_of_ice_hockey_arenas_by_capacity_0` does not contain any information about airport terminals. It lists ice hockey arenas. Therefore, I cannot answer the question based on the given schema.
+2025-07-24 12:38:22,964 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `list_of_ice_hockey_arenas_by_capacity' at line 1")
+[SQL: I am sorry, but the provided table schema `list_of_ice_hockey_arenas_by_capacity_0` does not contain any information about airport terminals. It lists ice hockey arenas. Therefore, I cannot answer the question based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:40:04,856 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'nationality' in 'field list'")
+[SQL: SELECT `nationality` FROM `t_2004_united_states_grand_prix_0` WHERE `driver` = 'Jenson Button';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 12:40:12,611 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about the nationality of drivers. Therefore, I cannot answer the question "What is the nationality of Jenson Button?" based on the given schema.
+2025-07-24 12:40:12,612 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about the' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about the nationality of drivers. Therefore, I cannot answer the question "What is the nationality of Jenson Button?" based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:40:18,429 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `dancing_with_the_stars_u` does not contain any information about novels, authors, or years related to books. Therefore, I cannot answer the question "What year does Orson Scott Card's 1986 novel take place?" using the given database.
+2025-07-24 12:40:18,431 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `dancing_with_the_stars_u` does not co' at line 1")
+[SQL: I am sorry, but the provided table schema `dancing_with_the_stars_u` does not contain any information about novels, authors, or years related to books. Therefore, I cannot answer the question "What year does Orson Scott Card's 1986 novel take place?" using the given database.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:40:23,955 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `pakistan_national_cricket_team_0` does not contain any information about armies, conflicts, or "lashkars". Therefore, I cannot generate a SQL query to answer your question based on the given schema.
+2025-07-24 12:40:23,956 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `pakistan_national_cricket_team_0` doe' at line 1")
+[SQL: I am sorry, but the provided table schema `pakistan_national_cricket_team_0` does not contain any information about armies, conflicts, or "lashkars". Therefore, I cannot generate a SQL query to answer your question based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:40:46,800 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:45:24,650 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:45:32,409 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about armies or conflicts. Therefore, I cannot answer the question "Which army conflicted with the lashkars?".
+2025-07-24 12:45:32,411 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about arm' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about armies or conflicts. Therefore, I cannot answer the question "Which army conflicted with the lashkars?".]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:45:36,596 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `pakistan_national_cricket_team_0` does not contain any information about armies, conflicts, or "lashkars". Therefore, I cannot generate a SQL query to answer your question based on the given schema.
+2025-07-24 12:45:36,598 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `pakistan_national_cricket_team_0` doe' at line 1")
+[SQL: I am sorry, but the provided table schema `pakistan_national_cricket_team_0` does not contain any information about armies, conflicts, or "lashkars". Therefore, I cannot generate a SQL query to answer your question based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:45:40,069 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about armies or conflicts. Therefore, I cannot answer the question "Which army conflicted with the lashkars?".
+2025-07-24 12:45:40,070 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about arm' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about armies or conflicts. Therefore, I cannot answer the question "Which army conflicted with the lashkars?".]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:45:44,228 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `pakistan_national_cricket_team_0` does not contain any information about armies, conflicts, or "lashkars". Therefore, I cannot generate a SQL query to answer your question based on the given schema.
+2025-07-24 12:45:44,231 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `pakistan_national_cricket_team_0` doe' at line 1")
+[SQL: I am sorry, but the provided table schema `pakistan_national_cricket_team_0` does not contain any information about armies, conflicts, or "lashkars". Therefore, I cannot generate a SQL query to answer your question based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:45:48,855 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:55:52,113 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:55:57,859 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but I cannot answer the question "Who are the lashkars?" with the provided table schema. The table `pakistan_national_cricket_team_0` contains information about cricket stadiums, cities, and match statistics, but it does not contain any information about "lashkars" or individuals.
+2025-07-24 12:55:57,861 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'I am sorry, but I cannot answer the question "Who are the lashkars?" with the pr\' at line 1')
+[SQL: I am sorry, but I cannot answer the question "Who are the lashkars?" with the provided table schema. The table `pakistan_national_cricket_team_0` contains information about cricket stadiums, cities, and match statistics, but it does not contain any information about "lashkars" or individuals.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:56:02,381 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but I cannot answer the question "Who are the lashkars?" with the provided table schema. The table `pakistan_national_cricket_team_0` contains information about cricket stadiums, cities, and match statistics, but it does not contain any information about "lashkars" or individuals.
+2025-07-24 12:56:02,383 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'I am sorry, but I cannot answer the question "Who are the lashkars?" with the pr\' at line 1')
+[SQL: I am sorry, but I cannot answer the question "Who are the lashkars?" with the provided table schema. The table `pakistan_national_cricket_team_0` contains information about cricket stadiums, cities, and match statistics, but it does not contain any information about "lashkars" or individuals.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:56:06,324 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but I cannot answer the question "Who are the lashkars?" with the provided table schema. The table `pakistan_national_cricket_team_0` contains information about cricket stadiums and matches, but it does not have any columns or data related to "lashkars".
+2025-07-24 12:56:06,327 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'I am sorry, but I cannot answer the question "Who are the lashkars?" with the pr\' at line 1')
+[SQL: I am sorry, but I cannot answer the question "Who are the lashkars?" with the provided table schema. The table `pakistan_national_cricket_team_0` contains information about cricket stadiums and matches, but it does not have any columns or data related to "lashkars".]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:56:12,418 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:56:22,760 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:56:26,445 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:56:30,442 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:57:43,142 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 12:58:04,540 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 12:58:35,059 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about where Toronto FC was founded. The table `record_attendances_in_united_states_club_soccer_6` contains details about attendance, teams, competitions, and venue locations for soccer matches, but not team founding information.
+2025-07-24 12:58:35,061 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about whe' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about where Toronto FC was founded. The table `record_attendances_in_united_states_club_soccer_6` contains details about attendance, teams, competitions, and venue locations for soccer matches, but not team founding information.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 12:59:55,951 - my_app - ERROR - No SQL statement found in the response content. Response content: The requested information cannot be retrieved from the provided table schema. The schema `list_of_mls_club_post_season_droughts_6` contains data about MLS club post-season droughts, not stadium information or their original purpose.
+2025-07-24 12:59:55,953 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'The requested information cannot be retrieved from the provided table schema. Th' at line 1")
+[SQL: The requested information cannot be retrieved from the provided table schema. The schema `list_of_mls_club_post_season_droughts_6` contains data about MLS club post-season droughts, not stadium information or their original purpose.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:01:00,568 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:01:09,682 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:01:28,013 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:01:39,784 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:01:43,529 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:03:00,167 - my_app - ERROR - No SQL statement found in the response content. Response content: The provided table schema does not contain information about Formula One World Championships or historical driver achievements. Therefore, I cannot generate a SQL query to answer the question.
+2025-07-24 13:03:00,169 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'The provided table schema does not contain information about Formula One World C' at line 1")
+[SQL: The provided table schema does not contain information about Formula One World Championships or historical driver achievements. Therefore, I cannot generate a SQL query to answer the question.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:03:28,640 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'game_name' in 'field list'")
+[SQL: SELECT `game_name` FROM `nwa_wrestling_legends_hall_of_heroes_0` WHERE `player_name` = 'Shouta Yasooka' AND `rank` = 5 GROUP BY `game_name` HAVING COUNT(*) = 2;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:03:33,445 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `t_2004_santos_fc_season_1` does not contain information about Campeonato Paulista, team standings, or years like 1908. Therefore, I cannot answer the question based on the given schema.
+2025-07-24 13:03:33,447 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `t_2004_santos_fc_season_1` does not c' at line 1")
+[SQL: I am sorry, but the provided table schema `t_2004_santos_fc_season_1` does not contain information about Campeonato Paulista, team standings, or years like 1908. Therefore, I cannot answer the question based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:03:51,384 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:10:35,652 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:10:41,375 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:10:45,266 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:10:48,851 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:10:52,305 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:11:47,024 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'championship_name' in 'field list'")
+[SQL: SELECT `championship_name` FROM `st` WHERE `ring_name_birth_name` LIKE '%%Joe Davis%%' AND `race_year` = 1927;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:12:32,976 - my_app - ERROR - No SQL statement found in the response content. Response content: The provided table schema does not contain information about the CART Championship or the year 2002. Therefore, it is not possible to answer the question using the given schema.
+2025-07-24 13:12:32,978 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'The provided table schema does not contain information about the CART Championsh' at line 1")
+[SQL: The provided table schema does not contain information about the CART Championship or the year 2002. Therefore, it is not possible to answer the question using the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:12:37,325 - my_app - ERROR - No SQL statement found in the response content. Response content: The provided table schema does not contain information about the CART Championship or the year 2002. Therefore, it is not possible to answer the question using the given schema.
+2025-07-24 13:12:37,327 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'The provided table schema does not contain information about the CART Championsh' at line 1")
+[SQL: The provided table schema does not contain information about the CART Championship or the year 2002. Therefore, it is not possible to answer the question using the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:14:08,226 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'birth_month' in 'field list'")
+[SQL: SELECT `birth_month` FROM `t_2013_afl_draft_1` WHERE `player` = 'Marcus Bontempelli';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:14:18,624 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `list_of_mls_club_post_season_droughts_6` does not contain information about the founding dates of the clubs, which is necessary to answer the question.
+2025-07-24 13:14:18,625 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `list_of_mls_club_post_season_droughts' at line 1")
+[SQL: I am sorry, but the provided table schema `list_of_mls_club_post_season_droughts_6` does not contain information about the founding dates of the clubs, which is necessary to answer the question.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:15:12,226 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1054, "Unknown column 'founding_year' in 'field list'")
+[SQL: SELECT `founding_year` FROM `list_of_mls_club_post_season_droughts_6` WHERE `club` IN ('FC Cincinnati', 'Houston Dynamo', 'New York Red Bulls', 'Sporting Kansas City', 'Toronto FC');]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:15:56,256 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:15:59,941 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:16:03,082 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:16:13,655 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:16:27,853 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:16:31,819 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:17:14,748 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema `nwa_wrestling_legends_hall_of_heroes_0` does not contain any information about "games", "Shouta Yasooka", or "rankings". Therefore, I cannot answer the question based on the given schema.
+2025-07-24 13:17:14,749 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema `nwa_wrestling_legends_hall_of_heroes_' at line 1")
+[SQL: I am sorry, but the provided table schema `nwa_wrestling_legends_hall_of_heroes_0` does not contain any information about "games", "Shouta Yasooka", or "rankings". Therefore, I cannot answer the question based on the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:17:46,643 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:18:24,633 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:19:02,417 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but I cannot answer this question with the given database schema. The table `deloitte_football_money_league_5` does not contain information about what fans of specific clubs are called.
+2025-07-24 13:19:02,419 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but I cannot answer this question with the given database schema. Th' at line 1")
+[SQL: I am sorry, but I cannot answer this question with the given database schema. The table `deloitte_football_money_league_5` does not contain information about what fans of specific clubs are called.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:21:07,920 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:21:22,603 - my_app - ERROR - No SQL statement found in the response content. Response content: I cannot answer this question based on the provided database schema. The schema contains information about baseball batting champions, but it does not include any data about players' political views or support for policies.
+2025-07-24 13:21:22,605 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I cannot answer this question based on the provided database schema. The schema ' at line 1")
+[SQL: I cannot answer this question based on the provided database schema. The schema contains information about baseball batting champions, but it does not include any data about players' political views or support for policies.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:23:00,343 - my_app - ERROR - No SQL statement found in the response content. Response content: The provided table schema `t_1991_college_baseball_all_america_team_0` does not contain information about MLB teams (like Colorado Rockies), specific years (1996, 1997), or professional baseball players. It only contains data for the 1991 college baseball All-America team. Therefore, the requested query cannot be answered with the given schema.
+2025-07-24 13:23:00,345 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'The provided table schema `t_1991_college_baseball_all_america_team_0` does not ' at line 1")
+[SQL: The provided table schema `t_1991_college_baseball_all_america_team_0` does not contain information about MLB teams (like Colorado Rockies), specific years (1996, 1997), or professional baseball players. It only contains data for the 1991 college baseball All-America team. Therefore, the requested query cannot be answered with the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:23:06,130 - my_app - ERROR - No SQL statement found in the response content. Response content: The provided table schema `t_1991_college_baseball_all_america_team_0` does not contain information about MLB teams (like Colorado Rockies), specific years (1996, 1997), or professional baseball players. It only contains data for the 1991 college baseball All-America team. Therefore, the requested query cannot be answered with the given schema.
+2025-07-24 13:23:06,132 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'The provided table schema `t_1991_college_baseball_all_america_team_0` does not ' at line 1")
+[SQL: The provided table schema `t_1991_college_baseball_all_america_team_0` does not contain information about MLB teams (like Colorado Rockies), specific years (1996, 1997), or professional baseball players. It only contains data for the 1991 college baseball All-America team. Therefore, the requested query cannot be answered with the given schema.]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:23:25,076 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:23:35,111 - my_app - ERROR - No SQL statement found in the response content. Response content: I am sorry, but the provided table schema does not contain information about rivers. Therefore, I cannot answer the question "Which river flows through London?".
+2025-07-24 13:23:35,114 - my_app - ERROR - SQL execution failed: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'I am sorry, but the provided table schema does not contain information about riv' at line 1")
+[SQL: I am sorry, but the provided table schema does not contain information about rivers. Therefore, I cannot answer the question "Which river flows through London?".]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-07-24 13:24:22,534 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1525, "Incorrect DATETIME value: '1:15.643'")
+[SQL: SELECT `driver` FROM `t_1992_hungarian_grand_prix_0` WHERE `lap` = '1:15.643';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:25:42,613 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:27:47,285 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:28:07,626 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:29:35,897 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 13:29:40,608 - my_app - ERROR - SQL execution failed: This result object does not return rows. It has been closed automatically.
+2025-07-24 13:29:55,252 - my_app - ERROR - SQL execution failed: (pymysql.err.OperationalError) (1065, 'Query was empty')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

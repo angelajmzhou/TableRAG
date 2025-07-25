@@ -11,6 +11,7 @@ import threading
 from utils.utils import read_in_lines, read_in
 from config import *
 import pandas as pd
+from config import gemini_config
 
 #this is currently not used? it evaluated the accuracy of the model response
 
@@ -46,7 +47,7 @@ def llm_eval(
     return
 
 
-def single_llm_eval(case: Dict = None) :
+def single_llm_eval(case: Dict = None):
     pattern = r'\[\[(\d+)\]\]'
     golden = case['answer-text']
     gen = case['tablerag_answer']
@@ -54,10 +55,19 @@ def single_llm_eval(case: Dict = None) :
 
     eval_prompt = EVALUATION_PROMPT.format(question=ques, golden=golden, gen=gen)
     messages = [{"role": "user", "content": eval_prompt}]
-    response = get_chat_result(messages=messages)
+    response = get_chat_result(messages=messages, llm_config=gemini_config)
 
-    matches = re.findall(pattern, response.content)
+    try:
+        # Properly extract text from Gemini response
+        content_parts = getattr(response, 'candidates', [])[0].content.parts
+        response_text = "".join(part.text for part in content_parts if hasattr(part, "text"))
+    except Exception as e:
+        print("Failed to extract content from Gemini response:", e)
+        return 0.0
+
+    matches = re.findall(pattern, response_text)
     return float(matches[0]) if matches else 0.0
+
 
 
 if __name__ == '__main__' :

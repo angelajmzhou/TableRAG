@@ -20,6 +20,7 @@ from prompt import *
 import pandas as pd
 from typing import Any, Tuple, List, Optional
 from google.generativeai.types import FunctionDeclaration
+import re
 
 
 MAX_ITER = 5
@@ -42,13 +43,12 @@ class TableRAG() :
             reranker_path=os.path.join(_args.bge_dir, "bge-reranker-v2-m3"),
             save_path="./embedding.pkl"
         )
-        # self.repo_id = self.config.get("repo_id", "")
         self.function_lock = threading.Lock()
 
 
     from google.generativeai.types import FunctionDeclaration
 
-    def create_tools(self):
+    def create_gemini_tools(self):
         return [
             FunctionDeclaration(
                 name="solve_subquery",
@@ -66,37 +66,94 @@ class TableRAG() :
             )
         ]
 
+    def create_v3_tools(self):
+        return [{
+            "type": "function",
+            "function": {
+                "name": "solve_subquery",
+                "description": "Return answer for the decomposed subquery.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "subquery": {
+                            "type": "string",
+                            "description": "The subquery to be solved, only take natural language as input."
+                        }
+                    },
+                    "required": [
+                        "subquery"
+                    ],
+                    "additionalProperties": False
+                },
+                "strict": True
+            }
+        }]
 
     def extract_subquery(self, response: Any, backbone: str = 'gemini') -> Tuple[str, Optional[List[str]], Optional[List[str]]]:
         """
-        Extract the subquery and reasoning process from Gemini or OpenAI responses.
+        Extract the subquery and reasoning process from Gemini or OpenAI-style responses.
         """
         reasoning = ""
         subquery = None
         tool_call_id = []
+        print(response)
+        if backbone == "gemini":
+            try:
+                if not response._result.candidates:
+                    return "No valid response from model.", None, None
 
-        try:
-            if not response._result.candidates:
-                return "No valid response from model.", None, None
+                parts = response._result.candidates[0].content.parts
 
-            parts = response._result.candidates[0].content.parts
+                for part in parts:
+                    if hasattr(part, "text"):
+                        reasoning = part.text
+                    if hasattr(part, "function_call") and part.function_call is not None:
+                        try:
+                            subquery = part.function_call.args["subquery"]
+                        except Exception as e:
+                            print(f"Error reading function args: {e}")
 
-            for i, part in enumerate(parts):
+                return reasoning.strip(), [subquery] if subquery else None, tool_call_id if tool_call_id else None
 
-                if hasattr(part, "text"):
-                    reasoning = part.text
+            except Exception as e:
+                print(f"Error extracting Gemini tool call: {e}")
+                return reasoning.strip(), None, None
 
-                if hasattr(part, "function_call") and part.function_call is not None:
-                    try:
-                        subquery = part.function_call.args["subquery"]
-                    except Exception as e:
-                        print(f"Error reading function args: {e}")
-            
-            return reasoning.strip(), [subquery] if subquery else None, tool_call_id if tool_call_id else None
+        elif backbone == "v3":
+            try:
+                # Step 1: get raw content (from ChatCompletionMessage or str)
+                if hasattr(response, "content"):
+                    raw = response.content
+                elif isinstance(response, str):
+                    raw = response
+                else:
+                    return "", None, None
 
-        except Exception as e:
-            print(f"Error extracting Gemini tool call: {e}")
-            return reasoning.strip(), None, None
+                # Step 2: extract JSON from code block
+                match = re.search(r"```json\s*(\{.*?\})\s*```", raw, re.DOTALL)
+                if not match:
+                    print("No JSON block found in response.")
+                    return "", None, None
+
+                parsed = json.loads(match.group(1))
+
+                reasoning = parsed.get("content", "")
+                tool_calls = parsed.get("tool_calls", [])
+
+                if tool_calls:
+                    subquery = tool_calls[0]["function"]["arguments"].get("subquery")
+                    return reasoning, [subquery], [tool_calls[0].get("id", "tool_call_0")]
+
+                return reasoning, None, None
+
+            except Exception as e:
+                print(f"[extract_subquery] failed: {e}")
+                return "", None, None
+
+        else:
+            print(f"Unknown backbone '{backbone}' in extract_subquery")
+            return "", None, None
+
     def extract_answer(self, response: str) -> str :
         ans = response[response.index("<Answer>") + len("<Answer>"): ] 
         return ans
@@ -117,17 +174,22 @@ class TableRAG() :
             except Exception as e:
                 print(f"[extract_content] Failed to extract from Gemini response: {e}")
                 return ""
-
         else:
-            raise ValueError(f"Unexpected response format: {type(response)} → {response}")
+            try:  
+                return response.content
+            except:
+                try:       
+                    return response['content']
+                except:
+                    raise ValueError(f"Unexpected response format: {type(response)} → {response}")
 
 
 
     def get_llm_response(self, text_messages: object, tools: object, backbone: str, select_config: object) :
         if tools :
-            response = get_chat_result(messages=text_messages, tools=tools, llm_config=gemini_config)   
+            response = get_chat_result(messages=text_messages, tools=tools, llm_config=select_config)   
         else :
-            response = get_chat_result(messages=text_messages, tools=None, llm_config=gemini_config)   
+            response = get_chat_result(messages=text_messages, tools=None, llm_config=select_config)   
 
         return response
                         
@@ -144,7 +206,10 @@ class TableRAG() :
             markdown_text = df.to_markdown(index=False)
         else:
             print("table does not exist.")
-        inital_prompt = SYSTEM_PROMPT.format(name=top1_table_name, query=query, table_content=markdown_text)
+        if(self.config.backbone == "gemini"):
+            inital_prompt = SYSTEM_PROMPT.format(name=top1_table_name, query=query, table_content=markdown_text)
+        else:
+            inital_prompt = SYSTEM_PROMPT_V3.format(name=top1_table_name, query=query, table_content=markdown_text)
         logger.info(f"Inital prompt: {inital_prompt}")
 
         intial_msg = [{"role": "user", "content": inital_prompt}]
@@ -168,8 +233,10 @@ class TableRAG() :
         _, _, doc_filenames = self.retriever.retrieve(query_with_suffix, 30, 5)
         top1_table_name = doc_filenames[0].replace(".json", "").replace(".xlsx", "")
         related_table_name_list = [top1_table_name]
-
-        tools = self.create_tools()
+        if backbone == "v3":
+            tools = self.create_v3_tools()
+        elif backbone == "gemini":
+            tools = self.create_gemini_tools()
         current_iter = self.max_iter
         text_messages = self.construct_initial_prompt(query, top1_table_name)
         logger.info(f"Processing query: {query}")
@@ -218,9 +285,17 @@ class TableRAG() :
                     "content": [x for x in flattened_content if x]  # remove empty strings
                 })
             else:
+                # Handle response.content for v3/deepseek/etc
+                if hasattr(response, "content"):
+                    model_response_content = response.content
+                elif isinstance(response, str):
+                    model_response_content = response
+                else:
+                    model_response_content = str(response)
+
                 text_messages.append({
                     "role": "model",
-                    "content": [response["content"]]
+                    "content": [model_response_content]
                 })
 
             for sub_query in sub_queries:
@@ -273,7 +348,7 @@ class TableRAG() :
             pre_data = read_in_lines(save_file_path)
             pre_questions = {case["question"] for case in pre_data}
         else :
-            pre_question = {}
+            pre_questions = {}
         def process_case(case_or_query: Union[str, dict]):
             if isinstance(case_or_query, dict):
                 if case_or_query["question"] in pre_questions :
