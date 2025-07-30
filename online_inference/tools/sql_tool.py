@@ -91,7 +91,7 @@ def get_excel_rag_response_plain(table_name_list: list = [], query: str = None) 
     try_times = 5
     while True :
         try:
-            resp = requests.post(url=url, json=body, headers=headers, verify=False, timeout=60)
+            resp = requests.post(url=url, json=body, headers=headers, verify=False, timeout=240)
             answer = json.loads(resp.text)
             return answer
         except json.JSONDecodeError as json_decode_e:

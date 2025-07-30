@@ -102,7 +102,7 @@ python3 main.py
 
 I used this to run:
 ```
-python3 main.py   --backbone gemini   --save_file_path ../results/results.json   --doc_dir ../offline_backend/dataset/hybridqa/dev_doc   --excel_dir ../offline_backend/dataset/hybridqa/dev_excel   --bge_dir ../models
+python3 main.py   --backbone gemini   --save_file_path ../results/results.json   --doc_dir ../offline_backend/dataset/hybridqa/dev_doc   --excel_dir ../offline_backend/dataset/hybridqa/dev_excel   --bge_dir ../models --data_file_path ../my_dev.json --rerun True
 ```
 
 If data_file_path is not provided as an argument, TableRAG will run in interactive mode, where users can live-prompt and receive answers until 'exit' is input.

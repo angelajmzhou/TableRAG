@@ -88,15 +88,30 @@ class TableRAG() :
                 "strict": True
             }
         }]
+    def create_claude_tools(self):
+        return [{
+                "name": "solve_subquery",
+                "description": "Return answer for the decomposed subquery.",
+                "input_schema": {
+                    "type": "object",
+                    "properties": {
+                        "subquery": {
+                            "type": "string",
+                            "description": "The subquery to be solved, only take natural language as input."
+                        }
+                    },
+                    "required": ["subquery"]
+                }
+        }]
+
 
     def extract_subquery(self, response: Any, backbone: str = 'gemini') -> Tuple[str, Optional[List[str]], Optional[List[str]]]:
         """
         Extract the subquery and reasoning process from Gemini or OpenAI-style responses.
         """
         reasoning = ""
-        subquery = None
+        subquery = []
         tool_call_id = []
-        print(response)
         if backbone == "gemini":
             try:
                 if not response._result.candidates:
@@ -109,11 +124,11 @@ class TableRAG() :
                         reasoning = part.text
                     if hasattr(part, "function_call") and part.function_call is not None:
                         try:
-                            subquery = part.function_call.args["subquery"]
+                            subquery.append(part.function_call.args["subquery"])
                         except Exception as e:
                             print(f"Error reading function args: {e}")
 
-                return reasoning.strip(), [subquery] if subquery else None, tool_call_id if tool_call_id else None
+                return reasoning.strip(), subquery if subquery else None, tool_call_id if tool_call_id else None
 
             except Exception as e:
                 print(f"Error extracting Gemini tool call: {e}")
@@ -145,7 +160,24 @@ class TableRAG() :
                     return reasoning, [subquery], [tool_calls[0].get("id", "tool_call_0")]
 
                 return reasoning, None, None
+            except json.JSONDecodeError as e:
+                print(f"JSON decoding error: {e}")
+                return "", None, None
+        elif backbone == "claude":
+            try:
+                reasoning = ""
+                subquery = []
+                tool_call_ids = []
 
+                for block in response.content:
+                    block_type = getattr(block, "type", "")
+                    if block_type == "text":
+                        reasoning += block.text.strip() + "\n"
+                    elif block_type == "tool_use":
+                        subquery.append(block.input.get("subquery"))
+                        tool_call_ids.append(block.id)
+
+                return reasoning.strip(), subquery, tool_call_ids
             except Exception as e:
                 print(f"[extract_subquery] failed: {e}")
                 return "", None, None
@@ -157,10 +189,10 @@ class TableRAG() :
     def extract_answer(self, response: str) -> str :
         ans = response[response.index("<Answer>") + len("<Answer>"): ] 
         return ans
-
     def extract_content(self, response):
         """
-        Extracts plain text from a Vertex Gemini GenerateContentResponse.
+        Extracts plain text from a Gemini or Claude response.
+        Handles Claude's block-based response (e.g., TextBlock, ToolUseBlock).
         """
         if isinstance(response, str):
             return response
@@ -168,21 +200,34 @@ class TableRAG() :
         elif isinstance(response, dict):
             return response.get("content", "")
 
+        # Gemini response
         elif hasattr(response, "candidates"):
             try:
                 return response.candidates[0].content.parts[0].text
             except Exception as e:
                 print(f"[extract_content] Failed to extract from Gemini response: {e}")
                 return ""
-        else:
-            try:  
-                return response.content
-            except:
-                try:       
-                    return response['content']
-                except:
-                    raise ValueError(f"Unexpected response format: {type(response)} → {response}")
 
+        # Claude response (message.content is a list of blocks)
+        elif hasattr(response, "content") and isinstance(response.content, list):
+            try:
+                return "\n".join(
+                    block.text.strip()
+                    for block in response.content
+                    if getattr(block, "type", "") == "text"
+                )
+            except Exception as e:
+                print(f"[extract_content] Failed to extract from Claude blocks: {e}")
+                return ""
+
+        # Fallback
+        try:
+            return response.content
+        except:
+            try:
+                return response["content"]
+            except:
+                raise ValueError(f"Unexpected response format: {type(response)} → {response}")
 
 
     def get_llm_response(self, text_messages: object, tools: object, backbone: str, select_config: object) :
@@ -206,10 +251,11 @@ class TableRAG() :
             markdown_text = df.to_markdown(index=False)
         else:
             print("table does not exist.")
-        if(self.config.backbone == "gemini"):
-            inital_prompt = SYSTEM_PROMPT.format(name=top1_table_name, query=query, table_content=markdown_text)
-        else:
+        if(self.config.backbone == "v3"):
             inital_prompt = SYSTEM_PROMPT_V3.format(name=top1_table_name, query=query, table_content=markdown_text)
+        else:
+            inital_prompt = SYSTEM_PROMPT.format(name=top1_table_name, query=query, table_content=markdown_text)
+
         logger.info(f"Inital prompt: {inital_prompt}")
 
         intial_msg = [{"role": "user", "content": inital_prompt}]
@@ -237,13 +283,18 @@ class TableRAG() :
             tools = self.create_v3_tools()
         elif backbone == "gemini":
             tools = self.create_gemini_tools()
-        current_iter = self.max_iter
+        elif backbone == "claude":
+            tools = self.create_claude_tools()
+        current_iter = self.max_iter #max iteration for searching tables
         text_messages = self.construct_initial_prompt(query, top1_table_name)
         logger.info(f"Processing query: {query}")
         select_config = config_mapping[backbone]
 
         while current_iter:
             current_iter -= 1
+            #likely failing here
+            print(f"Iteration {current_iter} text messages: ", text_messages)
+
             response = self.get_llm_response(
                 text_messages=text_messages,
                 tools=tools,
@@ -254,8 +305,11 @@ class TableRAG() :
             reasoning, sub_queries, tool_call_ids = self.extract_subquery(response, backbone=backbone)
             logger.info(f"Step {self.max_iter - current_iter}: {sub_queries}")
 
-            if not sub_queries and "<Answer>" in reasoning and current_iter != self.max_iter - 1:
+            if not sub_queries and "<Answer>" in reasoning:
                 answer = self.extract_answer(reasoning)
+                if not answer:
+                    logger.warning("Model claimed to answer, but extract_answer() returned nothing.")
+                    answer = "The model generated an answer but it could not be extracted."
                 logger.info(f"Answer: {answer}")
                 return answer, text_messages
 
@@ -266,7 +320,6 @@ class TableRAG() :
                 })
                 continue
 
-            # ✅ Append model message properly based on backend
             if backbone == "gemini":
                 gemini_parts = response._result.candidates[0].content.parts
                 flattened_content = []
@@ -280,24 +333,54 @@ class TableRAG() :
                                 "args": dict(part.function_call.args)
                             }
                         })
-                text_messages.append({
-                    "role": "model",
-                    "content": [x for x in flattened_content if x]  # remove empty strings
-                })
+                flattened_content = [x for x in flattened_content if x]  
+                if flattened_content:
+                    text_messages.append({
+                        "role": "model",
+                        "content": flattened_content
+                    })
+                else:
+                    logger.warning("Skipping appending empty 'model' message to text_messages")
             else:
                 # Handle response.content for v3/deepseek/etc
                 if hasattr(response, "content"):
-                    model_response_content = response.content
-                elif isinstance(response, str):
-                    model_response_content = response
-                else:
-                    model_response_content = str(response)
+                    content = response.content
 
+                    if isinstance(content, list):  # Claude-style: list of Blocks
+                        flattened_content = []
+                        for block in content:
+                            if hasattr(block, "text"):
+                                flattened_content.append(block.text)
+                            elif hasattr(block, "function"):  # Tool call block
+                                flattened_content.append({
+                                    "tool_calls": [{
+                                        "function": {
+                                            "name": block.name,
+                                            "arguments": block.input
+                                        }
+                                    }]
+                                })
+                        model_response_content = flattened_content
+                    else:
+                        # Non-list content (e.g., string), wrap in list
+                        model_response_content = [content]
+
+                elif isinstance(response, str):
+                    model_response_content = [response]
+                else:
+                    model_response_content = [str(response)]
+
+                # Append to message history
                 text_messages.append({
-                    "role": "model",
-                    "content": [model_response_content]
+                    "role": "assistant",
+                    "content": [
+                        {"type": "text", "text": part} if isinstance(part, str) else part
+                        for part in model_response_content
+                    ]
                 })
 
+
+            #iterate over all subqueries
             for sub_query in sub_queries:
                 reranked_docs, _, _ = self.retriever.retrieve(sub_query, 30, 5)
                 unique_retriebed_docs = list(set(reranked_docs))
@@ -316,6 +399,11 @@ class TableRAG() :
                 except:
                     sql_str, sql_execute_result, schema = "", "", "ExcelRAG execute fails, key does not exist."
 
+                # Safeguard: skip follow-up if nothing meaningful to work with
+                if not sql_str.strip() and not sql_execute_result.strip() and not doc_content.strip():
+                    logger.info(f"Skipping LLM follow-up: no SQL/doc/schema context for subquery '{sub_query}'")
+                    continue
+
                 combine_prompt_formatted = COMBINE_PROMPT.format(
                     docs=doc_content,
                     schema=schema,
@@ -323,8 +411,11 @@ class TableRAG() :
                     sql_execute_result=sql_execute_result,
                     query=sub_query
                 )
-
+                if not combine_prompt_formatted.strip():
+                    logger.warning("Skipping empty prompt.")
+                    return None, [{"role": "user", "content": "ERROR: Empty prompt skipped."}]
                 msg = [{"role": "user", "content": combine_prompt_formatted}]
+                #failing here...
                 answer = self.get_llm_response(text_messages=msg, backbone=backbone, select_config=select_config, tools=None)
                 answer = self.extract_content(answer) or ""
 
@@ -340,19 +431,19 @@ class TableRAG() :
     file_path: Optional[str],
     save_file_path: str,
     backbone: str,
-    rerun: bool = False,
+    rerun: bool = True,
     max_workers: int = 1,
 ) -> None:
         live_mode = file_path is None or not file_path or file_path == ""
         if rerun and (not live_mode):
             pre_data = read_in_lines(save_file_path)
-            pre_questions = {case["question"] for case in pre_data}
+            pre_questions = {case["question_id"] for case in pre_data if case["tablerag_answer"]!=""}
+            #pre_questions = {(case["question_id"] or case["tablerag_answer"]!="")for case in pre_data}
+ 
         else :
             pre_questions = {}
         def process_case(case_or_query: Union[str, dict]):
             if isinstance(case_or_query, dict):
-                if case_or_query["question"] in pre_questions :
-                    return pre_questions[case_or_query["question"]]
                 answer, messages = self._run(case_or_query, backbone=backbone)
                 result = case_or_query.copy()
             else:
@@ -365,8 +456,8 @@ class TableRAG() :
                 for mes in (messages or [])
             ]
             return result
-
-        with open(save_file_path, "w", encoding="utf-8") as fout:
+        write_mode = "a" if rerun and not live_mode else "w"
+        with open(save_file_path, write_mode, encoding="utf-8") as fout:
             if live_mode:
                 print("Entering interactive TableRAG session. Type ’exit’ or blank to quit.")                    
                 while True:
@@ -384,6 +475,9 @@ class TableRAG() :
                         fout.flush()
             else:
                 src_data = read_in(file_path)
+                #src_data = [case for case in src_data if case["tablerag_answer"] == ""]
+                src_data = [case for case in src_data if case["question_id"] not in pre_questions]
+
                 file_lock = threading.Lock()
 
                 with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:

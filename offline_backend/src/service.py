@@ -7,7 +7,6 @@ from prompt import *
 from handle_requests import get_llm_response
 from common_utils import transfer_name, SCHEMA_DIR, sql_alchemy_helper
 
-
 def extract_sql_statement(resp_content):  
     """
     从响应内容中提取SQL语句。
@@ -65,8 +64,9 @@ def process_tablerag_request(table_name_list, query):
     resp_content = get_llm_response(
         system_prompt=NL2SQL_SYSTEM_PROMPT,
         user_prompt=nl2sql_prompt,
-        model="v3"
+        model="claude"
     )
+    
     nl2sql_end_time = time.time()
     nl2sql_time_cusumed = nl2sql_end_time - nl2sql_start_time
 

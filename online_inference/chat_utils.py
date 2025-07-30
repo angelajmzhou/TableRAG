@@ -11,6 +11,7 @@ from config import *
 import httpx
 import google.generativeai as genai
 from typing import Dict, Any, Optional
+import anthropic
 
 
 def init_logger(name='my_logger', level=logging.DEBUG, log_file='app.log') :
@@ -67,7 +68,7 @@ def get_chat_result(messages: list[Dict[str, Any]], tools: Any = None, llm_confi
         try:
             genai.configure(api_key=gemini_config.get("api_key", ""))
             model = genai.GenerativeModel(
-                model_name=llm_config.get("model", "gemini-1.5-pro"),
+                model_name=llm_config.get("model", "gemini-2.5-pro"),
                 tools=tools
             )
 
@@ -82,13 +83,50 @@ def get_chat_result(messages: list[Dict[str, Any]], tools: Any = None, llm_confi
             raise RuntimeError(f"Gemini error: {e}")
     elif "v3" in llm_config.get("model"):
         client = OpenAI(
-        api_key=llm_config.get('api_key', ''),
-        base_url=llm_config.get('url', '')
+            api_key=llm_config.get('api_key', ''),
+            base_url=llm_config.get('url', '')
         )
-        chat_completion = client.chat.completions.create(
-            messages=messages,
-            model=llm_config.get('model', ''),
-            temperature=0.01
-        )
-        return chat_completion.choices[0].message
+        try:
+            chat_completion = client.chat.completions.create(
+                messages=messages,
+                model=llm_config.get('model', ''),
+                temperature=0.01
+            )
+
+            if not chat_completion or not chat_completion.choices:
+                print("LLM response is None or contains no choices.")
+                print(chat_completion)
+                return None
+            print(chat_completion)
+            return chat_completion.choices[0].message
+        except Exception as e:
+            print(f"LLM call failed: {e}")
+            return None
+    elif "claude" in llm_config.get("model"):
+        try:
+            client = anthropic.Anthropic(api_key=llm_config.get('api_key', ''))
+            if tools is not None:
+                chat_completion = client.messages.create(
+                    model='claude-3-5-sonnet-20240620',
+                    max_tokens=8192,
+                    messages = messages, 
+                    tools = tools, 
+                    temperature = 0.01
+                )
+            else:
+                chat_completion = client.messages.create(
+                model='claude-3-5-sonnet-20240620',
+                max_tokens=8192,
+                messages = messages, 
+                temperature = 0.01
+            )
+            if not chat_completion:
+                print("LLM response is None.")
+                return None
+            return chat_completion
+        except Exception as e:
+            print(f"LLM call failed: {e}")
+            return None
+
+
       
