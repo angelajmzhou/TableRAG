@@ -386,7 +386,7 @@ class TableRAG() :
                 unique_retriebed_docs = list(set(reranked_docs))
                 doc_content = "\n".join(unique_retriebed_docs[:3])
 
-                excel_rag_response_dict = get_excel_rag_response_plain(related_table_name_list, sub_query)
+                excel_rag_response_dict = get_excel_rag_response_plain(related_table_name_list, sub_query, model=backbone)
                 excel_rag_response = copy.deepcopy(excel_rag_response_dict)
                 logger.info(f"Requesting ExcelRAG, source file {related_table_name_list}, with query {sub_query}")
 

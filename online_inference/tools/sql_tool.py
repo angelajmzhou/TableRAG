@@ -33,7 +33,7 @@ def with_retry(max_retries=3, backoff_factor=5) :
     return decorator
 
 @with_retry(max_retries=3)
-def get_excel_rag_response(table_name_list, query, repo_id) :
+def get_excel_rag_response(table_name_list, query, repo_id, model = 'gemini') :
     """
     Run SQL generation and execute SQL in the database.
 
@@ -49,7 +49,8 @@ def get_excel_rag_response(table_name_list, query, repo_id) :
 
     body = {
     'table_name_list': table_name_list,
-    'query': query
+    'query': query,
+    'model': model
     }
     if repo_id:
         body['repo_id'] = repo_id
@@ -66,7 +67,7 @@ def get_excel_rag_response(table_name_list, query, repo_id) :
         raise e
 
 
-def get_excel_rag_response_plain(table_name_list: list = [], query: str = None) :
+def get_excel_rag_response_plain(table_name_list: list = [], query: str = None, model: str = 'gemini') -> dict:
     """
     Call the SQL generation and execution service.
 
@@ -85,7 +86,8 @@ def get_excel_rag_response_plain(table_name_list: list = [], query: str = None) 
 
     body = {
         'table_name_list': table_name_list,
-        'query': query
+        'query': query,
+        'model': model
     }
     
     try_times = 5
