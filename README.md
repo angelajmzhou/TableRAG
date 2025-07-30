@@ -83,9 +83,12 @@ python interface.py
 
 ### Step 1: Setup Config and Data Source
 
-1. Edit 'online_inference/config.py' to set the LLM infering url and key, and the query service url.
+1. Edit 'online_inference/config.py' to set the LLM infering url and key, and the query service url. Edit offline_backend/src/handle_requests.py as well.
+
+2. Put API keys in the .env file.
    
 3. Unzip the dev_excel.zip and put it into "/data" directory.
+
 
 ### Step 2: Run Main Experiment
 

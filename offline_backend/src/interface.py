@@ -11,8 +11,9 @@ def get_tablerag_response():
 
     query = json_body['query']
     table_name_list = json_body['table_name_list']
+    model = json_body.get('model', 'gemini')  # Default to 'gemini' if not specified
 
-    res_dict = process_tablerag_request(table_name_list, query)
+    res_dict = process_tablerag_request(table_name_list, query, model=model)
     
     return jsonify(res_dict)
 

@@ -115,6 +115,7 @@ def get_llm_response(
     if not user_prompt.strip():
         raise ValueError("User prompt must not be empty.")
         return None
+    print("using model:", model)
     if model == "gemini":
         full_prompt = f"{system_prompt.strip()}\n\n{user_prompt}" if system_prompt else user_prompt
         payload = {

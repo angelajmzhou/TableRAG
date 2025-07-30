@@ -28,7 +28,7 @@ def extract_sql_statement(resp_content):
         return resp_content
     
 
-def process_tablerag_request(table_name_list, query):
+def process_tablerag_request(table_name_list, query, model="gemini"):
     """
     Process the request for TableRAG.
     
@@ -64,7 +64,7 @@ def process_tablerag_request(table_name_list, query):
     resp_content = get_llm_response(
         system_prompt=NL2SQL_SYSTEM_PROMPT,
         user_prompt=nl2sql_prompt,
-        model="claude"
+        model=model
     )
     
     nl2sql_end_time = time.time()
